@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Pattern Activity (Hybrid)</title>
+    <title>Pattern Activity (Layout Fixed)</title>
     <style>
         /* --- 기본 설정 --- */
         body {
@@ -11,8 +11,7 @@
             background-color: #f0f2f5;
             margin: 0; padding: 0;
             height: 100vh;
-            display: flex;
-            flex-direction: column;
+            display: flex; flex-direction: column;
             overflow: hidden;
             user-select: none; -webkit-user-select: none;
         }
@@ -21,170 +20,147 @@
         header {
             background-color: #2c3e50;
             padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 60px;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 60px; flex-shrink: 0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
             z-index: 100;
         }
-
         .logo { font-size: 18px; font-weight: bold; color: #ecf0f1; display: flex; align-items: center; gap: 8px; }
         .menu-group { display: flex; gap: 8px; align-items: center; }
 
         select {
-            background-color: #34495e;
-            color: white;
-            border: 1px solid #5d6d7e;
-            padding: 8px 10px;
-            border-radius: 8px;
-            font-size: 14px;
-            outline: none;
-            font-weight: bold;
-            cursor: pointer;
-            width: auto;
-            max-width: 400px; /* 메뉴 길이 넉넉하게 */
-            min-width: 120px;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            background-color: #34495e; color: white; border: 1px solid #5d6d7e;
+            padding: 8px 10px; border-radius: 8px; font-size: 14px;
+            outline: none; font-weight: bold; cursor: pointer;
+            width: auto; max-width: 400px; min-width: 100px;
+            text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+            transition: width 0.2s ease;
         }
 
         /* --- 메인 스테이지 --- */
         .stage {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            padding: 20px;
-            width: 100%;
-            box-sizing: border-box;
+            flex: 1; display: flex; justify-content: center; align-items: center;
+            position: relative; padding: 20px; width: 100%; box-sizing: border-box;
         }
-
         .card {
-            background: white;
-            width: 100%;
-            max-width: 900px;
-            height: 100%;
-            max-height: 600px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 30px 60px;
-            position: relative;
+            background: white; width: 100%; max-width: 900px; height: 100%; max-height: 600px;
+            border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex; flex-direction: column;
+            position: relative; overflow: hidden;
         }
 
-        /* 질문 영역 */
-        .q-area { 
-            width: 100%; 
-            flex: 1; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            margin-bottom: 20px;
+        /* === 1. Look & Say 레이아웃 (2/3 + 1/3) === */
+        #lookSayContainer {
+            display: flex; flex-direction: column; height: 100%; width: 100%;
+        }
+        /* 상단 2/3: 문제 영역 */
+        .ls-upper {
+            flex: 2; /* 2/3 비율 */
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            padding: 20px; border-bottom: 1px solid #f0f0f0;
             overflow: hidden;
         }
-        
-        .q-text {
-            font-size: 42px;
-            font-weight: 800;
-            color: #2c3e50;
-            line-height: 1.4;
-            word-break: keep-all;
+        /* 하단 1/3: 정답 박스 영역 */
+        .ls-lower {
+            flex: 1; /* 1/3 비율 */
+            display: flex; justify-content: center; align-items: center;
+            padding: 20px; background-color: #fafafa;
         }
 
-        /* 이미지 스타일 */
-        .q-image {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-            border-radius: 10px;
-            display: none;
-        }
-
-        /* ★ 이모지 전용 스타일 (추가됨) ★ */
-        .q-emoji {
-            font-size: 150px; /* 왕따시만한 크기 */
-            line-height: 1;
-            display: none;
-            animation: pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        @keyframes pop {
-            0% { transform: scale(0.5); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        /* 정답 영역 */
-        .a-area {
-            width: 100%;
-            height: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        /* 요소 스타일 */
+        .q-text { font-size: 36px; font-weight: 800; color: #2c3e50; line-height: 1.4; word-break: keep-all; text-align: center;}
+        .q-image { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px; display: none; }
+        .q-emoji { font-size: 140px; line-height: 1; display: none; animation: pop 0.3s; }
         
         .answer-box {
-            width: 90%;
-            padding: 20px;
-            border-radius: 15px;
-            font-weight: bold;
-            font-size: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 80px;
-            background-color: #f8f9fa;
-            color: #95a5a6;
-            border: 2px dashed #bdc3c7;
+            width: 90%; height: 70%; 
+            border-radius: 15px; font-weight: bold; font-size: 24px;
+            cursor: pointer; transition: all 0.3s; display: flex; justify-content: center; align-items: center;
+            text-align: center;
+            background-color: white; color: #95a5a6; border: 2px dashed #bdc3c7;
+        }
+        .answer-box.visible {
+            background-color: #3498db; color: white; border: 2px solid #3498db;
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4); transform: translateY(-5px);
         }
 
-        .answer-box.visible {
-            background-color: #3498db;
-            color: white;
-            border: 2px solid #3498db;
-            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
-            transform: translateY(-5px);
-            font-size: 32px;
+        /* === 2. Unscramble 레이아웃 (3분할) === */
+        #unscrambleContainer {
+            display: none; /* 기본 숨김 */
+            flex-direction: column; height: 100%; width: 100%;
         }
+        /* 상단: 질문 */
+        .us-top {
+            flex: 1; /* 상단 */
+            display: flex; justify-content: center; align-items: center;
+            padding: 10px 20px; border-bottom: 1px solid #eee;
+        }
+        .us-top .q-text { font-size: 28px; } /* 글씨 조금 작게 */
+
+        /* 중단: 정답 슬롯 */
+        .us-mid {
+            flex: 1.2; /* 중간 (조금 더 넓게) */
+            background: #f0f4f8; 
+            padding: 20px; 
+            display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 8px;
+            overflow-y: auto;
+            transition: background 0.3s;
+        }
+        .us-mid.correct { background: #e3f9e5; box-shadow: inset 0 0 20px rgba(46, 204, 113, 0.2); }
+
+        /* 하단: 단어 블록 풀 */
+        .us-bot {
+            flex: 1; /* 하단 */
+            padding: 20px; 
+            display: flex; flex-wrap: wrap; justify-content: center; align-content: center; gap: 10px;
+            background: white;
+            border-top: 1px solid #eee;
+        }
+
+        /* ★ 단어 블록 스타일 개선 ★ */
+        .word-block {
+            background: white; border: 2px solid #3498db; color: #2c3e50;
+            padding: 8px 16px; /* 크기 축소 */
+            border-radius: 8px; /* 둥근 사각형 */
+            font-size: 18px; font-weight: bold;
+            cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.1s, background 0.1s;
+            
+            /* 텍스트 정렬 */
+            display: flex; align-items: center; justify-content: center;
+            text-align: center;
+            line-height: 1.2;
+        }
+        .word-block:active { transform: scale(0.95); }
+        .word-block.used { opacity: 0; pointer-events: none; width: 0; padding: 0; margin: 0; border: 0; overflow: hidden; }
+
+        /* 슬롯에 들어간 블록 */
+        .us-mid .word-block {
+            background: #3498db; color: white; border-color: #3498db;
+            box-shadow: none;
+        }
+
+        @keyframes pop { 0% { transform: scale(0.5); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
 
         /* 네비게이션 버튼 */
         .nav-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.8);
-            border: 1px solid #ddd;
-            width: 70px; height: 70px;
-            border-radius: 50%;
-            font-size: 32px;
-            cursor: pointer;
-            color: #2c3e50;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            z-index: 20;
+            position: absolute; top: 50%; transform: translateY(-50%);
+            background: rgba(255,255,255,0.8); border: 1px solid #ddd;
+            width: 60px; height: 60px; border-radius: 50%;
+            font-size: 28px; cursor: pointer; color: #2c3e50;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 20;
             display: flex; justify-content: center; align-items: center;
         }
         .nav-prev { left: 10px; }
         .nav-next { right: 10px; }
-
-        .progress-bar {
-            position: absolute; bottom: 20px;
-            font-size: 16px; color: #95a5a6; font-weight: bold;
-        }
+        .progress-bar { position: absolute; bottom: 15px; font-size: 14px; color: #95a5a6; font-weight: bold; left: 50%; transform: translateX(-50%); }
 
         @media (max-width: 768px) {
-            .q-text { font-size: 28px; }
-            .q-emoji { font-size: 100px; }
-            .answer-box.visible { font-size: 24px; }
-            .nav-btn { width: 50px; height: 50px; font-size: 24px; }
-            .card { padding: 20px; }
+            .q-text { font-size: 24px; }
+            .us-top .q-text { font-size: 20px; }
+            .word-block { font-size: 16px; padding: 6px 12px; }
+            .card { height: 100%; border-radius: 0; box-shadow: none; }
+            .stage { padding: 0; } 
             .logo span { display: none; }
             select { max-width: 150px; }
         }
@@ -195,10 +171,11 @@
     <header>
         <div class="logo">🎓 <span>Pattern Activity</span></div>
         <div class="menu-group">
-            <select id="bookSel" onchange="updatePatterns()"></select>
-            <select id="patSel" onchange="resetActivity()"></select>
-            <select id="actSel" onchange="resetActivity()">
+            <select id="bookSel" onchange="updatePatterns(); resizeSelect(this)"></select>
+            <select id="patSel" onchange="resetActivity(); resizeSelect(this)"></select>
+            <select id="actSel" onchange="resetActivity(); resizeSelect(this)">
                 <option value="looksay">Look & Say</option>
+                <option value="unscramble">Unscramble</option>
             </select>
         </div>
     </header>
@@ -208,17 +185,28 @@
         <button class="nav-btn nav-next" onclick="nextSlide()">❯</button>
 
         <div class="card">
-            <div class="q-area">
-                <div id="qText" class="q-text">Loading...</div>
-                <img id="qImg" class="q-image" src="" alt="Question Image">
-                <div id="qEmoji" class="q-emoji"></div>
-            </div>
-
-            <div class="a-area">
-                <div class="answer-box" id="aBox" onclick="toggleAnswer()">
-                    👆 Tap to check answer
+            
+            <div id="lookSayContainer">
+                <div class="ls-upper">
+                    <div id="lsText" class="q-text">Loading...</div>
+                    <img id="lsImg" class="q-image" src="" alt="Question">
+                    <div id="lsEmoji" class="q-emoji"></div>
+                </div>
+                <div class="ls-lower">
+                    <div class="answer-box" id="aBox" onclick="toggleAnswer()">
+                        👆 Tap to check answer
+                    </div>
                 </div>
             </div>
+
+            <div id="unscrambleContainer">
+                <div class="us-top">
+                    <div id="usText" class="q-text">Question</div>
+                </div>
+                <div id="slotArea" class="us-mid"></div>
+                <div id="poolArea" class="us-bot"></div>
+            </div>
+
         </div>
 
         <div class="progress-bar" id="progress">1 / 10</div>
@@ -227,9 +215,29 @@
     <script src="data.js"></script>
 
     <script>
+        // --- 메뉴 너비 자동 조절 ---
+        function resizeSelect(sel) {
+            let tempSpan = document.createElement("span");
+            tempSpan.style.visibility = "hidden";
+            tempSpan.style.position = "absolute";
+            tempSpan.style.fontSize = "14px";
+            tempSpan.style.fontWeight = "bold";
+            tempSpan.style.fontFamily = "'Pretendard', sans-serif";
+            tempSpan.innerText = sel.options[sel.selectedIndex].text;
+            document.body.appendChild(tempSpan);
+            let width = tempSpan.offsetWidth + 45; 
+            document.body.removeChild(tempSpan);
+            sel.style.width = width + "px";
+        }
+
+        // --- 전역 변수 ---
         let currentItems = [];
         let currentIndex = 0;
+        let currentMode = "looksay"; 
         const PLACEHOLDER_TEXT = "👆 Tap to check answer";
+        
+        // Unscramble 상태
+        let unscrambleState = { targetSentence: "", scrambledWords: [], userSelection: [] };
 
         window.onload = function() {
             if (typeof bookData === 'undefined') {
@@ -237,6 +245,7 @@
             }
             initBookMenu();
             initTouchEvents();
+            resizeSelect(document.getElementById('actSel'));
         };
 
         function initBookMenu() {
@@ -245,6 +254,7 @@
                 bookSel.innerHTML += `<option value="${book}">${book}</option>`;
             });
             updatePatterns();
+            resizeSelect(bookSel);
         }
 
         function updatePatterns() {
@@ -258,17 +268,23 @@
                 const name = items.find(d => d["Pattern #"] == p)["Pattern Name"];
                 patSel.innerHTML += `<option value="${p}">${p}. ${name}</option>`;
             });
+            resizeSelect(patSel);
             resetActivity();
         }
 
         function resetActivity() {
             const bookName = document.getElementById('bookSel').value;
             const pNum = parseInt(document.getElementById('patSel').value);
+            currentMode = document.getElementById('actSel').value;
+            
             const allItems = bookData[bookName].filter(d => d["Pattern #"] === pNum);
             
-            currentItems = allItems.filter(d => d.Section === "Speaking II");
-            if (currentItems.length === 0) {
+            if (currentMode === 'looksay') {
+                currentItems = allItems.filter(d => d.Section === "Speaking II");
+                if (currentItems.length === 0) currentItems = allItems.filter(d => d.Section === "Unscramble");
+            } else {
                 currentItems = allItems.filter(d => d.Section === "Unscramble");
+                if (currentItems.length === 0) currentItems = allItems.filter(d => d.Section === "Speaking II");
             }
 
             currentIndex = 0;
@@ -277,50 +293,58 @@
 
         function renderSlide() {
             if (currentItems.length === 0) return;
-
             const item = currentItems[currentIndex];
-            const qText = document.getElementById('qText');
-            const qImg = document.getElementById('qImg');
-            const qEmoji = document.getElementById('qEmoji');
-            const aBox = document.getElementById('aBox');
             const progress = document.getElementById('progress');
+            progress.innerText = `${currentIndex + 1} / ${currentItems.length}`;
 
-            // --- ★ 하이브리드 미디어 처리 로직 ★ ---
-            // 1. 모든 요소 일단 숨김
+            // 컨테이너 제어
+            const lsContainer = document.getElementById('lookSayContainer');
+            const usContainer = document.getElementById('unscrambleContainer');
+
+            if (currentMode === 'looksay') {
+                lsContainer.style.display = 'flex';
+                usContainer.style.display = 'none';
+                renderLookSay(item);
+            } else {
+                lsContainer.style.display = 'none';
+                usContainer.style.display = 'flex';
+                initUnscrambleGame(item);
+            }
+        }
+
+        // --- Look & Say 렌더링 ---
+        function renderLookSay(item) {
+            const qText = document.getElementById('lsText');
+            const qImg = document.getElementById('lsImg');
+            const qEmoji = document.getElementById('lsEmoji');
+            const aBox = document.getElementById('aBox');
+
             qText.style.display = "none";
             qImg.style.display = "none";
             qEmoji.style.display = "none";
 
             const imageVal = item["Image"] ? item["Image"].trim() : "";
-
             if (imageVal !== "") {
-                // 이미지 값은 있는데 파일 확장자가 있다? (.jpg, .png 등) -> 이미지 파일로 처리
                 if (imageVal.includes('.') || imageVal.includes('/')) {
                     qImg.src = "images/" + imageVal;
                     qImg.style.display = "block";
-                } 
-                // 확장자가 없다? -> 이모지로 간주
-                else {
+                } else {
                     qEmoji.innerText = imageVal;
                     qEmoji.style.display = "block";
                 }
             } else {
-                // 이미지 값이 없으면 -> 한글 텍스트 표시
                 qText.innerText = item["Korean/Question"];
                 qText.style.display = "block";
             }
-            
-            // 정답 박스 초기화
+
             aBox.className = "answer-box";
             aBox.innerText = PLACEHOLDER_TEXT;
-
-            progress.innerText = `${currentIndex + 1} / ${currentItems.length}`;
         }
 
         function toggleAnswer() {
+            if (currentMode !== 'looksay') return;
             const item = currentItems[currentIndex];
             const aBox = document.getElementById('aBox');
-            
             if (aBox.classList.contains('visible')) {
                 aBox.classList.remove('visible');
                 aBox.innerText = PLACEHOLDER_TEXT;
@@ -330,12 +354,86 @@
             }
         }
 
+        // --- Unscramble 게임 로직 ---
+        function initUnscrambleGame(item) {
+            const usText = document.getElementById('usText');
+            const slotArea = document.getElementById('slotArea');
+            const poolArea = document.getElementById('poolArea');
+
+            // 1. 상단: 한글 질문
+            usText.innerText = item["Korean/Question"];
+
+            // 2. 초기화
+            slotArea.innerHTML = "";
+            poolArea.innerHTML = "";
+            slotArea.className = "us-mid";
+            unscrambleState.userSelection = [];
+            unscrambleState.targetSentence = item["English/Answer"];
+
+            // 3. 단어 준비
+            let rawStr = item["Scrambled"];
+            if (!rawStr || rawStr === "") rawStr = item["English/Answer"];
+            
+            let words = rawStr.includes("/") ? rawStr.split("/") : rawStr.split(" ");
+            words = words.map(w => w.trim());
+            
+            // 랜덤 섞기
+            words.sort(() => Math.random() - 0.5);
+            unscrambleState.scrambledWords = words;
+
+            // 4. 단어 블록 생성
+            words.forEach((word, idx) => {
+                let btn = document.createElement("div");
+                btn.className = "word-block";
+                btn.innerText = word;
+                btn.onclick = () => selectWord(btn, word, idx);
+                poolArea.appendChild(btn);
+            });
+        }
+
+        function selectWord(btnElement, word, idx) {
+            btnElement.classList.add("used");
+            
+            const slotArea = document.getElementById('slotArea');
+            let slotBtn = document.createElement("div");
+            slotBtn.className = "word-block";
+            slotBtn.innerText = word;
+            slotBtn.onclick = () => deselectWord(slotBtn, btnElement);
+            
+            slotArea.appendChild(slotBtn);
+            unscrambleState.userSelection.push(word);
+
+            checkResult();
+        }
+
+        function deselectWord(slotBtn, originalBtn) {
+            slotBtn.remove();
+            originalBtn.classList.remove("used");
+            
+            const currentSlots = document.querySelectorAll("#slotArea .word-block");
+            unscrambleState.userSelection = Array.from(currentSlots).map(el => el.innerText);
+            
+            document.getElementById('slotArea').classList.remove("correct");
+        }
+
+        function checkResult() {
+            const userSent = unscrambleState.userSelection.join(" ");
+            const target = unscrambleState.targetSentence;
+            
+            const cleanUser = userSent.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+            const cleanTarget = target.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+
+            if (cleanUser === cleanTarget && cleanUser.length > 0) {
+                document.getElementById('slotArea').classList.add("correct");
+                if(navigator.vibrate) navigator.vibrate(50);
+            }
+        }
+
+        // --- 네비게이션 ---
         function nextSlide() {
             if (currentIndex < currentItems.length - 1) {
                 currentIndex++;
                 renderSlide();
-            } else {
-                if(navigator.vibrate) navigator.vibrate(50);
             }
         }
 
@@ -350,7 +448,6 @@
             let touchStartX = 0;
             let touchEndX = 0;
             const stage = document.getElementById('touchStage');
-
             stage.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
             stage.addEventListener('touchend', e => { 
                 touchEndX = e.changedTouches[0].screenX; 
