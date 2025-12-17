@@ -28608,7 +28608,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 스케이트보드 타는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28617,7 +28617,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 스케이트보드 타는 방법을 아니?",
       "English/Answer": "Do you know how to skateboard?",
       "Scrambled": "skateboard"
     },
@@ -28626,7 +28626,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 스케이트보드 타는 방법을 아니?",
       "English/Answer": "Do you know how to skateboard?",
       "Scrambled": "know / Do / to / you / skateboard / how"
     },
@@ -28635,7 +28635,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 고치는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28644,7 +28644,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 고치는 방법을 아니?",
       "English/Answer": "Do you know how to fix a computer?",
       "Scrambled": "fix a computer"
     },
@@ -28653,7 +28653,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 고치는 방법을 아니?",
       "English/Answer": "Do you know how to fix a computer?",
       "Scrambled": "how / computer / fix / know / Do / you / to / a"
     },
@@ -28662,7 +28662,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 요구르트 만드는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28671,7 +28671,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 요구르트 만드는 방법을 아니?",
       "English/Answer": "Do you know how to make yogurt?",
       "Scrambled": "make yogurt"
     },
@@ -28680,7 +28680,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 요구르트 만드는 방법을 아니?",
       "English/Answer": "Do you know how to make yogurt?",
       "Scrambled": "make / how / yogurt / Do / you / know / to"
     },
@@ -28689,7 +28689,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 전자 메일 보내는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28698,7 +28698,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 전자 메일 보내는 방법을 아니?",
       "English/Answer": "Do you know how to send emails?",
       "Scrambled": "send emails"
     },
@@ -28707,7 +28707,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 전자 메일 보내는 방법을 아니?",
       "English/Answer": "Do you know how to send emails?",
       "Scrambled": "to / emails / send / Do / how / you / know"
     },
@@ -28716,7 +28716,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 세탁기 사용하는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28725,7 +28725,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 세탁기 사용하는 방법을 아니?",
       "English/Answer": "Do you know how to use a washing machine?",
       "Scrambled": "use a washing machine"
     },
@@ -28734,7 +28734,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 세탁기 사용하는 방법을 아니?",
       "English/Answer": "Do you know how to use a washing machine?",
       "Scrambled": "washing / use / machine / know / to / you / a / Do / how"
     },
@@ -28743,7 +28743,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 뜨개질하는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28752,7 +28752,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 뜨개질하는 방법을 아니?",
       "English/Answer": "Do you know how to knit?",
       "Scrambled": "knit"
     },
@@ -28761,7 +28761,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 뜨개질 하는 방법을 아니?",
       "English/Answer": "Do you know how to knit?",
       "Scrambled": "know / knit / how / you / to / Do"
     },
@@ -28770,7 +28770,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 씨앗 키우는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28779,7 +28779,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 씨앗 키우는 방법을 아니?",
       "English/Answer": "Do you know how to grow seeds?",
       "Scrambled": "grow seeds"
     },
@@ -28788,7 +28788,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 씨앗 키우는 방법을 아니?",
       "English/Answer": "Do you know how to grow seeds?",
       "Scrambled": "how / Do / grow / to / you / seeds / know"
     },
@@ -28797,7 +28797,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 국제 전화 거는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28806,7 +28806,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 국제 전화 거는 방법을 아니?",
       "English/Answer": "Do you know how to make an international call?",
       "Scrambled": "make an international call"
     },
@@ -28815,7 +28815,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 국제 전화 거는 방법을 아니?",
       "English/Answer": "Do you know how to make an international call?",
       "Scrambled": "how / an / know / call / you / make / Do / to / international"
     },
@@ -28824,7 +28824,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 수영하는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28833,7 +28833,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 수영하는 방법을 아니?",
       "English/Answer": "Do you know how to swim?",
       "Scrambled": "swim"
     },
@@ -28842,7 +28842,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 수영하는 방법을 아니?",
       "English/Answer": "Do you know how to swim?",
       "Scrambled": "know / to / how / swim / Do / you"
     },
@@ -28851,7 +28851,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 체스 두는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28860,7 +28860,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 체스 두는 방법을 아니?",
       "English/Answer": "Do you know how to play chess?",
       "Scrambled": "play chess"
     },
@@ -28869,7 +28869,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 체스 두는 방법을 아니?",
       "English/Answer": "Do you know how to play chess?",
       "Scrambled": "how / play / you / to / know / chess / Do"
     },
@@ -28878,7 +28878,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 문제 푸는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28887,7 +28887,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 문제 푸는 방법을 아니?",
       "English/Answer": "Do you know how to solve this problem?",
       "Scrambled": "solve this problem"
     },
@@ -28896,7 +28896,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 문제 푸는 방법을 아니?",
       "English/Answer": "Do you know how to solve this problem?",
       "Scrambled": "solve / problem / how / you / know / to / this / Do"
     },
@@ -28905,7 +28905,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거기에 가는 방법을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28914,7 +28914,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거기에 가는 방법을 아니?",
       "English/Answer": "Do you know how to get there?",
       "Scrambled": "get there"
     },
@@ -28923,7 +28923,7 @@ const bookData = {
       "Pattern Name": "Do you know how to ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거기에 가는 방법을 아니?",
       "English/Answer": "Do you know how to get there?",
       "Scrambled": "get / there / how / know / you / Do / to"
     },
@@ -28932,7 +28932,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그를 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28941,7 +28941,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그를 기억하니?",
       "English/Answer": "Do you remember him?",
       "Scrambled": "him"
     },
@@ -28950,7 +28950,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그를 기억하니?",
       "English/Answer": "Do you remember him?",
       "Scrambled": "him / Do / remember / you"
     },
@@ -28959,7 +28959,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 스웨터를 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28968,7 +28968,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 스웨터를 기억하니?",
       "English/Answer": "Do you remember this sweater?",
       "Scrambled": "this sweater"
     },
@@ -28977,7 +28977,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 스웨터를 기억하니?",
       "English/Answer": "Do you remember this sweater?",
       "Scrambled": "remember / sweater / you / this / Do"
     },
@@ -28986,7 +28986,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 속초 가족 여행을 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -28995,7 +28995,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 속초 가족 여행을 기억하니?",
       "English/Answer": "Do you remember the family trip to Sokcho?",
       "Scrambled": "the family trip to Sokcho"
     },
@@ -29004,7 +29004,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 속초 가족 여행을 기억하니?",
       "English/Answer": "Do you remember the family trip to Sokcho?",
       "Scrambled": "Do / Sokcho / you / remember / to / trip / the / family"
     },
@@ -29013,7 +29013,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우리 6학년 때 선생님을 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29022,7 +29022,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우리 6학년 때 선생님을 기억하니?",
       "English/Answer": "Do you remember our 6th grade teacher?",
       "Scrambled": "our 6th grade teacher"
     },
@@ -29031,7 +29031,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우리 6학년 때 선생님을 기억하니?",
       "English/Answer": "Do you remember our 6th grade teacher?",
       "Scrambled": "6th / remember / you / teacher / Do / grade / our"
     },
@@ -29040,7 +29040,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 나에게 서울대공원에 대해 이야기했던 것을 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29049,7 +29049,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 나에게 서울대공원에 대해 이야기했던 것을 기억하니?",
       "English/Answer": "Do you remember telling me about the Seoul Grand Park?",
       "Scrambled": "telling me about the Seoul Grand Park"
     },
@@ -29058,7 +29058,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 나에게 서울대공원에 대해 이야기했던 것을 기억하니?",
       "English/Answer": "Do you remember telling me about the Seoul Grand Park?",
       "Scrambled": "Grand / Seoul / me / you / telling / Do / remember / about / the / Park"
     },
@@ -29067,7 +29067,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 노래를 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29076,7 +29076,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 노래를 기억하니?",
       "English/Answer": "Do you remember this song?",
       "Scrambled": "this song"
     },
@@ -29085,7 +29085,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 노래를 기억하니?",
       "English/Answer": "Do you remember this song?",
       "Scrambled": "remember / this / you / Do / song"
     },
@@ -29094,7 +29094,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 장난감의 이름을 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29103,7 +29103,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 장난감의 이름을 기억하니?",
       "English/Answer": "Do you remember the name of this toy?",
       "Scrambled": "the name of this toy"
     },
@@ -29112,7 +29112,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 장난감의 이름을 기억하니?",
       "English/Answer": "Do you remember the name of this toy?",
       "Scrambled": "the / remember / Do / name / this / of / toy / you"
     },
@@ -29121,7 +29121,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 작년 축구 경기를 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29130,7 +29130,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 작년 축구 경기를 기억하니?",
       "English/Answer": "Do you remember last year's soccer match?",
       "Scrambled": "last year's soccer match"
     },
@@ -29139,7 +29139,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 작년 축구 시합을 기억하니?",
       "English/Answer": "Do you remember last year's soccer match?",
       "Scrambled": "remember / Do / year's / you / soccer / last / match"
     },
@@ -29148,7 +29148,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 이름을 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29157,7 +29157,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 이름을 기억하니?",
       "English/Answer": "Do you remember my name?",
       "Scrambled": "my name"
     },
@@ -29166,7 +29166,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 이름을 기억하니?",
       "English/Answer": "Do you remember my name?",
       "Scrambled": "my / remember / Do / name / you"
     },
@@ -29175,7 +29175,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 엄마의 생신을 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29184,7 +29184,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 엄마의 생신을 기억하니?",
       "English/Answer": "Do you remember Mom's birthday?",
       "Scrambled": "Mom's birthday"
     },
@@ -29193,7 +29193,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 엄마의 생신을 기억하니?",
       "English/Answer": "Do you remember Mom's birthday?",
       "Scrambled": "remember / birthday / Do / Mom's / you"
     },
@@ -29202,7 +29202,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 너의 지난 여름 방학을 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29211,7 +29211,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 너의 지난 여름 방학을 기억하니?",
       "English/Answer": "Do you remember your last summer vacation?",
       "Scrambled": "your last summer vacation"
     },
@@ -29220,7 +29220,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 너의 지난 여름 방학을 기억하니?",
       "English/Answer": "Do you remember your last summer vacation?",
       "Scrambled": "vacation / summer / remember / your / last / Do / you"
     },
@@ -29229,7 +29229,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우리가 한옥 마을에 방문했던 것을 기억하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29238,7 +29238,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우리가 한옥 마을에 방문했던 것을 기억하니?",
       "English/Answer": "Do you remember our visit to the Hanok Village?",
       "Scrambled": "our visit to the Hanok Village"
     },
@@ -29247,7 +29247,7 @@ const bookData = {
       "Pattern Name": "Do you remember ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우리가 한옥 마을에 방문했던 것을 기억하니?",
       "English/Answer": "Do you remember our visit to the Hanok Village?",
       "Scrambled": "Village / visit / the / remember / to / our / you / Do / Hanok"
     },
@@ -29256,7 +29256,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 머리 모양에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29265,7 +29265,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 머리 모양에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of my hair?",
       "Scrambled": "my hair"
     },
@@ -29274,7 +29274,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 머리 모양에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of my hair?",
       "Scrambled": "hair / my / of / think / you / do / What"
     },
@@ -29283,7 +29283,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 영화에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29292,7 +29292,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 영화에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of the movie?",
       "Scrambled": "the movie"
     },
@@ -29301,7 +29301,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 영화에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of the movie?",
       "Scrambled": "movie / the / of / think / What / you / do"
     },
@@ -29310,7 +29310,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 계획에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29319,7 +29319,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 계획에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of this plan?",
       "Scrambled": "this plan"
     },
@@ -29328,7 +29328,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 계획에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of this plan?",
       "Scrambled": "plan / this / of / think / do / What / you"
     },
@@ -29337,7 +29337,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 애완동물 기르는 것에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29346,7 +29346,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 애완동물 기르는 것에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of raising a pet?",
       "Scrambled": "raising a pet"
     },
@@ -29355,7 +29355,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 애완동물 기르는 것에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of raising a pet?",
       "Scrambled": "you / a / pet / think / do / What / raising / of"
     },
@@ -29364,7 +29364,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 교복 입는 것에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29373,7 +29373,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 교복 입는 것에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of wearing school uniforms?",
       "Scrambled": "wearing school uniforms"
     },
@@ -29382,7 +29382,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 교복 입는 것에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of wearing school uniforms?",
       "Scrambled": "wearing / uniforms / school / of / think / you / do / What"
     },
@@ -29391,7 +29391,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 새 책가방에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29400,7 +29400,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 새 책가방에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of my new backpack?",
       "Scrambled": "my new backpack"
     },
@@ -29409,7 +29409,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 내 새 책가방에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of my new backpack?",
       "Scrambled": "backpack / my / think / of / new / do / What / you"
     },
@@ -29418,7 +29418,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 게임에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29427,7 +29427,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 게임에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of computer games?",
       "Scrambled": "computer games"
     },
@@ -29436,7 +29436,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 게임에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of computer games?",
       "Scrambled": "think / games / What / of / you / computer / do"
     },
@@ -29445,7 +29445,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 영어 캠프에 참여하는 것에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29454,7 +29454,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 영어 캠프에 참여하는 것에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of joining an English camp?",
       "Scrambled": "joining an English camp"
     },
@@ -29463,7 +29463,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 영어 캠프에 참여하는 것에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of joining an English camp?",
       "Scrambled": "joining / an / camp / think / English / you / of / do / What"
     },
@@ -29472,7 +29472,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 나에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29481,7 +29481,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 나에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of me?",
       "Scrambled": "me"
     },
@@ -29490,7 +29490,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 나에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of me?",
       "Scrambled": "of / you / What / me / do / think"
     },
@@ -29499,7 +29499,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 책에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29508,7 +29508,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 책에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of this book?",
       "Scrambled": "this book"
     },
@@ -29517,7 +29517,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 이 책에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of this book?",
       "Scrambled": "do / book / of / this / you / think / What"
     },
@@ -29526,7 +29526,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 음악 수업에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29535,7 +29535,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 음악 수업에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of music class?",
       "Scrambled": "music class"
     },
@@ -29544,7 +29544,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 음악 수업에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of music class?",
       "Scrambled": "class / you / music / of / think / do / What"
     },
@@ -29553,7 +29553,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 해외 여행에 대해 어떻게 생각하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29562,7 +29562,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 해외 여행에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of traveling abroad?",
       "Scrambled": "traveling abroad"
     },
@@ -29571,7 +29571,7 @@ const bookData = {
       "Pattern Name": "What do you think of ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 해외 여행에 대해 어떻게 생각하니?",
       "English/Answer": "What do you think of traveling abroad?",
       "Scrambled": "traveling / of / think / abroad / do / you / What"
     },
@@ -29580,7 +29580,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 무엇이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29589,7 +29589,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 무엇이 있니?",
       "English/Answer": "What else is there?",
       "Scrambled": "is there"
     },
@@ -29598,7 +29598,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 무엇이 있니?",
       "English/Answer": "What else is there?",
       "Scrambled": "else / What / there / is"
     },
@@ -29607,7 +29607,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 밖에 무엇이 필요하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29616,7 +29616,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 밖에 무엇이 필요하니?",
       "English/Answer": "What else do I need?",
       "Scrambled": "do I need"
     },
@@ -29625,7 +29625,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 밖에 무엇이 필요하니?",
       "English/Answer": "What else do I need?",
       "Scrambled": "What / need / I / else / do"
     },
@@ -29634,7 +29634,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그에 대해 그 밖에 무엇을 아니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29643,7 +29643,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그에 대해 그 밖에 무엇을 아니?",
       "English/Answer": "What else do you know about him?",
       "Scrambled": "do you know about him"
     },
@@ -29652,7 +29652,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그에 대해 그 밖에 무엇을 아니?",
       "English/Answer": "What else do you know about him?",
       "Scrambled": "him / else / about / do / know / you / What"
     },
@@ -29661,7 +29661,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "우린 오늘 그 밖에 무엇을 할 수 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29670,7 +29670,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "우린 오늘 그 밖에 무엇을 할 수 있니?",
       "English/Answer": "What else can we do today?",
       "Scrambled": "can we do today"
     },
@@ -29679,7 +29679,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "우린 오늘 그 밖에 무엇을 할 수 있니?",
       "English/Answer": "What else can we do today?",
       "Scrambled": "else / do / we / What / today / can"
     },
@@ -29688,7 +29688,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 런던에서 그 밖에 무엇을 보았니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29697,7 +29697,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 런던에서 그 밖에 무엇을 보았니?",
       "English/Answer": "What else did you see in London?",
       "Scrambled": "did you see in London"
     },
@@ -29706,7 +29706,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 런던에서 그 밖에 무엇을 보았니?",
       "English/Answer": "What else did you see in London?",
       "Scrambled": "did / in / you / else / London / What / see"
     },
@@ -29715,7 +29715,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 무엇이 새롭니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29724,7 +29724,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 무엇이 새롭니?",
       "English/Answer": "What else is new?",
       "Scrambled": "is new"
     },
@@ -29733,7 +29733,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 무엇이 새롭니?",
       "English/Answer": "What else is new?",
       "Scrambled": "else / new / is / What"
     },
@@ -29742,7 +29742,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "우린 그 밖에 무엇을 살 필요가 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29751,7 +29751,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "우린 그 밖에 무엇을 살 필요가 있니?",
       "English/Answer": "What else do we need to buy?",
       "Scrambled": "do we need to buy"
     },
@@ -29760,7 +29760,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "우린 그 밖에 무엇을 살 필요가 있니?",
       "English/Answer": "What else do we need to buy?",
       "Scrambled": "do / What / else / buy / need / to / we"
     },
@@ -29769,7 +29769,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 밖에 무엇을 찾았니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29778,7 +29778,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 밖에 무엇을 찾았니?",
       "English/Answer": "What else did you find?",
       "Scrambled": "did you find"
     },
@@ -29787,7 +29787,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 밖에 무엇을 찾았니?",
       "English/Answer": "What else did you find?",
       "Scrambled": "did / find / else / What / you"
     },
@@ -29796,7 +29796,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 할 일이 무엇이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29805,7 +29805,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 할 일이 무엇이 있니?",
       "English/Answer": "What else is there to do?",
       "Scrambled": "is there to do"
     },
@@ -29814,7 +29814,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 할 일이 무엇이 있니?",
       "English/Answer": "What else is there to do?",
       "Scrambled": "do / is / there / What / to / else"
     },
@@ -29823,7 +29823,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 내가 너를 위해 무엇을 해 줄 수 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29832,7 +29832,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 내가 너를 위해 무엇을 해 줄 수 있니?",
       "English/Answer": "What else can I do for you?",
       "Scrambled": "can I do for you"
     },
@@ -29841,7 +29841,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "그 밖에 내가 너를 위해 무엇을 해 줄 수 있니?",
       "English/Answer": "What else can I do for you?",
       "Scrambled": "can / I / What / else / you / for / do"
     },
@@ -29850,7 +29850,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "그에게 그 밖에 무슨 말을 했니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29859,7 +29859,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "그에게 그 밖에 무슨 말을 했니?",
       "English/Answer": "What else did you say to him?",
       "Scrambled": "did you say to him"
     },
@@ -29868,7 +29868,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "그에게 그 밖에 무슨 말을 했니?",
       "English/Answer": "What else did you say to him?",
       "Scrambled": "did / say / him / else / to / you / What"
     },
@@ -29877,7 +29877,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 그 밖에 무엇을 챙겨야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29886,7 +29886,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 그 밖에 무엇을 챙겨야 하니?",
       "English/Answer": "What else do I need to pack?",
       "Scrambled": "do I need to pack"
     },
@@ -29895,7 +29895,7 @@ const bookData = {
       "Pattern Name": "What else ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 그 밖에 무엇을 챙겨야 하니?",
       "English/Answer": "What else do I need to pack?",
       "Scrambled": "pack / do / to / I / need / else / What"
     },
@@ -29904,7 +29904,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "그 팔찌는 어떠니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29913,7 +29913,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "그 팔찌는 어떠니?",
       "English/Answer": "How do you like the bracelet?",
       "Scrambled": "the bracelet"
     },
@@ -29922,7 +29922,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "그 팔찌는 어떠니?",
       "English/Answer": "How do you like the bracelet?",
       "Scrambled": "the / like / do / bracelet / How / you"
     },
@@ -29931,7 +29931,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "그 브로콜리 수프는 어때?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29940,7 +29940,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "그 브로콜리 수프는 어때?",
       "English/Answer": "How do you like the broccoli soup?",
       "Scrambled": "the broccoli soup"
     },
@@ -29949,7 +29949,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "그 브로콜리 수프는 어때?",
       "English/Answer": "How do you like the broccoli soup?",
       "Scrambled": "the / like / How / do / broccoli / soup / you"
     },
@@ -29958,7 +29958,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "이 자전거는 어때?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29967,7 +29967,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "이 자전거는 어때?",
       "English/Answer": "How do you like this bicycle?",
       "Scrambled": "this bicycle"
     },
@@ -29976,7 +29976,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "이 자전거는 어때?",
       "English/Answer": "How do you like this bicycle?",
       "Scrambled": "How / like / bicycle / do / this / you"
     },
@@ -29985,7 +29985,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "네 재킷이 마음에 드니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -29994,7 +29994,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "네 재킷이 마음에 드니?",
       "English/Answer": "How do you like your jacket?",
       "Scrambled": "your jacket"
     },
@@ -30003,7 +30003,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "네 재킷이 마음에 드니?",
       "English/Answer": "How do you like your jacket?",
       "Scrambled": "do / like / your / jacket / How / you"
     },
@@ -30012,7 +30012,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "그 새 컴퓨터 게임이 마음에 드니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30021,7 +30021,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "그 새 컴퓨터 게임이 마음에 드니?",
       "English/Answer": "How do you like the new computer game?",
       "Scrambled": "the new computer game"
     },
@@ -30030,7 +30030,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "그 새 컴퓨터 게임이 마음에 드니?",
       "English/Answer": "How do you like the new computer game?",
       "Scrambled": "like / the / computer / new / game / How / you / do"
     },
@@ -30039,7 +30039,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "네 담임 선생님은 어떠시니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30048,7 +30048,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "네 담임 선생님은 어떠시니?",
       "English/Answer": "How do you like your homeroom teacher?",
       "Scrambled": "your homeroom teacher"
     },
@@ -30057,7 +30057,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "네 담임 선생님은 어떠시니?",
       "English/Answer": "How do you like your homeroom teacher?",
       "Scrambled": "like / teacher / your / homeroom / How / do / you"
     },
@@ -30066,7 +30066,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "그 사진 전시회는 어때?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30075,7 +30075,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "그 사진 전시회는 어때?",
       "English/Answer": "How do you like the photo exhibition?",
       "Scrambled": "the photo exhibition"
     },
@@ -30084,7 +30084,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "그 사진 전시회는 어때?",
       "English/Answer": "How do you like the photo exhibition?",
       "Scrambled": "How / like / photo / the / exhibition / do / you"
     },
@@ -30093,7 +30093,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "네 새 휴대 전화가 마음에 드니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30102,7 +30102,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "네 새 휴대 전화가 마음에 드니?",
       "English/Answer": "How do you like your new cell phone?",
       "Scrambled": "your new cell phone"
     },
@@ -30111,7 +30111,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "네 새 휴대 전화가 마음에 드니?",
       "English/Answer": "How do you like your new cell phone?",
       "Scrambled": "like / phone / your / new / cell / How / do / you"
     },
@@ -30120,7 +30120,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "그 음식은 어때?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30129,7 +30129,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "그 음식은 어때?",
       "English/Answer": "How do you like the food?",
       "Scrambled": "the food"
     },
@@ -30138,7 +30138,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "그 음식은 어때?",
       "English/Answer": "How do you like the food?",
       "Scrambled": "do / you / food / like / How / the"
     },
@@ -30147,7 +30147,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내 아이디어는 어때?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30156,7 +30156,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내 아이디어는 어때?",
       "English/Answer": "How do you like my idea?",
       "Scrambled": "my idea"
     },
@@ -30165,7 +30165,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내 아이디어는 어때?",
       "English/Answer": "How do you like my idea?",
       "Scrambled": "you / do / idea / like / my / How"
     },
@@ -30174,7 +30174,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "네 기타 수업은 어때?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30183,7 +30183,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "네 기타 수업은 어때?",
       "English/Answer": "How do you like your guitar lessons?",
       "Scrambled": "your guitar lessons"
     },
@@ -30192,7 +30192,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "네 기타 수업은 어때?",
       "English/Answer": "How do you like your guitar lessons?",
       "Scrambled": "do / guitar / your / lessons / like / How / you"
     },
@@ -30201,7 +30201,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "이 신발은 어때?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30210,7 +30210,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "이 신발은 어때?",
       "English/Answer": "How do you like these shoes?",
       "Scrambled": "these shoes"
     },
@@ -30219,7 +30219,7 @@ const bookData = {
       "Pattern Name": "How do you like ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "이 신발은 어때?",
       "English/Answer": "How do you like these shoes?",
       "Scrambled": "like / shoes / these / How / do / you"
     },
@@ -30228,7 +30228,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 운동하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30237,7 +30237,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 운동하니?",
       "English/Answer": "How often do you exercise?",
       "Scrambled": "exercise"
     },
@@ -30246,7 +30246,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 운동하니?",
       "English/Answer": "How often do you exercise?",
       "Scrambled": "do / How / exercise / you / often"
     },
@@ -30255,7 +30255,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 책을 읽니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30264,7 +30264,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 책을 읽니?",
       "English/Answer": "How often do you read a book?",
       "Scrambled": "read a book"
     },
@@ -30273,7 +30273,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 책을 읽니?",
       "English/Answer": "How often do you read a book?",
       "Scrambled": "book / you / read / often / a / How / do"
     },
@@ -30282,7 +30282,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 햄버거를 먹니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30291,7 +30291,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 햄버거를 먹니?",
       "English/Answer": "How often do you eat hamburgers?",
       "Scrambled": "eat hamburgers"
     },
@@ -30300,7 +30300,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 햄버거를 먹니?",
       "English/Answer": "How often do you eat hamburgers?",
       "Scrambled": "hamburgers / do / eat / How / often / you"
     },
@@ -30309,7 +30309,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 학교에 걸어가니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30318,7 +30318,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 학교에 걸어가니?",
       "English/Answer": "How often do you walk to school?",
       "Scrambled": "walk to school"
     },
@@ -30327,7 +30327,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 학교에 걸어가니?",
       "English/Answer": "How often do you walk to school?",
       "Scrambled": "walk / often / How / school / do / to / you"
     },
@@ -30336,7 +30336,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 네 개에게 먹이를 주니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30345,7 +30345,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 네 개에게 먹이를 주니?",
       "English/Answer": "How often do you feed your dog?",
       "Scrambled": "feed your dog"
     },
@@ -30354,7 +30354,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 네 개에게 먹이를 주니?",
       "English/Answer": "How often do you feed your dog?",
       "Scrambled": "your / often / How / feed / you / do / dog"
     },
@@ -30363,7 +30363,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 머리카락을 자르니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30372,7 +30372,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 머리카락을 자르니?",
       "English/Answer": "How often do you get a haircut?",
       "Scrambled": "get a haircut"
     },
@@ -30381,7 +30381,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 머리카락을 자르니?",
       "English/Answer": "How often do you get a haircut?",
       "Scrambled": "How / a / haircut / often / get / you / do"
     },
@@ -30390,7 +30390,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 체육관에 가니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30399,7 +30399,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 체육관에 가니?",
       "English/Answer": "How often do you go to the gym?",
       "Scrambled": "go to the gym"
     },
@@ -30408,7 +30408,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 체육관에 가니?",
       "English/Answer": "How often do you go to the gym?",
       "Scrambled": "How / often / go / gym / to / do / you / the"
     },
@@ -30417,7 +30417,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 네 조부모님을 방문하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30426,7 +30426,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 네 조부모님을 방문하니?",
       "English/Answer": "How often do you visit your grandparents?",
       "Scrambled": "visit your grandparents"
     },
@@ -30435,7 +30435,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 네 조부모님을 방문하니?",
       "English/Answer": "How often do you visit your grandparents?",
       "Scrambled": "your / often / How / visit / grandparents / you / do"
     },
@@ -30444,7 +30444,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 외식하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30453,7 +30453,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 외식하니?",
       "English/Answer": "How often do you eat out?",
       "Scrambled": "eat out"
     },
@@ -30462,7 +30462,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 외식하니?",
       "English/Answer": "How often do you eat out?",
       "Scrambled": "do / often / out / eat / you / How"
     },
@@ -30471,7 +30471,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 인터넷을 사용하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30480,7 +30480,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 인터넷을 사용하니?",
       "English/Answer": "How often do you use the internet?",
       "Scrambled": "use the internet"
     },
@@ -30489,7 +30489,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 인터넷을 사용하니?",
       "English/Answer": "How often do you use the internet?",
       "Scrambled": "use / internet / often / the / you / do / How"
     },
@@ -30498,7 +30498,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 늦게까지 깨어 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30507,7 +30507,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 늦게까지 깨어 있니?",
       "English/Answer": "How often do you stay up late?",
       "Scrambled": "stay up late"
     },
@@ -30516,7 +30516,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 늦게까지 깨어 있니?",
       "English/Answer": "How often do you stay up late?",
       "Scrambled": "up / late / often / stay / do / you / How"
     },
@@ -30525,7 +30525,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 아침을 거르니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30534,7 +30534,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 아침을 거르니?",
       "English/Answer": "How often do you skip breakfast?",
       "Scrambled": "skip breakfast"
     },
@@ -30543,7 +30543,7 @@ const bookData = {
       "Pattern Name": "How often do you ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 얼마나 자주 아침을 거르니?",
       "English/Answer": "How often do you skip breakfast?",
       "Scrambled": "do / breakfast / often / you / skip / How"
     },
@@ -30552,7 +30552,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "전 치킨샐러드로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30561,7 +30561,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "전 치킨샐러드로 할게요.",
       "English/Answer": "I'll have a chicken salad.",
       "Scrambled": "a chicken salad"
     },
@@ -30570,7 +30570,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "전 치킨샐러드로 할게요.",
       "English/Answer": "I'll have a chicken salad.",
       "Scrambled": "have / chicken / I'll / salad / a"
     },
@@ -30579,7 +30579,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "전 오렌지주스로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30588,7 +30588,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "전 오렌지주스로 할게요.",
       "English/Answer": "I'll have an orange juice.",
       "Scrambled": "an orange juice"
     },
@@ -30597,7 +30597,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "전 오렌지주스로 할게요.",
       "English/Answer": "I'll have an orange juice.",
       "Scrambled": "I'll / juice / have / orange / an"
     },
@@ -30606,7 +30606,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "전 딸기아이스크림으로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30615,7 +30615,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "전 딸기아이스크림으로 할게요.",
       "English/Answer": "I'll have strawberry ice cream.",
       "Scrambled": "strawberry ice cream"
     },
@@ -30624,7 +30624,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "전 딸기아이스크림으로 할게요.",
       "English/Answer": "I'll have strawberry ice cream.",
       "Scrambled": "strawberry / ice / I'll / cream / have"
     },
@@ -30633,7 +30633,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "전 햄버거 두 개로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30642,7 +30642,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "전 햄버거 두 개로 할게요.",
       "English/Answer": "I'll have two hamburgers.",
       "Scrambled": "two hamburgers"
     },
@@ -30651,7 +30651,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "전 햄버거 두 개로 할게요.",
       "English/Answer": "I'll have two hamburgers.",
       "Scrambled": "hamburgers / two / I'll / have"
     },
@@ -30660,7 +30660,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "전 중간 크기의 피자로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30669,7 +30669,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "전 중간 크기의 피자로 할게요.",
       "English/Answer": "I'll have a medium pizza.",
       "Scrambled": "a medium pizza"
     },
@@ -30678,7 +30678,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "전 중간 크기의 피자로 할게요.",
       "English/Answer": "I'll have a medium pizza.",
       "Scrambled": "medium / pizza / I'll / a / have"
     },
@@ -30687,7 +30687,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "전 콜라로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30696,7 +30696,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "전 콜라로 할게요.",
       "English/Answer": "I'll have a cola.",
       "Scrambled": "a cola"
     },
@@ -30705,7 +30705,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "전 콜라로 할게요.",
       "English/Answer": "I'll have a cola.",
       "Scrambled": "have / I'll / cola / a"
     },
@@ -30714,7 +30714,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "전 애플파이로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30723,7 +30723,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "전 애플파이로 할게요.",
       "English/Answer": "I'll have an apple pie.",
       "Scrambled": "an apple pie"
     },
@@ -30732,7 +30732,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "전 애플파이로 할게요.",
       "English/Answer": "I'll have an apple pie.",
       "Scrambled": "have / I'll / pie / apple / an"
     },
@@ -30741,7 +30741,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "전 버터가 든 팝콘으로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30750,7 +30750,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "전 버터가 든 팝콘으로 할게요.",
       "English/Answer": "I'll have popcorn with butter.",
       "Scrambled": "popcorn with butter"
     },
@@ -30759,7 +30759,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "전 버터가 든 팝콘으로 할게요.",
       "English/Answer": "I'll have popcorn with butter.",
       "Scrambled": "I'll / with / have / popcorn / butter"
     },
@@ -30768,7 +30768,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "전 팬케이크로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30777,7 +30777,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "전 팬케이크로 할게요.",
       "English/Answer": "I'll have pancakes.",
       "Scrambled": "pancakes"
     },
@@ -30786,7 +30786,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "전 팬케이크로 할게요.",
       "English/Answer": "I'll have pancakes.",
       "Scrambled": "I'll / pancakes / have"
     },
@@ -30795,7 +30795,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "전 핫초코로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30804,7 +30804,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "전 핫초코로 할게요.",
       "English/Answer": "I'll have a hot chocolate.",
       "Scrambled": "a hot chocolate"
     },
@@ -30813,7 +30813,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "전 핫초코로 할게요.",
       "English/Answer": "I'll have a hot chocolate.",
       "Scrambled": "hot / chocolate / I'll / a / have"
     },
@@ -30822,7 +30822,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "전 오늘의 수프로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30831,7 +30831,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "전 오늘의 수프로 할게요.",
       "English/Answer": "I'll have the soup of the day.",
       "Scrambled": "the soup of the day"
     },
@@ -30840,7 +30840,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "전 오늘의 수프로 할게요.",
       "English/Answer": "I'll have the soup of the day.",
       "Scrambled": "of / day / soup / have / I'll / the / the"
     },
@@ -30849,7 +30849,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "전 치즈버거와 감자튀김으로 할게요.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30858,7 +30858,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "전 치즈버거와 감자튀김으로 할게요.",
       "English/Answer": "I'll have a cheeseburger and French fries.",
       "Scrambled": "a cheeseburger and French fries"
     },
@@ -30867,7 +30867,7 @@ const bookData = {
       "Pattern Name": "I'll have ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "전 치즈버거와 감자튀김으로 할게요.",
       "English/Answer": "I'll have a cheeseburger and French fries.",
       "Scrambled": "French / fries / a / have / I'll / cheeseburger / and"
     },
@@ -30876,7 +30876,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 여행이 기대돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30885,7 +30885,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 여행이 기대돼.",
       "English/Answer": "I can't wait for the trip.",
       "Scrambled": "for the trip"
     },
@@ -30894,7 +30894,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 여행이 기대돼.",
       "English/Answer": "I can't wait for the trip.",
       "Scrambled": "trip / wait / can't / I / for / the"
     },
@@ -30903,7 +30903,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 경기가 기대돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30912,7 +30912,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 경기가 기대돼.",
       "English/Answer": "I can't wait for the game.",
       "Scrambled": "for the game"
     },
@@ -30921,7 +30921,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 경기가 기대돼.",
       "English/Answer": "I can't wait for the game.",
       "Scrambled": "wait / for / can't / game / I / the"
     },
@@ -30930,7 +30930,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 캠핑이 기대돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30939,7 +30939,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 캠핑이 기대돼.",
       "English/Answer": "I can't wait to camp.",
       "Scrambled": "to camp"
     },
@@ -30948,7 +30948,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 캠핑이 기대돼.",
       "English/Answer": "I can't wait to camp.",
       "Scrambled": "to / camp / wait / I / can't"
     },
@@ -30957,7 +30957,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 다시 돌아가고 싶어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30966,7 +30966,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 다시 돌아가고 싶어.",
       "English/Answer": "I can't wait to go back again.",
       "Scrambled": "to go back again"
     },
@@ -30975,7 +30975,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 다시 돌아가고 싶어.",
       "English/Answer": "I can't wait to go back again.",
       "Scrambled": "wait / again / I / to / can't / back / go"
     },
@@ -30984,7 +30984,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 내 오래된 친구들을 보고 싶어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -30993,7 +30993,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 내 오래된 친구들을 보고 싶어.",
       "English/Answer": "I can't wait to see my old friends.",
       "Scrambled": "to see my old friends"
     },
@@ -31002,7 +31002,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 내 오래된 친구들을 보고 싶어.",
       "English/Answer": "I can't wait to see my old friends.",
       "Scrambled": "wait / friends / see / old / I / to / my / can't"
     },
@@ -31011,7 +31011,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 파티가 기대돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31020,7 +31020,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 파티가 기대돼.",
       "English/Answer": "I can't wait for the party.",
       "Scrambled": "for the party"
     },
@@ -31029,7 +31029,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 파티가 기대돼.",
       "English/Answer": "I can't wait for the party.",
       "Scrambled": "can't / wait / for / party / I / the"
     },
@@ -31038,7 +31038,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 영화 보러 가고 싶어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31047,7 +31047,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 영화 보러 가고 싶어.",
       "English/Answer": "I can't wait to go to the movies.",
       "Scrambled": "to go to the movies"
     },
@@ -31056,7 +31056,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 영화 보러 가고 싶어.",
       "English/Answer": "I can't wait to go to the movies.",
       "Scrambled": "go / wait / to / I / movies / can't / the / to"
     },
@@ -31065,7 +31065,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 홍콩에 있는 내 사촌을 방문하고 싶어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31074,7 +31074,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 홍콩에 있는 내 사촌을 방문하고 싶어.",
       "English/Answer": "I can't wait to visit my cousin in Hong Kong.",
       "Scrambled": "to visit my cousin in Hong Kong"
     },
@@ -31083,7 +31083,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨리 홍콩에 있는 내 사촌을 방문하고 싶어.",
       "English/Answer": "I can't wait to visit my cousin in Hong Kong.",
       "Scrambled": "Hong / to / cousin / wait / visit / Kong / my / I / in / can't"
     },
@@ -31092,7 +31092,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 미술 수업이 기대돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31101,7 +31101,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 미술 수업이 기대돼.",
       "English/Answer": "I can't wait for the art class.",
       "Scrambled": "for the art class"
     },
@@ -31110,7 +31110,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 미술 수업이 기대돼.",
       "English/Answer": "I can't wait for the art class.",
       "Scrambled": "class / can't / the / wait / art / for / I"
     },
@@ -31119,7 +31119,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 방학이 기대돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31128,7 +31128,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 방학이 기대돼.",
       "English/Answer": "I can't wait for my vacation.",
       "Scrambled": "for my vacation"
     },
@@ -31137,7 +31137,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 방학이 기대돼.",
       "English/Answer": "I can't wait for my vacation.",
       "Scrambled": "wait / for / vacation / can't / I / my"
     },
@@ -31146,7 +31146,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 그의 새 책을 읽는 것이 기대돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31155,7 +31155,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 그의 새 책을 읽는 것이 기대돼.",
       "English/Answer": "I can't wait to read his new book.",
       "Scrambled": "to read his new book"
     },
@@ -31164,7 +31164,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 그의 새 책을 읽는 것이 기대돼.",
       "English/Answer": "I can't wait to read his new book.",
       "Scrambled": "wait / can't / his / read / new / I / to / book"
     },
@@ -31173,7 +31173,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 선물들을 열어보는 것이 기대돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31182,7 +31182,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 선물들을 열어보는 것이 기대돼.",
       "English/Answer": "I can't wait to open my presents.",
       "Scrambled": "to open my presents"
     },
@@ -31191,7 +31191,7 @@ const bookData = {
       "Pattern Name": "I can't wait ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 선물들을 열어보는 것이 기대돼.",
       "English/Answer": "I can't wait to open my presents.",
       "Scrambled": "open / wait / my / I / to / presents / can't"
     },
@@ -31200,7 +31200,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 속도를 줄여야 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31209,7 +31209,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 속도를 줄여야 해.",
       "English/Answer": "You must slow down.",
       "Scrambled": "slow down"
     },
@@ -31218,7 +31218,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 속도를 줄여야 해.",
       "English/Answer": "You must slow down.",
       "Scrambled": "down / must / You / slow"
     },
@@ -31227,7 +31227,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 에너지를 아껴야 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31236,7 +31236,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 에너지를 아껴야 해.",
       "English/Answer": "You must save energy.",
       "Scrambled": "save energy"
     },
@@ -31245,7 +31245,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 에너지를 아껴야 해.",
       "English/Answer": "You must save energy.",
       "Scrambled": "energy / You / save / must"
     },
@@ -31254,7 +31254,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 헬멧을 써야 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31263,7 +31263,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 헬멧을 써야 해.",
       "English/Answer": "You must wear a helmet.",
       "Scrambled": "wear a helmet"
     },
@@ -31272,7 +31272,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 헬멧을 써야 해.",
       "English/Answer": "You must wear a helmet.",
       "Scrambled": "wear / helmet / a / You / must"
     },
@@ -31281,7 +31281,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 규칙을 따라야 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31290,7 +31290,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 규칙을 따라야 해.",
       "English/Answer": "You must follow the rules.",
       "Scrambled": "follow the rules"
     },
@@ -31299,7 +31299,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 규칙을 따라야 해.",
       "English/Answer": "You must follow the rules.",
       "Scrambled": "must / rules / follow / the / You"
     },
@@ -31308,7 +31308,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 먼저 네 손을 씻어야 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31317,7 +31317,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 먼저 네 손을 씻어야 해.",
       "English/Answer": "You must wash your hands first.",
       "Scrambled": "wash your hands first"
     },
@@ -31326,7 +31326,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 먼저 네 손을 씻어야 해.",
       "English/Answer": "You must wash your hands first.",
       "Scrambled": "wash / first / must / hands / your / You"
     },
@@ -31335,7 +31335,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 지금 당장 119에 전화해야 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31344,7 +31344,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 지금 당장 119에 전화해야 해.",
       "English/Answer": "You must call 119 right now.",
       "Scrambled": "call 119 right now"
     },
@@ -31353,7 +31353,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 지금 당장 119에 전화해야 해.",
       "English/Answer": "You must call 119 right now.",
       "Scrambled": "now / call / right / 119 / must / You"
     },
@@ -31362,7 +31362,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 음식을 낭비해서는 안 돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31371,7 +31371,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 음식을 낭비해서는 안 돼.",
       "English/Answer": "You must not waste food.",
       "Scrambled": "not waste food"
     },
@@ -31380,7 +31380,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 음식을 낭비해서는 안 돼.",
       "English/Answer": "You must not waste food.",
       "Scrambled": "must / waste / not / You / food"
     },
@@ -31389,7 +31389,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 숲에서 요리해서는 안 돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31398,7 +31398,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 숲에서 요리해서는 안 돼.",
       "English/Answer": "You must not cook in the forest.",
       "Scrambled": "not cook in the forest"
     },
@@ -31407,7 +31407,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 숲에서 요리해서는 안 돼.",
       "English/Answer": "You must not cook in the forest.",
       "Scrambled": "must / forest / the / in / not / cook / You"
     },
@@ -31416,7 +31416,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 조용히 해야 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31425,7 +31425,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 조용히 해야 해.",
       "English/Answer": "You must be quiet.",
       "Scrambled": "be quiet"
     },
@@ -31434,7 +31434,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 조용히 해야 해.",
       "English/Answer": "You must be quiet.",
       "Scrambled": "be / must / You / quiet"
     },
@@ -31443,7 +31443,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거짓말을 해서는 안 돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31452,7 +31452,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거짓말을 해서는 안 돼.",
       "English/Answer": "You must not tell a lie.",
       "Scrambled": "not tell a lie"
     },
@@ -31461,7 +31461,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거짓말을 해서는 안 돼.",
       "English/Answer": "You must not tell a lie.",
       "Scrambled": "You / tell / not / lie / must / a"
     },
@@ -31470,7 +31470,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 휴대 전화를 꺼야 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31479,7 +31479,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 휴대 전화를 꺼야 해.",
       "English/Answer": "You must turn off your cell phone.",
       "Scrambled": "turn off your cell phone"
     },
@@ -31488,7 +31488,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 휴대 전화를 꺼야 해.",
       "English/Answer": "You must turn off your cell phone.",
       "Scrambled": "turn / must / your / You / phone / off / cell"
     },
@@ -31497,7 +31497,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 수업 중에 간식을 먹어서는 안 돼.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31506,7 +31506,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 수업 중에 간식을 먹어서는 안 돼.",
       "English/Answer": "You must not eat snacks during class.",
       "Scrambled": "not eat snacks during class"
     },
@@ -31515,7 +31515,7 @@ const bookData = {
       "Pattern Name": "You must ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 수업 중에 간식을 먹어서는 안 돼.",
       "English/Answer": "You must not eat snacks during class.",
       "Scrambled": "during / not / must / You / class / eat / snacks"
     },
@@ -31524,7 +31524,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 목록을 작성해야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31533,7 +31533,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 목록을 작성해야 할 것 같아.",
       "English/Answer": "I think you should make a list.",
       "Scrambled": "make a list"
     },
@@ -31542,7 +31542,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 목록을 작성해야 할 것 같아.",
       "English/Answer": "I think you should make a list.",
       "Scrambled": "list / make / you / I / should / think / a"
     },
@@ -31551,7 +31551,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그에게 사실을 말해야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31560,7 +31560,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그에게 사실을 말해야 할 것 같아.",
       "English/Answer": "I think you should tell him the truth.",
       "Scrambled": "tell him the truth"
     },
@@ -31569,7 +31569,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그에게 사실을 말해야 할 것 같아.",
       "English/Answer": "I think you should tell him the truth.",
       "Scrambled": "think / him / tell / the / truth / you / should / I"
     },
@@ -31578,7 +31578,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 매일 줄넘기를 해야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31587,7 +31587,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 매일 줄넘기를 해야 할 것 같아.",
       "English/Answer": "I think you should jump rope every day.",
       "Scrambled": "jump rope every day"
     },
@@ -31596,7 +31596,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 매일 줄넘기를 해야 할 것 같아.",
       "English/Answer": "I think you should jump rope every day.",
       "Scrambled": "you / day / think / every / jump / I / rope / should"
     },
@@ -31605,7 +31605,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 균형 잡힌 식사를 해야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31614,7 +31614,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 균형 잡힌 식사를 해야 할 것 같아.",
       "English/Answer": "I think you should have a balanced diet.",
       "Scrambled": "have a balanced diet"
     },
@@ -31623,7 +31623,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 균형 잡힌 식사를 해야 할 것 같아.",
       "English/Answer": "I think you should have a balanced diet.",
       "Scrambled": "you / a / diet / have / think / I / should / balanced"
     },
@@ -31632,7 +31632,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 분실물 보관소를 확인해야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31641,7 +31641,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 분실물 보관소를 확인해야 할 것 같아.",
       "English/Answer": "I think you should check the lost and found.",
       "Scrambled": "check the lost and found"
     },
@@ -31650,7 +31650,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 분실물 보관소를 확인해야 할 것 같아.",
       "English/Answer": "I think you should check the lost and found.",
       "Scrambled": "found / and / I / should / lost / you / think / the / check"
     },
@@ -31659,7 +31659,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 따뜻한 물을 많이 마셔야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31668,7 +31668,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 따뜻한 물을 많이 마셔야 할 것 같아.",
       "English/Answer": "I think you should drink lots of hot water.",
       "Scrambled": "drink lots of hot water"
     },
@@ -31677,7 +31677,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 따뜻한 물을 많이 마셔야 할 것 같아.",
       "English/Answer": "I think you should drink lots of hot water.",
       "Scrambled": "drink / you / hot / of / should / water / think / lots / I"
     },
@@ -31686,7 +31686,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그것을 경찰에 알려야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31695,7 +31695,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그것을 경찰에 알려야 할 것 같아.",
       "English/Answer": "I think you should report it to the police.",
       "Scrambled": "report it to the police"
     },
@@ -31704,7 +31704,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그것을 경찰에 알려야 할 것 같아.",
       "English/Answer": "I think you should report it to the police.",
       "Scrambled": "to / should / you / it / police / I / report / think / the"
     },
@@ -31713,7 +31713,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 문제를 다시 검토해야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31722,7 +31722,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 문제를 다시 검토해야 할 것 같아.",
       "English/Answer": "I think you should review the problem again.",
       "Scrambled": "review the problem again"
     },
@@ -31731,7 +31731,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그 문제를 다시 검토해야 할 것 같아.",
       "English/Answer": "I think you should review the problem again.",
       "Scrambled": "again / you / think / problem / should / review / I / the"
     },
@@ -31740,7 +31740,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 안경을 써야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31749,7 +31749,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 안경을 써야 할 것 같아.",
       "English/Answer": "I think you should wear glasses.",
       "Scrambled": "wear glasses"
     },
@@ -31758,7 +31758,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 안경을 써야 할 것 같아.",
       "English/Answer": "I think you should wear glasses.",
       "Scrambled": "you / glasses / think / wear / should / I"
     },
@@ -31767,7 +31767,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 밤에 먹지 말아야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31776,7 +31776,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 밤에 먹지 말아야 할 것 같아.",
       "English/Answer": "I think you should not eat at night.",
       "Scrambled": "not eat at night"
     },
@@ -31785,7 +31785,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 밤에 먹지 말아야 할 것 같아.",
       "English/Answer": "I think you should not eat at night.",
       "Scrambled": "eat / night / I / think / at / should / not / you"
     },
@@ -31794,7 +31794,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 게임을 제한해야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31803,7 +31803,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 게임을 제한해야 할 것 같아.",
       "English/Answer": "I think you should limit computer games.",
       "Scrambled": "limit computer games"
     },
@@ -31812,7 +31812,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 컴퓨터 게임을 제한해야 할 것 같아.",
       "English/Answer": "I think you should limit computer games.",
       "Scrambled": "think / computer / should / limit / games / you / I"
     },
@@ -31821,7 +31821,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 네 점심 도시락을 가져가야 할 것 같아.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31830,7 +31830,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 네 점심 도시락을 가져가야 할 것 같아.",
       "English/Answer": "I think you should take your lunch box.",
       "Scrambled": "take your lunch box"
     },
@@ -31839,7 +31839,7 @@ const bookData = {
       "Pattern Name": "I think you should ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 네 점심 도시락을 가져가야 할 것 같아.",
       "English/Answer": "I think you should take your lunch box.",
       "Scrambled": "think / your / I / should / lunch / take / you / box"
     },
@@ -31848,7 +31848,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 매일 운동하는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31857,7 +31857,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 매일 운동하는 게 좋겠어.",
       "English/Answer": "You'd better exercise daily.",
       "Scrambled": "exercise daily"
     },
@@ -31866,7 +31866,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 매일 운동하는 게 좋겠어.",
       "English/Answer": "You'd better exercise daily.",
       "Scrambled": "better / exercise / You'd / daily"
     },
@@ -31875,7 +31875,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우산을 가져가는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31884,7 +31884,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우산을 가져가는 게 좋겠어.",
       "English/Answer": "You'd better take an umbrella.",
       "Scrambled": "take an umbrella"
     },
@@ -31893,7 +31893,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 우산을 가져가는 게 좋겠어.",
       "English/Answer": "You'd better take an umbrella.",
       "Scrambled": "better / umbrella / an / take / You'd"
     },
@@ -31902,7 +31902,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그냥 자는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31911,7 +31911,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그냥 자는 게 좋겠어.",
       "English/Answer": "You'd better just go to bed.",
       "Scrambled": "just go to bed"
     },
@@ -31920,7 +31920,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 그냥 자는 게 좋겠어.",
       "English/Answer": "You'd better just go to bed.",
       "Scrambled": "go / to / better / just / bed / You'd"
     },
@@ -31929,7 +31929,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 선생님 말씀을 듣는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31938,7 +31938,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 선생님 말씀을 듣는 게 좋겠어.",
       "English/Answer": "You'd better listen to your teacher.",
       "Scrambled": "listen to your teacher"
     },
@@ -31947,7 +31947,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 선생님 말씀을 듣는 게 좋겠어.",
       "English/Answer": "You'd better listen to your teacher.",
       "Scrambled": "better / teacher / to / listen / You'd / your"
     },
@@ -31956,7 +31956,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 먼저 숙제를 하는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31965,7 +31965,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 먼저 숙제를 하는 게 좋겠어.",
       "English/Answer": "You'd better do your homework first.",
       "Scrambled": "do your homework first"
     },
@@ -31974,7 +31974,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 먼저 숙제를 하는 게 좋겠어.",
       "English/Answer": "You'd better do your homework first.",
       "Scrambled": "homework / better / do / first / your / You'd"
     },
@@ -31983,7 +31983,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 오후 10시까지 집에 오는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -31992,7 +31992,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 오후 10시까지 집에 오는 게 좋겠어.",
       "English/Answer": "You'd better come home by 10 p.m.",
       "Scrambled": "come home by 10 p.m."
     },
@@ -32001,7 +32001,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 오후 10시까지 집에 오는 게 좋겠어.",
       "English/Answer": "You'd better come home by 10 p.m.",
       "Scrambled": "better / home / You'd / p.m. / by / 10 / come"
     },
@@ -32010,7 +32010,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 비닐봉지를 쓰지 않는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32019,7 +32019,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 비닐봉지를 쓰지 않는 게 좋겠어.",
       "English/Answer": "You'd better not use plastic bags.",
       "Scrambled": "not use plastic bags"
     },
@@ -32028,7 +32028,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 비닐봉지를 쓰지 않는 게 좋겠어.",
       "English/Answer": "You'd better not use plastic bags.",
       "Scrambled": "not / use / bags / You'd / plastic / better"
     },
@@ -32037,7 +32037,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 너무 많은 음식을 먹지 않는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32046,7 +32046,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 너무 많은 음식을 먹지 않는 게 좋겠어.",
       "English/Answer": "You'd better not eat too much food.",
       "Scrambled": "not eat too much food"
     },
@@ -32055,7 +32055,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 너무 많은 음식을 먹지 않는 게 좋겠어.",
       "English/Answer": "You'd better not eat too much food.",
       "Scrambled": "not / food / better / eat / You'd / too / much"
     },
@@ -32064,7 +32064,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 예의를 갖추는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32073,7 +32073,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 예의를 갖추는 게 좋겠어.",
       "English/Answer": "You'd better be polite.",
       "Scrambled": "be polite"
     },
@@ -32082,7 +32082,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 예의를 갖추는 게 좋겠어.",
       "English/Answer": "You'd better be polite.",
       "Scrambled": "polite / You'd / better / be"
     },
@@ -32091,7 +32091,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 다시 늦지 않는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32100,7 +32100,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 다시 늦지 않는 게 좋겠어.",
       "English/Answer": "You'd better not be late again.",
       "Scrambled": "not be late again"
     },
@@ -32109,7 +32109,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 다시 늦지 않는 게 좋겠어.",
       "English/Answer": "You'd better not be late again.",
       "Scrambled": "better / again / late / be / not / You'd"
     },
@@ -32118,7 +32118,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 말하기 전에 생각하는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32127,7 +32127,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 말하기 전에 생각하는 게 좋겠어.",
       "English/Answer": "You'd better think before you speak.",
       "Scrambled": "think before you speak"
     },
@@ -32136,7 +32136,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 말하기 전에 생각하는 게 좋겠어.",
       "English/Answer": "You'd better think before you speak.",
       "Scrambled": "better / speak / think / before / you / You'd"
     },
@@ -32145,7 +32145,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 밤에 걷지 않는 게 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32154,7 +32154,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 밤에 걷지 않는 게 좋겠어.",
       "English/Answer": "You'd better not walk at night.",
       "Scrambled": "not walk at night"
     },
@@ -32163,7 +32163,7 @@ const bookData = {
       "Pattern Name": "You'd better ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 밤에 걷지 않는 게 좋겠어.",
       "English/Answer": "You'd better not walk at night.",
       "Scrambled": "at / not / night / walk / better / You'd"
     },
@@ -32172,7 +32172,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 여기서 기다려야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32181,7 +32181,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 여기서 기다려야 하니?",
       "English/Answer": "Do I need to wait here?",
       "Scrambled": "wait here"
     },
@@ -32190,7 +32190,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 여기서 기다려야 하니?",
       "English/Answer": "Do I need to wait here?",
       "Scrambled": "here / I / to / need / wait / Do"
     },
@@ -32199,7 +32199,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 집에 있어야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32208,7 +32208,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 집에 있어야 하니?",
       "English/Answer": "Do I need to stay at home?",
       "Scrambled": "stay at home"
     },
@@ -32217,7 +32217,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 집에 있어야 하니?",
       "English/Answer": "Do I need to stay at home?",
       "Scrambled": "home / stay / I / at / need / Do / to"
     },
@@ -32226,7 +32226,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 내 신발을 벗어야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32235,7 +32235,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 내 신발을 벗어야 하니?",
       "English/Answer": "Do I need to take off my shoes?",
       "Scrambled": "take off my shoes"
     },
@@ -32244,7 +32244,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 내 신발을 벗어야 하니?",
       "English/Answer": "Do I need to take off my shoes?",
       "Scrambled": "off / shoes / take / need / Do / my / I / to"
     },
@@ -32253,7 +32253,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨간 신호에 멈춰야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32262,7 +32262,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨간 신호에 멈춰야 하니?",
       "English/Answer": "Do I need to stop at the red sign?",
       "Scrambled": "stop at the red sign"
     },
@@ -32271,7 +32271,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 빨간 신호에 멈춰야 하니?",
       "English/Answer": "Do I need to stop at the red sign?",
       "Scrambled": "need / the / stop / I / red / sign / at / to / Do"
     },
@@ -32280,7 +32280,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 표를 사기 위해 줄을 서야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32289,7 +32289,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 표를 사기 위해 줄을 서야 하니?",
       "English/Answer": "Do I need to line up to buy a ticket?",
       "Scrambled": "line up to buy a ticket"
     },
@@ -32298,7 +32298,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 표를 사기 위해 줄을 서야 하니?",
       "English/Answer": "Do I need to line up to buy a ticket?",
       "Scrambled": "line / I / ticket / buy / to / a / need / to / up / Do"
     },
@@ -32307,7 +32307,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 내 소유의 스노보드를 가져와야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32316,7 +32316,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 내 소유의 스노보드를 가져와야 하니?",
       "English/Answer": "Do I need to bring my own snowboard?",
       "Scrambled": "bring my own snowboard"
     },
@@ -32325,7 +32325,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 내 소유의 스노보드를 가져와야 하니?",
       "English/Answer": "Do I need to bring my own snowboard?",
       "Scrambled": "snowboard / my / need / bring / to / own / Do / I"
     },
@@ -32334,7 +32334,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 돈을 갚아야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32343,7 +32343,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 돈을 갚아야 하니?",
       "English/Answer": "Do I need to pay back the money?",
       "Scrambled": "pay back the money"
     },
@@ -32352,7 +32352,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 그 돈을 갚아야 하니?",
       "English/Answer": "Do I need to pay back the money?",
       "Scrambled": "pay / Do / need / to / I / back / money / the"
     },
@@ -32361,7 +32361,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 식후에 약을 먹어야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32370,7 +32370,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 식후에 약을 먹어야 하니?",
       "English/Answer": "Do I need to take the medicine after meals?",
       "Scrambled": "take the medicine after meals"
     },
@@ -32379,7 +32379,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 식후에 약을 먹어야 하니?",
       "English/Answer": "Do I need to take the medicine after meals?",
       "Scrambled": "medicine / I / to / take / after / the / meals / need / Do"
     },
@@ -32388,7 +32388,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 매일 연습해야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32397,7 +32397,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 매일 연습해야 하니?",
       "English/Answer": "Do I need to practice every day?",
       "Scrambled": "practice every day"
     },
@@ -32406,7 +32406,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 매일 연습해야 하니?",
       "English/Answer": "Do I need to practice every day?",
       "Scrambled": "to / need / Do / day / practice / I / every"
     },
@@ -32415,7 +32415,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 은행에 가야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32424,7 +32424,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 은행에 가야 하니?",
       "English/Answer": "Do I need to go to the bank?",
       "Scrambled": "go to the bank"
     },
@@ -32433,7 +32433,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 은행에 가야 하니?",
       "English/Answer": "Do I need to go to the bank?",
       "Scrambled": "need / bank / the / to / go / I / Do / to"
     },
@@ -32442,7 +32442,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 경기하는 법을 알아야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32451,7 +32451,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 경기하는 법을 알아야 하니?",
       "English/Answer": "Do I need to know how to play?",
       "Scrambled": "know how to play"
     },
@@ -32460,7 +32460,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 경기하는 법을 알아야 하니?",
       "English/Answer": "Do I need to know how to play?",
       "Scrambled": "play / know / I / how / Do / to / need / to"
     },
@@ -32469,7 +32469,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 오른쪽으로 걸어야 하니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32478,7 +32478,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 오른쪽으로 걸어야 하니?",
       "English/Answer": "Do I need to walk on the right side?",
       "Scrambled": "walk on the right side"
     },
@@ -32487,7 +32487,7 @@ const bookData = {
       "Pattern Name": "Do I need to ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 오른쪽으로 걸어야 하니?",
       "English/Answer": "Do I need to walk on the right side?",
       "Scrambled": "the / walk / I / side / Do / need / right / on / to"
     },
@@ -32496,7 +32496,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "내 설거지 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32505,7 +32505,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "내 설거지 좀 도와줄래?",
       "English/Answer": "Can you help me with the dishes?",
       "Scrambled": "with the dishes"
     },
@@ -32514,7 +32514,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "내 설거지 좀 도와줄래?",
       "English/Answer": "Can you help me with the dishes?",
       "Scrambled": "me / help / you / Can / with / dishes / the"
     },
@@ -32523,7 +32523,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 문제 푸는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32532,7 +32532,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 문제 푸는 것 좀 도와줄래?",
       "English/Answer": "Can you help me solve this problem?",
       "Scrambled": "solve this problem"
     },
@@ -32541,7 +32541,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 문제 푸는 것 좀 도와줄래?",
       "English/Answer": "Can you help me solve this problem?",
       "Scrambled": "problem / help / me / you / Can / solve / this"
     },
@@ -32550,7 +32550,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 가방들 나르는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32559,7 +32559,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 가방들 나르는 것 좀 도와줄래?",
       "English/Answer": "Can you help me carry these bags?",
       "Scrambled": "carry these bags"
     },
@@ -32568,7 +32568,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 가방들 나르는 것 좀 도와줄래?",
       "English/Answer": "Can you help me carry these bags?",
       "Scrambled": "bags / help / you / Can / me / these / carry"
     },
@@ -32577,7 +32577,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "내가 쓰레기 버리는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32586,7 +32586,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "내가 쓰레기 버리는 것 좀 도와줄래?",
       "English/Answer": "Can you help me throw away the trash?",
       "Scrambled": "throw away the trash"
     },
@@ -32595,7 +32595,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "내가 쓰레기 버리는 것 좀 도와줄래?",
       "English/Answer": "Can you help me throw away the trash?",
       "Scrambled": "throw / help / away / me / Can / you / trash / the"
     },
@@ -32604,7 +32604,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 이미지 내려받는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32613,7 +32613,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 이미지 내려받는 것 좀 도와줄래?",
       "English/Answer": "Can you help me download this image?",
       "Scrambled": "download this image"
     },
@@ -32622,7 +32622,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 이미지 내려받는 것 좀 도와줄래?",
       "English/Answer": "Can you help me download this image?",
       "Scrambled": "this / help / download / me / image / Can / you"
     },
@@ -32631,7 +32631,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "내 숙제 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32640,7 +32640,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "내 숙제 좀 도와줄래?",
       "English/Answer": "Can you help me with my homework?",
       "Scrambled": "with my homework"
     },
@@ -32649,7 +32649,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "내 숙제 좀 도와줄래?",
       "English/Answer": "Can you help me with my homework?",
       "Scrambled": "help / homework / with / you / me / my / Can"
     },
@@ -32658,7 +32658,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "내가 내 가방 찾는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32667,7 +32667,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "내가 내 가방 찾는 것 좀 도와줄래?",
       "English/Answer": "Can you help me find my bag?",
       "Scrambled": "find my bag"
     },
@@ -32676,7 +32676,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "내가 내 가방 찾는 것 좀 도와줄래?",
       "English/Answer": "Can you help me find my bag?",
       "Scrambled": "find / help / bag / me / my / Can / you"
     },
@@ -32685,7 +32685,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "내가 옷 거는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32694,7 +32694,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "내가 옷 거는 것 좀 도와줄래?",
       "English/Answer": "Can you help me hang up the clothes?",
       "Scrambled": "hang up the clothes"
     },
@@ -32703,7 +32703,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "내가 옷 거는 것 좀 도와줄래?",
       "English/Answer": "Can you help me hang up the clothes?",
       "Scrambled": "hang / clothes / help / me / you / up / Can / the"
     },
@@ -32712,7 +32712,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "내가 연설하는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32721,7 +32721,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "내가 연설하는 것 좀 도와줄래?",
       "English/Answer": "Can you help me with my speech?",
       "Scrambled": "with my speech"
     },
@@ -32730,7 +32730,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "내가 연설하는 것 좀 도와줄래?",
       "English/Answer": "Can you help me with my speech?",
       "Scrambled": "Can / with / help / you / speech / me / my"
     },
@@ -32739,7 +32739,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내가 상 차리는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32748,7 +32748,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내가 상 차리는 것 좀 도와줄래?",
       "English/Answer": "Can you help me set the table?",
       "Scrambled": "set the table"
     },
@@ -32757,7 +32757,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내가 상 차리는 것 좀 도와줄래?",
       "English/Answer": "Can you help me set the table?",
       "Scrambled": "me / help / you / table / Can / set / the"
     },
@@ -32766,7 +32766,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "내가 개 씻기는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32775,7 +32775,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "내가 개 씻기는 것 좀 도와줄래?",
       "English/Answer": "Can you help me wash my dog?",
       "Scrambled": "wash my dog"
     },
@@ -32784,7 +32784,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "내가 개 씻기는 것 좀 도와줄래?",
       "English/Answer": "Can you help me wash my dog?",
       "Scrambled": "wash / me / you / Can / dog / help / my"
     },
@@ -32793,7 +32793,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 병을 여는 것 좀 도와줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32802,7 +32802,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 병을 여는 것 좀 도와줄래?",
       "English/Answer": "Can you help me open this jar?",
       "Scrambled": "open this jar"
     },
@@ -32811,7 +32811,7 @@ const bookData = {
       "Pattern Name": "Can you help me ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 이 병을 여는 것 좀 도와줄래?",
       "English/Answer": "Can you help me open this jar?",
       "Scrambled": "help / me / this / open / jar / Can / you"
     },
@@ -32820,7 +32820,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "이유를 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32829,7 +32829,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "이유를 내게 말해 줄래?",
       "English/Answer": "Can you tell me the reason?",
       "Scrambled": "the reason"
     },
@@ -32838,7 +32838,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "이유를 내게 말해 줄래?",
       "English/Answer": "Can you tell me the reason?",
       "Scrambled": "me / tell / Can / the / you / reason"
     },
@@ -32847,7 +32847,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "오늘의 일정을 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32856,7 +32856,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "오늘의 일정을 내게 말해 줄래?",
       "English/Answer": "Can you tell me today's schedule?",
       "Scrambled": "today's schedule"
     },
@@ -32865,7 +32865,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "오늘의 일정을 내게 말해 줄래?",
       "English/Answer": "Can you tell me today's schedule?",
       "Scrambled": "me / you / today's / Can / tell / schedule"
     },
@@ -32874,7 +32874,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "스티브 잡스에 대해 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32883,7 +32883,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "스티브 잡스에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about Steve Jobs?",
       "Scrambled": "about Steve Jobs"
     },
@@ -32892,7 +32892,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "스티브 잡스에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about Steve Jobs?",
       "Scrambled": "me / Jobs / Steve / about / Can / tell / you"
     },
@@ -32901,7 +32901,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "현대 미술에 대해 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32910,7 +32910,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "현대 미술에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about modern art?",
       "Scrambled": "about modern art"
     },
@@ -32919,7 +32919,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "현대 미술에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about modern art?",
       "Scrambled": "me / art / tell / you / Can / about / modern"
     },
@@ -32928,7 +32928,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "지구를 지키는 방법들에 대해 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32937,7 +32937,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "지구를 지키는 방법들에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about ways to save the earth?",
       "Scrambled": "about ways to save the earth"
     },
@@ -32946,7 +32946,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "지구를 지키는 방법들에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about ways to save the earth?",
       "Scrambled": "save / about / earth / ways / to / you / tell / me / Can / the"
     },
@@ -32955,7 +32955,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "요리법을 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32964,7 +32964,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "요리법을 내게 말해 줄래?",
       "English/Answer": "Can you tell me the recipe?",
       "Scrambled": "the recipe"
     },
@@ -32973,7 +32973,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "요리법을 내게 말해 줄래?",
       "English/Answer": "Can you tell me the recipe?",
       "Scrambled": "me / recipe / you / Can / tell / the"
     },
@@ -32982,7 +32982,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "우주에 대해 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -32991,7 +32991,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "우주에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about the universe?",
       "Scrambled": "about the universe"
     },
@@ -33000,7 +33000,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "우주에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about the universe?",
       "Scrambled": "universe / the / about / Can / me / you / tell"
     },
@@ -33009,7 +33009,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "식량 은행에 대해 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33018,7 +33018,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "식량 은행에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about food banks?",
       "Scrambled": "about food banks"
     },
@@ -33027,7 +33027,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "식량 은행에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about food banks?",
       "Scrambled": "about / tell / you / food / Can / banks / me"
     },
@@ -33036,7 +33036,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "시간에 대해 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33045,7 +33045,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "시간에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me the time?",
       "Scrambled": "the time"
     },
@@ -33054,7 +33054,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "시간에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me the time?",
       "Scrambled": "me / time / the / tell / Can / you"
     },
@@ -33063,7 +33063,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "그것에 대해 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33072,7 +33072,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "그것에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about it?",
       "Scrambled": "about it"
     },
@@ -33081,7 +33081,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "그것에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about it?",
       "Scrambled": "you / it / about / me / Can / tell"
     },
@@ -33090,7 +33090,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "네 계획에 대해 내게 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33099,7 +33099,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "네 계획에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about your plans?",
       "Scrambled": "about your plans"
     },
@@ -33108,7 +33108,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "네 계획에 대해 내게 말해 줄래?",
       "English/Answer": "Can you tell me about your plans?",
       "Scrambled": "plans / tell / Can / about / you / me / your"
     },
@@ -33117,7 +33117,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "이 티켓의 가격을 말해 줄래?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33126,7 +33126,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "이 티켓의 가격을 말해 줄래?",
       "English/Answer": "Can you tell me the price of this ticket?",
       "Scrambled": "the price of this ticket"
     },
@@ -33135,7 +33135,7 @@ const bookData = {
       "Pattern Name": "Can you tell me ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "이 티켓의 가격을 말해 줄래?",
       "English/Answer": "Can you tell me the price of this ticket?",
       "Scrambled": "of / tell / ticket / this / me / Can / price / you / the"
     },
@@ -33144,7 +33144,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 제주도에 간 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33153,7 +33153,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 제주도에 간 적이 없어.",
       "English/Answer": "I've never been to Jeju-do.",
       "Scrambled": "been to Jeju-do"
     },
@@ -33162,7 +33162,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 제주도에 간 적이 없어.",
       "English/Answer": "I've never been to Jeju-do.",
       "Scrambled": "I've / been / Jeju-do / never / to"
     },
@@ -33171,7 +33171,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 케밥을 먹은 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33180,7 +33180,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 케밥을 먹은 적이 없어.",
       "English/Answer": "I've never eaten kebab.",
       "Scrambled": "eaten kebab"
     },
@@ -33189,7 +33189,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 케밥을 먹은 적이 없어.",
       "English/Answer": "I've never eaten kebab.",
       "Scrambled": "I've / never / kebab / eaten"
     },
@@ -33198,7 +33198,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그 노인을 만난 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33207,7 +33207,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그 노인을 만난 적이 없어.",
       "English/Answer": "I've never met the old man.",
       "Scrambled": "met the old man"
     },
@@ -33216,7 +33216,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그 노인을 만난 적이 없어.",
       "English/Answer": "I've never met the old man.",
       "Scrambled": "man / old / met / I've / never / the"
     },
@@ -33225,7 +33225,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 별똥별을 본 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33234,7 +33234,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 별똥별을 본 적이 없어.",
       "English/Answer": "I've never seen a shooting star.",
       "Scrambled": "seen a shooting star"
     },
@@ -33243,7 +33243,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 별똥별을 본 적이 없어.",
       "English/Answer": "I've never seen a shooting star.",
       "Scrambled": "seen / shooting / I've / star / a / never"
     },
@@ -33252,7 +33252,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 롤러코스터를 탄 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33261,7 +33261,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 롤러코스터를 탄 적이 없어.",
       "English/Answer": "I've never ridden a roller coaster.",
       "Scrambled": "ridden a roller coaster"
     },
@@ -33270,7 +33270,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 롤러코스터를 탄 적이 없어.",
       "English/Answer": "I've never ridden a roller coaster.",
       "Scrambled": "roller / a / ridden / I've / coaster / never"
     },
@@ -33279,7 +33279,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 태국 음식을 먹어본 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33288,7 +33288,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 태국 음식을 먹어본 적이 없어.",
       "English/Answer": "I've never tried Thai food.",
       "Scrambled": "tried Thai food"
     },
@@ -33297,7 +33297,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 태국 음식을 먹어본 적이 없어.",
       "English/Answer": "I've never tried Thai food.",
       "Scrambled": "I've / tried / food / never / Thai"
     },
@@ -33306,7 +33306,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 한국 드라마를 본 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33315,7 +33315,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 한국 드라마를 본 적이 없어.",
       "English/Answer": "I've never watched a Korean drama.",
       "Scrambled": "watched a Korean drama"
     },
@@ -33324,7 +33324,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 한국 드라마를 본 적이 없어.",
       "English/Answer": "I've never watched a Korean drama.",
       "Scrambled": "drama / I've / watched / Korean / a / never"
     },
@@ -33333,7 +33333,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그 사고에 대해 들은 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33342,7 +33342,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그 사고에 대해 들은 적이 없어.",
       "English/Answer": "I've never heard about the accident.",
       "Scrambled": "heard about the accident"
     },
@@ -33351,7 +33351,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그 사고에 대해 들은 적이 없어.",
       "English/Answer": "I've never heard about the accident.",
       "Scrambled": "heard / never / I've / accident / about / the"
     },
@@ -33360,7 +33360,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 애완동물을 키워본 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33369,7 +33369,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 애완동물을 키워본 적이 없어.",
       "English/Answer": "I've never had a pet.",
       "Scrambled": "had a pet"
     },
@@ -33378,7 +33378,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 애완동물을 키워본 적이 없어.",
       "English/Answer": "I've never had a pet.",
       "Scrambled": "pet / had / never / a / I've"
     },
@@ -33387,7 +33387,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그것들을 본 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33396,7 +33396,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그것들을 본 적이 없어.",
       "English/Answer": "I've never seen it.",
       "Scrambled": "seen it"
     },
@@ -33405,7 +33405,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 그것들을 본 적이 없어.",
       "English/Answer": "I've never seen it.",
       "Scrambled": "never / seen / it / I've"
     },
@@ -33414,7 +33414,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 봉사 활동을 해본 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33423,7 +33423,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 봉사 활동을 해본 적이 없어.",
       "English/Answer": "I've never done volunteer work.",
       "Scrambled": "done volunteer work"
     },
@@ -33432,7 +33432,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 봉사 활동을 해본 적이 없어.",
       "English/Answer": "I've never done volunteer work.",
       "Scrambled": "done / never / I've / volunteer / work"
     },
@@ -33441,7 +33441,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 알라딘에 관한 이야기를 읽어본 적이 없어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33450,7 +33450,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 알라딘에 관한 이야기를 읽어본 적이 없어.",
       "English/Answer": "I've never read a story about Aladdin.",
       "Scrambled": "read a story about Aladdin"
     },
@@ -33459,7 +33459,7 @@ const bookData = {
       "Pattern Name": "I've never ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 한 번도 알라딘에 관한 이야기를 읽어본 적이 없어.",
       "English/Answer": "I've never read a story about Aladdin.",
       "Scrambled": "about / never / Aladdin / read / I've / story / a"
     },
@@ -33468,7 +33468,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "Have you ever done it?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33477,7 +33477,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 김치를 먹어본 적이 있니?",
       "English/Answer": "Have you ever tried kimchi?",
       "Scrambled": "tried kimchi"
     },
@@ -33486,7 +33486,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "넌 김치를 먹어 본 적이 있니?",
       "English/Answer": "Have you ever tried kimchi?",
       "Scrambled": "tried / kimchi / Have / ever / you"
     },
@@ -33495,7 +33495,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 펭귄을 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33504,7 +33504,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 펭귄을 본 적이 있니?",
       "English/Answer": "Have you ever seen a penguin?",
       "Scrambled": "seen a penguin"
     },
@@ -33513,7 +33513,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "넌 펭귄을 본 적이 있니?",
       "English/Answer": "Have you ever seen a penguin?",
       "Scrambled": "seen / Have / a / ever / you / penguin"
     },
@@ -33522,7 +33522,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 춤 수업을 받아본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33531,7 +33531,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 춤 수업을 받아본 적이 있니?",
       "English/Answer": "Have you ever taken a dance class?",
       "Scrambled": "taken a dance class"
     },
@@ -33540,7 +33540,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "넌 춤 수업을 받아본 적이 있니?",
       "English/Answer": "Have you ever taken a dance class?",
       "Scrambled": "dance / taken / class / ever / a / Have / you"
     },
@@ -33549,7 +33549,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 디즈니랜드에 가 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33558,7 +33558,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 디즈니랜드에 가 본 적이 있니?",
       "English/Answer": "Have you ever been to Disneyland?",
       "Scrambled": "been to Disneyland"
     },
@@ -33567,7 +33567,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "넌 디즈니랜드에 가 본 적이 있니?",
       "English/Answer": "Have you ever been to Disneyland?",
       "Scrambled": "been / Have / you / to / ever / Disneyland"
     },
@@ -33576,7 +33576,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 텐트를 쳐 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33585,7 +33585,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 텐트를 쳐 본 적이 있니?",
       "English/Answer": "Have you ever put up a tent?",
       "Scrambled": "put up a tent"
     },
@@ -33594,7 +33594,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "넌 텐트를 쳐 본 적이 있니?",
       "English/Answer": "Have you ever put up a tent?",
       "Scrambled": "up / you / Have / ever / put / tent / a"
     },
@@ -33603,7 +33603,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 샘의 엄마를 만나 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33612,7 +33612,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 샘의 엄마를 만나 본 적이 있니?",
       "English/Answer": "Have you ever met Sam's mother?",
       "Scrambled": "met Sam's mother"
     },
@@ -33621,7 +33621,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "넌 샘의 엄마를 만나 본 적이 있니?",
       "English/Answer": "Have you ever met Sam's mother?",
       "Scrambled": "met / ever / Sam's / mother / you / Have"
     },
@@ -33630,7 +33630,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 토끼에게 먹이를 줘 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33639,7 +33639,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 토끼에게 먹이를 줘 본 적이 있니?",
       "English/Answer": "Have you ever fed a rabbit?",
       "Scrambled": "fed a rabbit"
     },
@@ -33648,7 +33648,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "넌 토끼에게 먹이를 줘 본 적이 있니?",
       "English/Answer": "Have you ever fed a rabbit?",
       "Scrambled": "Have / rabbit / fed / a / ever / you"
     },
@@ -33657,7 +33657,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 요가를 해 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33666,7 +33666,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 요가를 해 본 적이 있니?",
       "English/Answer": "Have you ever done yoga?",
       "Scrambled": "done yoga"
     },
@@ -33675,7 +33675,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "넌 요가를 해 본 적이 있니?",
       "English/Answer": "Have you ever done yoga?",
       "Scrambled": "yoga / done / you / Have / ever"
     },
@@ -33684,7 +33684,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 캠핑을 가 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33693,7 +33693,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 캠핑을 가 본 적이 있니?",
       "English/Answer": "Have you ever gone camping?",
       "Scrambled": "gone camping"
     },
@@ -33702,7 +33702,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "넌 캠핑을 가 본 적이 있니?",
       "English/Answer": "Have you ever gone camping?",
       "Scrambled": "gone / ever / Have / you / camping"
     },
@@ -33711,7 +33711,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 부모님을 위해 요리해 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33720,7 +33720,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 부모님을 위해 요리해 본 적이 있니?",
       "English/Answer": "Have you ever cooked for your parents?",
       "Scrambled": "cooked for your parents"
     },
@@ -33729,7 +33729,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "넌 부모님을 위해 요리해 본 적이 있니?",
       "English/Answer": "Have you ever cooked for your parents?",
       "Scrambled": "for / parents / your / Have / you / ever / cooked"
     },
@@ -33738,7 +33738,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 해리포터 시리즈를 읽어 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33747,7 +33747,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 해리포터 시리즈를 읽어 본 적이 있니?",
       "English/Answer": "Have you ever read the Harry Potter series?",
       "Scrambled": "read the Harry Potter series"
     },
@@ -33756,7 +33756,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "넌 해리포터 시리즈를 읽어 본 적이 있니?",
       "English/Answer": "Have you ever read the Harry Potter series?",
       "Scrambled": "series / Harry / read / ever / Potter / you / the / Have"
     },
@@ -33765,7 +33765,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거리에서 돈을 주워 본 적이 있니?",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33774,7 +33774,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거리에서 돈을 주워 본 적이 있니?",
       "English/Answer": "Have you ever found money on the street?",
       "Scrambled": "found money on the street"
     },
@@ -33783,7 +33783,7 @@ const bookData = {
       "Pattern Name": "Have you ever ...?",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "넌 거리에서 돈을 주워 본 적이 있니?",
       "English/Answer": "Have you ever found money on the street?",
       "Scrambled": "found / street / the / money / ever / you / Have / on"
     },
@@ -33792,7 +33792,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 튼튼해질 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33801,7 +33801,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 튼튼해질 수 있으면 좋겠어.",
       "English/Answer": "I wish I could be strong.",
       "Scrambled": "be strong"
     },
@@ -33810,7 +33810,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "난 튼튼해질 수 있으면 좋겠어.",
       "English/Answer": "I wish I could be strong.",
       "Scrambled": "strong / could / wish / be / I / I"
     },
@@ -33819,7 +33819,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 춤을 잘 출 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33828,7 +33828,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 춤을 잘 출 수 있으면 좋겠어.",
       "English/Answer": "I wish I could dance well.",
       "Scrambled": "dance well"
     },
@@ -33837,7 +33837,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "난 춤을 잘 출 수 있으면 좋겠어.",
       "English/Answer": "I wish I could dance well.",
       "Scrambled": "dance / wish / well / I / I / could"
     },
@@ -33846,7 +33846,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 대통령이 될 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33855,7 +33855,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 대통령이 될 수 있으면 좋겠어.",
       "English/Answer": "I wish I could become president.",
       "Scrambled": "become president"
     },
@@ -33864,7 +33864,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "난 대통령이 될 수 있으면 좋겠어.",
       "English/Answer": "I wish I could become president.",
       "Scrambled": "president / become / wish / I / I / could"
     },
@@ -33873,7 +33873,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 전 세계를 여행할 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33882,7 +33882,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 전 세계를 여행할 수 있으면 좋겠어.",
       "English/Answer": "I wish I could travel all over the world.",
       "Scrambled": "travel all over the world"
     },
@@ -33891,7 +33891,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "난 전 세계를 여행할 수 있으면 좋겠어.",
       "English/Answer": "I wish I could travel all over the world.",
       "Scrambled": "over / travel / all / could / world / I / the / I / wish"
     },
@@ -33900,7 +33900,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 영어 시험에서 A를 받을 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33909,7 +33909,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 영어 시험에서 A를 받을 수 있으면 좋겠어.",
       "English/Answer": "I wish I could get an A on the English test.",
       "Scrambled": "get an A on the English test"
     },
@@ -33918,7 +33918,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "난 영어 시험에서 A를 받을 수 있으면 좋겠어.",
       "English/Answer": "I wish I could get an A on the English test.",
       "Scrambled": "get / wish / A / English / on / an / I / the / test / I / could"
     },
@@ -33927,7 +33927,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 고양이를 키울 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33936,7 +33936,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 고양이를 키울 수 있으면 좋겠어.",
       "English/Answer": "I wish I could raise a cat.",
       "Scrambled": "raise a cat"
     },
@@ -33945,7 +33945,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "난 고양이를 키울 수 있으면 좋겠어.",
       "English/Answer": "I wish I could raise a cat.",
       "Scrambled": "raise / I / I / wish / a / cat / could"
     },
@@ -33954,7 +33954,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 더 오래 머물 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33963,7 +33963,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 더 오래 머물 수 있으면 좋겠어.",
       "English/Answer": "I wish I could stay longer.",
       "Scrambled": "stay longer"
     },
@@ -33972,7 +33972,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "난 더 오래 머물 수 있으면 좋겠어.",
       "English/Answer": "I wish I could stay longer.",
       "Scrambled": "wish / longer / stay / could / I / I"
     },
@@ -33981,7 +33981,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 언젠가 우주로 여행할 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -33990,7 +33990,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 언젠가 우주로 여행할 수 있으면 좋겠어.",
       "English/Answer": "I wish I could travel to space someday.",
       "Scrambled": "travel to space someday"
     },
@@ -33999,7 +33999,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "난 언젠가 우주로 여행할 수 있으면 좋겠어.",
       "English/Answer": "I wish I could travel to space someday.",
       "Scrambled": "someday / space / could / wish / I / to / travel / I"
     },
@@ -34008,7 +34008,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 가수가 될 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34017,7 +34017,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 가수가 될 수 있으면 좋겠어.",
       "English/Answer": "I wish I could be a singer.",
       "Scrambled": "be a singer"
     },
@@ -34026,7 +34026,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "난 가수가 될 수 있으면 좋겠어.",
       "English/Answer": "I wish I could be a singer.",
       "Scrambled": "could / singer / a / wish / be / I / I"
     },
@@ -34035,7 +34035,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 더 많은 친구가 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34044,7 +34044,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 더 많은 친구가 있으면 좋겠어.",
       "English/Answer": "I wish I could have more friends.",
       "Scrambled": "have more friends"
     },
@@ -34053,7 +34053,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "난 더 많은 친구가 있으면 좋겠어.",
       "English/Answer": "I wish I could have more friends.",
       "Scrambled": "friends / I / have / I / could / wish / more"
     },
@@ -34062,7 +34062,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 달 위를 걸을 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34071,7 +34071,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 달 위를 걸을 수 있으면 좋겠어.",
       "English/Answer": "I wish I could walk on the moon.",
       "Scrambled": "walk on the moon"
     },
@@ -34080,7 +34080,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "난 달 위를 걸을 수 있으면 좋겠어.",
       "English/Answer": "I wish I could walk on the moon.",
       "Scrambled": "could / wish / I / moon / walk / I / on / the"
     },
@@ -34089,7 +34089,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 영어를 잘 말할 수 있으면 좋겠어.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34098,7 +34098,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 영어를 잘 말할 수 있으면 좋겠어.",
       "English/Answer": "I wish I could speak English well.",
       "Scrambled": "speak English well"
     },
@@ -34107,7 +34107,7 @@ const bookData = {
       "Pattern Name": "I wish I could ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "난 영어를 잘 말할 수 있으면 좋겠어.",
       "English/Answer": "I wish I could speak English well.",
       "Scrambled": "speak / wish / English / well / could / I / I"
     },
@@ -34116,7 +34116,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "선물 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34125,7 +34125,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "선물 고마워.",
       "English/Answer": "Thank you for the gift.",
       "Scrambled": "the gift"
     },
@@ -34134,7 +34134,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "선물 고마워.",
       "English/Answer": "Thank you for the gift.",
       "Scrambled": "you / gift / Thank / for / the"
     },
@@ -34143,7 +34143,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "자리 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34152,7 +34152,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "자리 고마워.",
       "English/Answer": "Thank you for the seat.",
       "Scrambled": "the seat"
     },
@@ -34161,7 +34161,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "자리 고마워.",
       "English/Answer": "Thank you for the seat.",
       "Scrambled": "for / Thank / the / you / seat"
     },
@@ -34170,7 +34170,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "너의 조언 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34179,7 +34179,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "너의 조언 고마워.",
       "English/Answer": "Thank you for your advice.",
       "Scrambled": "your advice"
     },
@@ -34188,7 +34188,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "너의 조언 고마워.",
       "English/Answer": "Thank you for your advice.",
       "Scrambled": "advice / Thank / for / your / you"
     },
@@ -34197,7 +34197,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "우리를 초대해 줘서 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34206,7 +34206,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "우리를 초대해 줘서 고마워.",
       "English/Answer": "Thank you for inviting us.",
       "Scrambled": "inviting us"
     },
@@ -34215,7 +34215,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "우리를 초대해 줘서 고마워.",
       "English/Answer": "Thank you for inviting us.",
       "Scrambled": "inviting / Thank / you / us / for"
     },
@@ -34224,7 +34224,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내 숙제를 도와줘서 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34233,7 +34233,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내 숙제를 도와줘서 고마워.",
       "English/Answer": "Thank you for helping me with my homework.",
       "Scrambled": "helping me with my homework"
     },
@@ -34242,7 +34242,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내 숙제를 도와줘서 고마워.",
       "English/Answer": "Thank you for helping me with my homework.",
       "Scrambled": "with / you / for / me / helping / Thank / my / homework"
     },
@@ -34251,7 +34251,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "책 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34260,7 +34260,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "책 고마워.",
       "English/Answer": "Thank you for the book.",
       "Scrambled": "the book"
     },
@@ -34269,7 +34269,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "책 고마워.",
       "English/Answer": "Thank you for the book.",
       "Scrambled": "Thank / book / for / the / you"
     },
@@ -34278,7 +34278,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "와 줘서 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34287,7 +34287,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "와 줘서 고마워.",
       "English/Answer": "Thank you for coming.",
       "Scrambled": "coming"
     },
@@ -34296,7 +34296,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "와 줘서 고마워.",
       "English/Answer": "Thank you for coming.",
       "Scrambled": "coming / Thank / you / for"
     },
@@ -34305,7 +34305,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "저를 학교까지 태워 주셔서 고맙습니다.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34314,7 +34314,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "저를 학교까지 태워 주셔서 고맙습니다.",
       "English/Answer": "Thank you for giving me a ride to school.",
       "Scrambled": "giving me a ride to school"
     },
@@ -34323,7 +34323,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "저를 학교까지 태워 주셔서 고맙습니다.",
       "English/Answer": "Thank you for giving me a ride to school.",
       "Scrambled": "you / to / ride / giving / school / Thank / for / a / me"
     },
@@ -34332,7 +34332,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "저녁 식사 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34341,7 +34341,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "저녁 식사 고마워.",
       "English/Answer": "Thank you for dinner.",
       "Scrambled": "dinner"
     },
@@ -34350,7 +34350,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "저녁 식사 고마워.",
       "English/Answer": "Thank you for dinner.",
       "Scrambled": "for / you / dinner / Thank"
     },
@@ -34359,7 +34359,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "친절하게 대해 줘서 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34368,7 +34368,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "친절하게 대해 줘서 고마워.",
       "English/Answer": "Thank you for your kindness.",
       "Scrambled": "your kindness"
     },
@@ -34377,7 +34377,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "친절하게 대해 줘서 고마워.",
       "English/Answer": "Thank you for your kindness.",
       "Scrambled": "kindness / for / you / Thank / your"
     },
@@ -34386,7 +34386,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "나를 돌봐 줘서 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34395,7 +34395,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "나를 돌봐 줘서 고마워.",
       "English/Answer": "Thank you for taking care of me.",
       "Scrambled": "taking care of me"
     },
@@ -34404,7 +34404,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "나를 돌봐 줘서 고마워.",
       "English/Answer": "Thank you for taking care of me.",
       "Scrambled": "me / you / care / Thank / for / taking / of"
     },
@@ -34413,7 +34413,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "네 휴대전화를 빌려줘서 고마워.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34422,7 +34422,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "네 휴대전화를 빌려줘서 고마워.",
       "English/Answer": "Thank you for lending me your cell phone.",
       "Scrambled": "lending me your cell phone"
     },
@@ -34431,7 +34431,7 @@ const bookData = {
       "Pattern Name": "Thank you for ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "네 휴대전화를 빌려줘서 고마워.",
       "English/Answer": "Thank you for lending me your cell phone.",
       "Scrambled": "you / your / lending / cell / me / phone / Thank / for"
     },
@@ -34440,7 +34440,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 문을 잠그도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34449,7 +34449,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 문을 잠그도록 해.",
       "English/Answer": "Make sure to lock the door.",
       "Scrambled": "lock the door"
     },
@@ -34458,7 +34458,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 문을 잠그도록 해.",
       "English/Answer": "Make sure to lock the door.",
       "Scrambled": "sure / door / to / lock / Make / the"
     },
@@ -34467,7 +34467,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 TV 소리를 줄이도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34476,7 +34476,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 TV 소리를 줄이도록 해.",
       "English/Answer": "Make sure to turn down the TV.",
       "Scrambled": "turn down the TV"
     },
@@ -34485,7 +34485,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 TV 소리를 줄이도록 해.",
       "English/Answer": "Make sure to turn down the TV.",
       "Scrambled": "to / Make / down / turn / sure / the / TV"
     },
@@ -34494,7 +34494,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 선크림을 바르도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34503,7 +34503,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 선크림을 바르도록 해.",
       "English/Answer": "Make sure you put on sunscreen.",
       "Scrambled": "put on sunscreen"
     },
@@ -34512,7 +34512,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 선크림을 바르도록 해.",
       "English/Answer": "Make sure you put on sunscreen.",
       "Scrambled": "on / sunscreen / you / put / Make / sure"
     },
@@ -34521,7 +34521,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "절대 너무 늦지 않도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34530,7 +34530,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "절대 너무 늦지 않도록 해.",
       "English/Answer": "Make sure you're not too late.",
       "Scrambled": "you're not too late"
     },
@@ -34539,7 +34539,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "절대 너무 늦지 않도록 해.",
       "English/Answer": "Make sure you're not too late.",
       "Scrambled": "you're / not / sure / late / too / Make"
     },
@@ -34548,7 +34548,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "절대 네 우산을 잊지 않도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34557,7 +34557,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "절대 네 우산을 잊지 않도록 해.",
       "English/Answer": "Make sure you don't forget your umbrella.",
       "Scrambled": "don't forget your umbrella"
     },
@@ -34566,7 +34566,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "절대 네 우산을 잊지 않도록 해.",
       "English/Answer": "Make sure you don't forget your umbrella.",
       "Scrambled": "your / Make / sure / forget / you / don't / umbrella"
     },
@@ -34575,7 +34575,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 네 교통 카드를 가져오도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34584,7 +34584,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 네 교통 카드를 가져오도록 해.",
       "English/Answer": "Make sure to bring your transportation card.",
       "Scrambled": "bring your transportation card"
     },
@@ -34593,7 +34593,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 네 교통 카드를 가져오도록 해.",
       "English/Answer": "Make sure to bring your transportation card.",
       "Scrambled": "your / Make / to / sure / bring / transportation / card"
     },
@@ -34602,7 +34602,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 내일까지 그 책들을 반납하도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34611,7 +34611,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 내일까지 그 책들을 반납하도록 해.",
       "English/Answer": "Make sure you return the books by tomorrow.",
       "Scrambled": "return the books by tomorrow"
     },
@@ -34620,7 +34620,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 내일까지 그 책들을 반납하도록 해.",
       "English/Answer": "Make sure you return the books by tomorrow.",
       "Scrambled": "you / by / books / sure / return / Make / the / tomorrow"
     },
@@ -34629,7 +34629,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "절대 서로 다투지 않도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34638,7 +34638,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "절대 서로 다투지 않도록 해.",
       "English/Answer": "Make sure you don't argue with each other.",
       "Scrambled": "don't argue with each other"
     },
@@ -34647,7 +34647,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "절대 서로 다투지 않도록 해.",
       "English/Answer": "Make sure you don't argue with each other.",
       "Scrambled": "argue / Make / you / each / sure / don't / with / other"
     },
@@ -34656,7 +34656,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 따뜻한 옷을 입도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34665,7 +34665,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 따뜻한 옷을 입도록 해.",
       "English/Answer": "Make sure to wear warm clothes.",
       "Scrambled": "wear warm clothes"
     },
@@ -34674,7 +34674,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 따뜻한 옷을 입도록 해.",
       "English/Answer": "Make sure to wear warm clothes.",
       "Scrambled": "warm / Make / clothes / to / sure / wear"
     },
@@ -34683,7 +34683,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 나에게 다시 전화하도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34692,7 +34692,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 나에게 다시 전화하도록 해.",
       "English/Answer": "Make sure you call me back.",
       "Scrambled": "call me back"
     },
@@ -34701,7 +34701,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 나에게 다시 전화하도록 해.",
       "English/Answer": "Make sure you call me back.",
       "Scrambled": "Make / me / back / call / sure / you"
     },
@@ -34710,7 +34710,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "절대 똑같은 실수를 하지 않도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34719,7 +34719,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "절대 똑같은 실수를 하지 않도록 해.",
       "English/Answer": "Make sure you don't make the same mistake.",
       "Scrambled": "don't make the same mistake"
     },
@@ -34728,7 +34728,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "절대 똑같은 실수를 하지 않도록 해.",
       "English/Answer": "Make sure you don't make the same mistake.",
       "Scrambled": "don't / you / Make / sure / mistake / same / the / make"
     },
@@ -34737,7 +34737,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 케이크를 시원하게 보관하도록 해.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34746,7 +34746,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 케이크를 시원하게 보관하도록 해.",
       "English/Answer": "Make sure to keep the cake cool.",
       "Scrambled": "keep the cake cool"
     },
@@ -34755,7 +34755,7 @@ const bookData = {
       "Pattern Name": "Make sure ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "꼭 케이크를 시원하게 보관하도록 해.",
       "English/Answer": "Make sure to keep the cake cool.",
       "Scrambled": "cake / Make / keep / cool / sure / to / the"
     },
@@ -34764,7 +34764,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "내가 생각해 볼게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34773,7 +34773,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "내가 생각해 볼게.",
       "English/Answer": "Let me think.",
       "Scrambled": "think"
     },
@@ -34782,7 +34782,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 1,
-      "Korean/Question": "",
+      "Korean/Question": "내가 생각해 볼게.",
       "English/Answer": "Let me think.",
       "Scrambled": "think / Let / me"
     },
@@ -34791,7 +34791,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 하나 보여 줄게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34800,7 +34800,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 하나 보여 줄게.",
       "English/Answer": "Let me show you one.",
       "Scrambled": "show you one"
     },
@@ -34809,7 +34809,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 2,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 하나 보여 줄게.",
       "English/Answer": "Let me show you one.",
       "Scrambled": "you / me / Let / one / show"
     },
@@ -34818,7 +34818,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 책을 읽어 줄게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34827,7 +34827,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 책을 읽어 줄게.",
       "English/Answer": "Let me read you a book.",
       "Scrambled": "read you a book"
     },
@@ -34836,7 +34836,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 3,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 책을 읽어 줄게.",
       "English/Answer": "Let me read you a book.",
       "Scrambled": "you / Let / read / me / book / a"
     },
@@ -34845,7 +34845,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "내가 네 전화를 사용할게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34854,7 +34854,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "내가 네 전화를 사용할게.",
       "English/Answer": "Let me use your phone.",
       "Scrambled": "use your phone"
     },
@@ -34863,7 +34863,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 4,
-      "Korean/Question": "",
+      "Korean/Question": "내가 네 전화를 사용할게.",
       "English/Answer": "Let me use your phone.",
       "Scrambled": "your / phone / Let / me / use"
     },
@@ -34872,7 +34872,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 내 친구에 대해 말할게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34881,7 +34881,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 내 친구에 대해 말할게.",
       "English/Answer": "Let me tell you about my friend.",
       "Scrambled": "tell you about my friend"
     },
@@ -34890,7 +34890,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 5,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 내 친구에 대해 말할게.",
       "English/Answer": "Let me tell you about my friend.",
       "Scrambled": "about / tell / me / Let / you / friend / my"
     },
@@ -34899,7 +34899,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너의 자전거를 탈게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34908,7 +34908,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너의 자전거를 탈게.",
       "English/Answer": "Let me ride your bicycle.",
       "Scrambled": "ride your bicycle"
     },
@@ -34917,7 +34917,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 6,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너의 자전거를 탈게.",
       "English/Answer": "Let me ride your bicycle.",
       "Scrambled": "Let / your / bicycle / me / ride"
     },
@@ -34926,7 +34926,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 질문을 좀 할게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34935,7 +34935,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 질문을 좀 할게.",
       "English/Answer": "Let me ask you some questions.",
       "Scrambled": "ask you some questions"
     },
@@ -34944,7 +34944,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 7,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너에게 질문을 좀 할게.",
       "English/Answer": "Let me ask you some questions.",
       "Scrambled": "you / me / Let / ask / questions / some"
     },
@@ -34953,7 +34953,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "내가 먼저 내 재킷을 가져올게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34962,7 +34962,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "내가 먼저 내 재킷을 가져올게.",
       "English/Answer": "Let me get my jacket first.",
       "Scrambled": "get my jacket first"
     },
@@ -34971,7 +34971,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 8,
-      "Korean/Question": "",
+      "Korean/Question": "내가 먼저 내 재킷을 가져올게.",
       "English/Answer": "Let me get my jacket first.",
       "Scrambled": "my / me / get / first / jacket / Let"
     },
@@ -34980,7 +34980,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "내가 맞춰 볼게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -34989,7 +34989,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "내가 맞춰 볼게.",
       "English/Answer": "Let me guess.",
       "Scrambled": "guess"
     },
@@ -34998,7 +34998,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 9,
-      "Korean/Question": "",
+      "Korean/Question": "내가 맞춰 볼게.",
       "English/Answer": "Let me guess.",
       "Scrambled": "me / guess / Let"
     },
@@ -35007,7 +35007,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내가 네 사진을 찍어 줄게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -35016,7 +35016,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내가 네 사진을 찍어 줄게.",
       "English/Answer": "Let me take your picture.",
       "Scrambled": "take your picture"
     },
@@ -35025,7 +35025,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 10,
-      "Korean/Question": "",
+      "Korean/Question": "내가 네 사진을 찍어 줄게.",
       "English/Answer": "Let me take your picture.",
       "Scrambled": "Let / take / your / me / picture"
     },
@@ -35034,7 +35034,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "내가 내 가족을 소개할게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -35043,7 +35043,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "내가 내 가족을 소개할게.",
       "English/Answer": "Let me introduce my family.",
       "Scrambled": "introduce my family"
     },
@@ -35052,7 +35052,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 11,
-      "Korean/Question": "",
+      "Korean/Question": "내가 내 가족을 소개할게.",
       "English/Answer": "Let me introduce my family.",
       "Scrambled": "family / me / my / introduce / Let"
     },
@@ -35061,7 +35061,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking I",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너를 안아 줄게.",
       "English/Answer": "",
       "Scrambled": ""
     },
@@ -35070,7 +35070,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Speaking II",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너를 안아 줄게.",
       "English/Answer": "Let me give you a hug.",
       "Scrambled": "give you a hug"
     },
@@ -35079,7 +35079,7 @@ const bookData = {
       "Pattern Name": "Let me ....",
       "Section": "Unscramble",
       "Question #": 12,
-      "Korean/Question": "",
+      "Korean/Question": "내가 너를 안아 줄게.",
       "English/Answer": "Let me give you a hug.",
       "Scrambled": "give / hug / you / me / Let / a"
     }
