@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Pattern Master Class</title>
+    <title>Pattern Master Class (Final v5)</title>
     <style>
         /* --- 기본 설정 --- */
         body {
             font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
-            background-color: #f0f2f5; margin: 0; padding: 0;
+            background-color: #2c3e50;
+            margin: 0; padding: 0;
             height: 100vh; display: flex; flex-direction: column;
             overflow: hidden; user-select: none; -webkit-user-select: none;
         }
 
         /* --- 헤더 --- */
         header {
-            background-color: #2c3e50; padding: 10px 20px;
+            background-color: #34495e; padding: 10px 20px;
             display: flex; align-items: center; justify-content: space-between;
-            height: 60px; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 100;
+            height: 60px; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 100;
         }
         .logo { font-size: 18px; font-weight: bold; color: #ecf0f1; display: flex; align-items: center; gap: 8px; }
         .menu-group { display: flex; gap: 8px; align-items: center; }
 
         select {
-            background-color: #34495e; color: white; border: 1px solid #5d6d7e;
+            background-color: #2c3e50; color: white; border: 1px solid #5d6d7e;
             padding: 8px 10px; border-radius: 8px; font-size: 14px;
             outline: none; font-weight: bold; cursor: pointer;
-            width: auto; max-width: 300px; min-width: 100px;
+            width: auto; max-width: 250px; min-width: 100px;
             text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
             transition: width 0.2s ease;
         }
@@ -35,112 +36,116 @@
         .stage {
             flex: 1; display: flex; justify-content: center; align-items: center;
             position: relative; padding: 20px; width: 100%; box-sizing: border-box;
+            background-color: #ecf0f1;
         }
         .card {
             background: white; width: 100%; max-width: 900px; height: 100%; max-height: 600px;
-            border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             display: flex; flex-direction: column; overflow: hidden; position: relative;
         }
 
-        /* =========================================
-           레이아웃 1: Look & Say / Blanks / Speed
-           (상단 2/3 + 하단 1/3 구조)
-           ========================================= */
-        #lookSayLayout {
-            display: flex; flex-direction: column; height: 100%; width: 100%;
+        /* === 타이머 & 폭탄 UI === */
+        .timer-container {
+            position: absolute; top: 0; left: 0; width: 100%; height: 10px;
+            background: #ddd; z-index: 50; display: none;
         }
-        /* 상단 2/3: 문제 표시 영역 */
-        .ls-upper {
-            flex: 2; display: flex; flex-direction: column; justify-content: center; align-items: center;
-            padding: 20px; border-bottom: 1px solid #f0f0f0; overflow: hidden; text-align: center;
+        .bomb-icon {
+            position: absolute; left: 5px; top: 12px; font-size: 40px; z-index: 51;
+            transform: translateY(-50%); filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+            transition: transform 0.2s;
         }
-        /* 하단 1/3: 정답 박스 영역 */
-        .ls-lower {
-            flex: 1; display: flex; justify-content: center; align-items: center;
-            padding: 20px; background-color: #fafafa;
+        .timer-bar {
+            height: 100%; background: #e74c3c; width: 100%;
+            transition: width 1s linear; border-radius: 0 5px 5px 0;
+            box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
         }
+        .timer-container.urgent .bomb-icon { animation: shake 0.5s infinite; }
+        .timer-container.urgent .timer-bar { background: #c0392b; }
 
-        /* 콘텐츠 스타일 */
+        .explosion-popup {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0);
+            font-size: 150px; z-index: 200; pointer-events: none;
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        .explosion-popup.boom { transform: translate(-50%, -50%) scale(1); animation: shake 0.5s; }
+
+        /* === Layout 1: Look & Say / Blanks / Speed === */
+        #lookSayLayout { display: flex; flex-direction: column; height: 100%; width: 100%; }
+        .ls-upper { flex: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; text-align: center; border-bottom: 1px solid #eee; overflow: hidden;}
+        .ls-lower { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #fafafa; }
+        
         .q-text { font-size: 36px; font-weight: 800; color: #2c3e50; line-height: 1.4; word-break: keep-all; }
         .q-image { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px; display: none; }
         .q-emoji { font-size: 140px; line-height: 1; display: none; animation: pop 0.3s; }
         .blank-text { font-size: 32px; font-weight: bold; color: #2c3e50; line-height: 1.6; display: none; }
 
-        /* 정답 확인 박스 */
-        .answer-box {
-            width: 90%; height: 70%; border-radius: 15px; font-weight: bold; font-size: 24px;
-            cursor: pointer; transition: all 0.3s; display: flex; justify-content: center; align-items: center; text-align: center;
-            background-color: white; color: #95a5a6; border: 2px dashed #bdc3c7;
-        }
-        .answer-box.visible {
-            background-color: #3498db; color: white; border: 2px solid #3498db;
-            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4); transform: translateY(-5px);
-        }
+        .answer-box { width: 90%; height: 70%; border-radius: 15px; font-weight: bold; font-size: 24px; cursor: pointer; display: flex; justify-content: center; align-items: center; text-align: center; background-color: white; color: #95a5a6; border: 2px dashed #bdc3c7; transition: all 0.2s; }
+        .answer-box.visible { background-color: #3498db; color: white; border: 2px solid #3498db; box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4); transform: translateY(-5px); }
 
-        /* =========================================
-           레이아웃 2: Unscramble / Dictation
-           (상단 - 중단 - 하단 3분할 구조)
-           ========================================= */
-        #unscrambleLayout {
-            display: none; flex-direction: column; height: 100%; width: 100%;
-        }
-        /* 상단: 질문(한글) or 듣기 버튼 */
-        .us-top {
-            flex: 1; display: flex; justify-content: center; align-items: center;
-            padding: 10px 20px; border-bottom: 1px solid #eee; background: #fff;
-        }
-        .us-top .q-text { font-size: 28px; }
-
-        /* 중단: 정답 슬롯 */
-        .us-mid {
-            flex: 1.2; background: #f0f4f8; padding: 20px;
-            display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 8px;
-            overflow-y: auto; transition: background 0.3s;
-        }
+        /* === Layout 2: Unscramble / Dictation === */
+        #unscrambleLayout { display: none; flex-direction: column; height: 100%; width: 100%; }
+        .us-top { flex: 1; display: flex; justify-content: center; align-items: center; padding: 10px 20px; border-bottom: 1px solid #eee; background: #fff; }
+        .us-mid { flex: 1.2; background: #f0f4f8; padding: 20px; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 8px; overflow-y: auto; transition: background 0.3s; }
         .us-mid.correct { background: #e3f9e5; box-shadow: inset 0 0 20px rgba(46, 204, 113, 0.2); }
+        .us-bot { flex: 1; padding: 20px; background: white; border-top: 1px solid #eee; display: flex; flex-wrap: wrap; justify-content: center; align-content: center; gap: 10px; }
 
-        /* 하단: 단어 블록 풀 */
-        .us-bot {
-            flex: 1; padding: 20px; background: white; border-top: 1px solid #eee;
-            display: flex; flex-wrap: wrap; justify-content: center; align-content: center; gap: 10px;
-        }
-
-        /* ★ 단어 블록 (작고 깔끔하게 수정됨) ★ */
-        .word-block {
-            background: white; border: 2px solid #3498db; color: #2c3e50;
-            padding: 8px 16px; /* 패딩 축소 */
-            border-radius: 8px; /* 둥근 사각형 */
-            font-size: 18px; font-weight: bold;
-            cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.1s, background 0.1s;
-            display: flex; align-items: center; justify-content: center; text-align: center;
-        }
+        .word-block { background: white; border: 2px solid #3498db; color: #2c3e50; padding: 8px 16px; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.1s; display: flex; align-items: center; justify-content: center; text-align: center; }
         .word-block:active { transform: scale(0.95); }
-        .word-block.used { opacity: 0; pointer-events: none; width: 0; padding: 0; margin: 0; border: 0; overflow: hidden; }
-        .us-mid .word-block { background: #3498db; color: white; border-color: #3498db; box-shadow: none; }
+        .word-block.used { display: none !important; } /* 이동 효과 */
+        .listen-btn { background: #f1c40f; color: #2c3e50; border: none; padding: 10px 30px; border-radius: 50px; font-size: 22px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s; display: none; align-items: center; gap: 10px; }
 
-        /* 듣기 버튼 (Dictation용) */
-        .listen-btn {
-            background: #f1c40f; color: #2c3e50; border: none; padding: 10px 30px; border-radius: 50px;
-            font-size: 22px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s; display: none; align-items: center; gap: 10px;
+        /* === Layout 3: Memory Match === */
+        #memoryLayout { display: none; height: 100%; width: 100%; padding: 40px 20px 20px; box-sizing: border-box; flex-wrap: wrap; align-content: center; justify-content: center; gap: 10px; background: #f8f9fa; position: relative; }
+        .mem-stats { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); font-size: 18px; font-weight: bold; color: #34495e; background: rgba(255,255,255,0.9); padding: 5px 15px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 10px; }
+        .mem-card { width: calc(25% - 10px); height: calc(33% - 10px); position: relative; perspective: 1000px; cursor: pointer; }
+        .mem-inner { width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .mem-card.flipped .mem-inner { transform: rotateY(180deg); }
+        .mem-card.matched { visibility: hidden; opacity: 0; transition: opacity 0.5s; pointer-events: none; }
+        .mem-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; justify-content: center; align-items: center; border-radius: 10px; padding: 10px; box-sizing: border-box; font-weight: bold; word-break: keep-all; font-size: 14px; }
+        .mem-front { background-color: #34495e; color: #ecf0f1; font-size: 24px; }
+        .mem-back { background-color: white; color: #2c3e50; border: 2px solid #3498db; transform: rotateY(180deg); }
+
+        /* === Layout 4: Quiz Show (Grid 2x2) === */
+        #quizLayout { display: none; flex-direction: column; height: 100%; width: 100%; padding-top: 15px;}
+        .quiz-q-area { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; text-align: center; }
+        .quiz-body { flex: 1.5; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; background: #ecf0f1; }
+        .quiz-btn { background: white; border: 3px solid #bdc3c7; border-radius: 15px; font-size: 18px; font-weight: bold; color: #34495e; cursor: pointer; transition: 0.2s; display: flex; justify-content: center; align-items: center; text-align: center; padding: 10px; word-break: keep-all; line-height: 1.3; box-shadow: 0 3px 6px rgba(0,0,0,0.05); }
+        .quiz-btn.correct { background: #2ecc71; border-color: #27ae60; color: white; }
+        .quiz-btn.wrong { background: #e74c3c; border-color: #c0392b; color: white; animation: shake 0.4s; }
+
+        /* === Layout 5: Flash Sentence (Vertical) === */
+        #flashLayout { display: none; flex-direction: column; height: 100%; width: 100%; padding-top: 20px; background: #ecf0f1; }
+        .flash-list { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; padding: 20px 40px; overflow-y: auto; }
+        .flash-btn { 
+            width: 100%; max-width: 600px; 
+            padding: 15px; background: white; border: 2px solid #bdc3c7; border-radius: 12px; 
+            font-size: 20px; font-weight: bold; color: #34495e; cursor: pointer; text-align: center; 
+            transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
         }
-        .listen-btn:active { transform: scale(0.95); }
+        .flash-btn:active { transform: scale(0.98); }
+        .flash-btn.correct { background: #2ecc71; border-color: #27ae60; color: white; }
+        .flash-btn.wrong { background: #e74c3c; border-color: #c0392b; color: white; animation: shake 0.4s; }
 
-        /* Speed Game Timer */
-        .timer-bar-bg { position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: #eee; display: none;}
-        .timer-bar { height: 100%; background: #e74c3c; width: 100%; transition: width 1s linear; }
+        /* Flash Overlay */
+        .flash-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #2c3e50; color: white; z-index: 50; display: none; flex-direction: column; justify-content: center; align-items: center; font-size: 40px; font-weight: 900; text-align: center; padding: 20px; box-sizing: border-box;}
+        
+        @keyframes shake { 0% { transform: translateX(0); } 25% { transform: translateX(-5px); } 50% { transform: translateX(5px); } 75% { transform: translateX(-5px); } 100% { transform: translateX(0); } }
+        @keyframes pop { 0% { transform: scale(0.5); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
 
-        /* 네비게이션 */
         .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: 1px solid #ddd; width: 60px; height: 60px; border-radius: 50%; font-size: 28px; cursor: pointer; color: #2c3e50; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 20; display: flex; justify-content: center; align-items: center; }
         .nav-prev { left: 10px; } .nav-next { right: 10px; }
-        .progress-bar { position: absolute; bottom: 15px; font-size: 14px; color: #95a5a6; font-weight: bold; left: 50%; transform: translateX(-50%); }
+        .progress-bar { position: absolute; bottom: 15px; font-size: 14px; color: #95a5a6; font-weight: bold; left: 50%; transform: translateX(-50%); z-index: 5;}
+        
+        .hidden { display: none !important; }
 
         @media (max-width: 768px) {
-            .q-text { font-size: 26px; }
-            .us-top .q-text { font-size: 20px; }
+            .mem-card { width: calc(33% - 10px); height: calc(25% - 10px); }
+            .quiz-body { grid-template-columns: 1fr; }
+            .q-text { font-size: 24px; }
             .word-block { font-size: 16px; padding: 6px 12px; }
-            .card { height: 100%; border-radius: 0; } 
+            .flash-btn { font-size: 16px; padding: 12px; }
+            .card { height: 100%; border-radius: 0; }
             .stage { padding: 0; } .logo span { display: none; }
             select { max-width: 150px; }
         }
@@ -159,6 +164,9 @@
             <option value="dictation">3. Block Dictation</option>
             <option value="blanks">4. Pattern Blanks</option>
             <option value="speed">5. Speed Game</option>
+            <option value="memory">6. Memory Match 🃏</option>
+            <option value="quiz">7. Quiz Show 💣</option>
+            <option value="flash">8. Flash Sentence ⚡</option>
         </select>
     </div>
 </header>
@@ -168,7 +176,15 @@
     <button class="nav-btn nav-next" onclick="nextSlide()">❯</button>
 
     <div class="card">
-        <div id="speedTimer" class="timer-bar-bg"><div id="timerBar" class="timer-bar"></div></div>
+        <div id="gameTimer" class="timer-container">
+            <div class="bomb-icon">💣</div>
+            <div id="timerBar" class="timer-bar"></div>
+        </div>
+        <div id="explosionPopup" class="explosion-popup">💥</div>
+
+        <div id="flashOverlay" class="flash-overlay">
+            <div id="flashContent">Ready...</div>
+        </div>
 
         <div id="lookSayLayout">
             <div class="ls-upper">
@@ -192,6 +208,25 @@
             <div id="usSlot" class="us-mid"></div>
             <div id="usPool" class="us-bot"></div>
         </div>
+
+        <div id="memoryLayout">
+            <div class="mem-stats">
+                <span>❤️ Moves: <span id="memMoves">20</span></span>
+            </div>
+        </div>
+
+        <div id="quizLayout">
+            <div class="quiz-q-area">
+                <div id="quizQ" class="q-text">Question</div>
+            </div>
+            <div id="quizBody" class="quiz-body">
+                </div>
+        </div>
+
+        <div id="flashLayout">
+            <div id="flashOptions" class="flash-list">
+                </div>
+        </div>
     </div>
 
     <div class="progress-bar" id="progress">1 / 10</div>
@@ -213,6 +248,13 @@
     let currentMode = "looksay";
     let timerInterval = null; 
     let unscrambleState = { target: "", selected: [] };
+    
+    // 게임 변수
+    let memoryFlipped = [];
+    let memoryMoves = 20;
+    let quizAnswerIdx = 0;
+    let quizLocked = false;
+    let flashDuration = 700;
 
     window.onload = function() {
         if (typeof bookData === 'undefined') { alert("data.js 없음"); return; }
@@ -245,11 +287,10 @@
         const bookName = document.getElementById('bookSel').value;
         const pNum = parseInt(document.getElementById('patSel').value);
         currentMode = document.getElementById('actSel').value;
-        
         const allItems = bookData[bookName].filter(d => d["Pattern #"] === pNum);
         
-        // 데이터 필터링: 블록형 게임은 Unscramble 데이터 우선
-        if (currentMode === 'unscramble' || currentMode === 'dictation') {
+        // 데이터 필터링
+        if (['unscramble', 'dictation', 'flash', 'quiz'].includes(currentMode)) {
             currentItems = allItems.filter(d => d.Section === "Unscramble");
             if (!currentItems.length) currentItems = allItems.filter(d => d.Section === "Speaking II");
         } else {
@@ -257,72 +298,65 @@
             if (!currentItems.length) currentItems = allItems.filter(d => d.Section === "Unscramble");
         }
 
-        currentIndex = 0;
+        flashDuration = 700; 
+        if (currentMode === 'memory') {
+            currentIndex = 0; renderMemoryGame();
+        } else {
+            currentIndex = 0; renderSlide();
+        }
         clearInterval(timerInterval);
-        renderSlide();
     }
 
     function renderSlide() {
+        if (currentMode === 'memory') return;
         if (currentItems.length === 0) return;
         const item = currentItems[currentIndex];
         
         const els = {
-            lsLayout: document.getElementById('lookSayLayout'),
-            usLayout: document.getElementById('unscrambleLayout'),
-            qText: document.getElementById('qText'),
-            blankText: document.getElementById('blankText'),
-            qImg: document.getElementById('qImg'),
-            qEmoji: document.getElementById('qEmoji'),
-            aBox: document.getElementById('aBox'),
-            usText: document.getElementById('usText'),
-            listenBtn: document.getElementById('listenBtn'),
-            timer: document.getElementById('speedTimer'),
-            progress: document.getElementById('progress')
+            ls: document.getElementById('lookSayLayout'),
+            us: document.getElementById('unscrambleLayout'),
+            mem: document.getElementById('memoryLayout'),
+            quiz: document.getElementById('quizLayout'),
+            flashDiv: document.getElementById('flashLayout'),
+            overlay: document.getElementById('flashOverlay'),
+            timer: document.getElementById('gameTimer'),
+            boom: document.getElementById('explosionPopup'),
+            prog: document.getElementById('progress')
         };
 
         // 초기화
-        els.lsLayout.style.display = 'none';
-        els.usLayout.style.display = 'none';
-        els.timer.style.display = 'none';
-        
-        // Look & Say 요소 초기화
-        els.qText.style.display = 'none';
-        els.blankText.style.display = 'none';
-        els.qImg.style.display = 'none';
-        els.qEmoji.style.display = 'none';
-        els.aBox.className = "answer-box";
-        els.aBox.innerText = "👆 Tap to check answer";
-        els.progress.innerText = `${currentIndex + 1} / ${currentItems.length}`;
+        [els.ls, els.us, els.mem, els.quiz, els.flashDiv, els.overlay, els.timer].forEach(e => e.style.display = 'none');
+        els.boom.classList.remove('boom');
+        els.timer.classList.remove('urgent');
+        els.prog.innerText = `${currentIndex + 1} / ${currentItems.length}`;
+
+        // 공통 요소 Reset
+        document.getElementById('qText').style.display = 'none';
+        document.getElementById('qImg').style.display = 'none';
+        document.getElementById('qEmoji').style.display = 'none';
+        document.getElementById('blankText').style.display = 'none';
 
         // 이미지 체크
         let hasImage = false;
-        const imageVal = item["Image"] ? item["Image"].trim() : "";
-        
-        if (imageVal !== "") {
+        let imageVal = item["Image"] ? item["Image"].trim() : "";
+        if (imageVal && currentMode !== 'dictation') {
+            hasImage = true;
+            const qImg = document.getElementById('qImg');
+            const qEmoji = document.getElementById('qEmoji');
             if (imageVal.includes('.') || imageVal.includes('/')) {
-                els.qImg.src = "images/" + imageVal;
-                if(currentMode !== 'dictation') hasImage = true; // 딕테이션일땐 이미지 안씀
+                qImg.src = "images/" + imageVal;
             } else {
-                els.qEmoji.innerText = imageVal;
-                if(currentMode !== 'dictation') hasImage = true;
+                qEmoji.innerText = imageVal;
             }
         }
 
-        // 모드별 렌더링
-        switch(currentMode) {
-            case 'looksay':
-                els.lsLayout.style.display = 'flex';
-                if (hasImage) {
-                    if(els.qImg.src) els.qImg.style.display = 'block';
-                    else els.qEmoji.style.display = 'block';
-                } else {
-                    els.qText.innerText = item["Korean/Question"];
-                    els.qText.style.display = 'block';
-                }
-                break;
+        // --- 모드별 로직 ---
+        if (['looksay', 'blanks', 'speed'].includes(currentMode)) {
+            els.ls.style.display = 'flex';
+            document.getElementById('aBox').className = "answer-box";
+            document.getElementById('aBox').innerText = "👆 Tap to check answer";
 
-            case 'blanks':
-                els.lsLayout.style.display = 'flex';
+            if (currentMode === 'blanks') {
                 let patName = item["Pattern Name"].replace(/[\.\~\?\[\]]/g, "").trim();
                 let sentence = item["English/Answer"];
                 let regex = new RegExp(patName, "i");
@@ -331,42 +365,191 @@
                     let parts = sentence.split(" ");
                     if(parts.length > 1) { parts[0] = "____"; parts[1] = "____"; masked = parts.join(" "); }
                 }
-                els.blankText.innerHTML = masked;
-                els.blankText.style.display = 'block';
-                break;
-
-            case 'speed':
-                els.lsLayout.style.display = 'flex';
-                els.timer.style.display = 'block';
+                document.getElementById('blankText').innerHTML = masked; 
+                document.getElementById('blankText').style.display = 'block';
+            } else {
                 if (hasImage) {
-                    if(els.qImg.src) els.qImg.style.display = 'block';
-                    else els.qEmoji.style.display = 'block';
+                    if(document.getElementById('qImg').src.includes(imageVal)) document.getElementById('qImg').style.display = 'block'; 
+                    else document.getElementById('qEmoji').style.display = 'block';
                 } else {
-                    els.qText.innerText = item["Korean/Question"];
-                    els.qText.style.display = 'block';
+                    document.getElementById('qText').innerText = item["Korean/Question"]; 
+                    document.getElementById('qText').style.display = 'block';
                 }
-                startTimer();
-                break;
+            }
 
-            case 'unscramble':
-                els.usLayout.style.display = 'flex';
-                els.usText.style.display = 'block';
-                els.listenBtn.style.display = 'none';
-                els.usText.innerText = item["Korean/Question"];
-                initUnscramble(item);
-                break;
+            if (currentMode === 'speed') {
+                els.timer.style.display = 'block';
+                startTimer(5000, () => {
+                    if (!document.getElementById('aBox').classList.contains('visible')) toggleAnswer();
+                });
+            }
+        } 
+        else if (['unscramble', 'dictation'].includes(currentMode)) {
+            els.us.style.display = 'flex';
+            const usText = document.getElementById('usText');
+            const listenBtn = document.getElementById('listenBtn');
+            usText.style.display = 'block'; listenBtn.style.display = 'none';
 
-            case 'dictation':
-                els.usLayout.style.display = 'flex';
-                els.usText.style.display = 'none'; // 텍스트 숨김
-                els.listenBtn.style.display = 'flex'; // 듣기 버튼 표시
-                initUnscramble(item);
-                break;
+            if (currentMode === 'dictation') {
+                usText.style.display = 'none'; listenBtn.style.display = 'flex';
+            } else {
+                usText.innerText = item["Korean/Question"];
+            }
+            initUnscramble(item);
+        }
+        else if (currentMode === 'quiz') {
+            els.quiz.style.display = 'flex';
+            // Quiz Mode도 Flash처럼 50% 확률로 영어/한글 질문 랜덤화
+            let isEngQuestion = Math.random() > 0.5;
+            renderQuizOrFlash(item, false, isEngQuestion); 
+        }
+        else if (currentMode === 'flash') {
+            els.overlay.style.display = 'flex'; 
+            els.flashDiv.style.display = 'none'; 
+            
+            const fContent = document.getElementById('flashContent');
+            fContent.innerText = "Ready...";
+            
+            let isEngQuestion = Math.random() > 0.5;
+            let questionText = isEngQuestion ? item["English/Answer"] : item["Korean/Question"];
+
+            setTimeout(() => {
+                fContent.innerText = questionText; 
+                if(navigator.vibrate) navigator.vibrate(50);
+                
+                setTimeout(() => {
+                    els.overlay.style.display = 'none'; 
+                    els.flashDiv.style.display = 'flex'; 
+                    els.timer.style.display = 'block'; 
+                    
+                    renderQuizOrFlash(item, true, isEngQuestion); 
+                    
+                    startTimer(5000, () => { 
+                        document.getElementById('explosionPopup').classList.add('boom');
+                        if(navigator.vibrate) navigator.vibrate([200, 100, 200]);
+                        quizLocked = true;
+                        // Time out -> Auto next
+                        setTimeout(() => nextSlide(), 1500);
+                    });
+
+                }, flashDuration); 
+
+            }, 1000); 
         }
     }
 
-    // --- 기능 로직 ---
+    // --- Quiz (Grid) & Flash (Vertical) Rendering Logic (Mixed Distractors) ---
+    function renderQuizOrFlash(item, isFlash, isEngQuestion) {
+        quizLocked = false;
+        let container, btnClass;
 
+        let questionText = isEngQuestion ? item["English/Answer"] : item["Korean/Question"];
+
+        if (!isFlash) {
+            // Quiz Mode: Grid Layout, 4 choices
+            container = document.getElementById('quizBody');
+            btnClass = 'quiz-btn';
+            document.getElementById('quizQ').innerText = questionText;
+        } else {
+            // Flash Mode: Vertical Layout, 5 choices
+            container = document.getElementById('flashOptions');
+            btnClass = 'flash-btn';
+            document.getElementById('quizQ').innerText = "What was the sentence?";
+        }
+        
+        container.innerHTML = "";
+        
+        // --- Distractor Logic (Mix Same Pattern & Diff Pattern) ---
+        let bookItems = bookData[document.getElementById('bookSel').value];
+        
+        // 1. Same Pattern Distractors (Excluding correct answer)
+        let samePat = bookItems.filter(d => 
+            d["Pattern #"] === item["Pattern #"] && 
+            d["English/Answer"] !== item["English/Answer"] &&
+            d["English/Answer"].trim() !== ""
+        );
+        
+        // 2. Diff Pattern Distractors
+        let diffPat = bookItems.filter(d => 
+            d["Pattern #"] !== item["Pattern #"] &&
+            d["English/Answer"] && d["English/Answer"].trim() !== ""
+        );
+
+        samePat.sort(() => Math.random() - 0.5);
+        diffPat.sort(() => Math.random() - 0.5);
+
+        // Logic: Pick up to 2 from samePat, rest from diffPat
+        let distractors = [];
+        if (samePat.length > 0) distractors.push(samePat[0]);
+        if (samePat.length > 1) distractors.push(samePat[1]);
+        
+        // Need total 3 distractors (for Quiz) or 4 (for Flash)
+        let totalNeeded = isFlash ? 4 : 3;
+        let remaining = totalNeeded - distractors.length;
+        distractors = distractors.concat(diffPat.slice(0, remaining));
+
+        // Determine target property for choices (Opposite of Question)
+        // If question is English -> Choices are Korean
+        // If question is Korean -> Choices are English
+        let targetProp = isEngQuestion ? "Korean/Question" : "English/Answer";
+
+        let choices = distractors.map(d => ({ txt: d[targetProp], isAns: false }));
+        choices.push({ txt: item[targetProp], isAns: true });
+        
+        choices.sort(() => Math.random() - 0.5);
+        quizAnswerIdx = choices.findIndex(c => c.isAns); 
+
+        choices.forEach((c, idx) => {
+            let btn = document.createElement('div');
+            btn.className = btnClass;
+            btn.innerText = c.txt;
+            btn.onclick = () => checkQuizAndNext(btn, idx, isFlash);
+            container.appendChild(btn);
+        });
+
+        if(!isFlash) {
+            document.getElementById('gameTimer').style.display = 'block';
+            startTimer(5000, () => {
+                 document.getElementById('explosionPopup').classList.add('boom');
+                 if(navigator.vibrate) navigator.vibrate([200, 100, 200]);
+                 quizLocked = true;
+                 setTimeout(() => nextSlide(), 1500);
+            });
+        }
+    }
+
+    // --- Check Quiz & Auto Next ---
+    function checkQuizAndNext(btn, idx, isFlash) {
+        if (quizLocked) return;
+        quizLocked = true;
+        clearInterval(timerInterval);
+
+        const btnClass = isFlash ? '.flash-btn' : '.quiz-btn';
+
+        if (idx === quizAnswerIdx) {
+            btn.classList.add('correct');
+            if(navigator.vibrate) navigator.vibrate(50);
+            if (isFlash && flashDuration > 200) flashDuration -= 50;
+
+            // Correct -> 0.5s auto next
+            setTimeout(() => {
+                nextSlide();
+            }, 500);
+
+        } else {
+            btn.classList.add('wrong');
+            document.querySelectorAll(btnClass)[quizAnswerIdx].classList.add('correct');
+            if(navigator.vibrate) navigator.vibrate(200);
+            if(isFlash) flashDuration = 700;
+
+            // Wrong -> 1.5s auto next
+            setTimeout(() => {
+                nextSlide();
+            }, 1500);
+        }
+    }
+
+    // --- Helpers ---
     function toggleAnswer() {
         const item = currentItems[currentIndex];
         const aBox = document.getElementById('aBox');
@@ -374,7 +557,10 @@
             aBox.classList.remove('visible'); aBox.innerText = "👆 Tap to check answer";
         } else {
             aBox.classList.add('visible'); aBox.innerText = item["English/Answer"];
-            if(currentMode === 'speed') clearInterval(timerInterval);
+            if(currentMode === 'speed') {
+                clearInterval(timerInterval);
+                setTimeout(() => nextSlide(), 1500); // Speed Game Auto Next
+            }
         }
     }
 
@@ -382,7 +568,6 @@
         const usSlot = document.getElementById('usSlot');
         const usPool = document.getElementById('usPool');
         usSlot.innerHTML = ""; usPool.innerHTML = ""; usSlot.className = "us-mid";
-        
         unscrambleState.target = item["English/Answer"].replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
         
         let raw = item["Scrambled"] || item["English/Answer"];
@@ -403,54 +588,93 @@
             usPool.appendChild(btn);
         });
     }
-
     function checkUnscramble() {
         const currentWords = Array.from(document.querySelectorAll("#usSlot .word-block")).map(el=>el.innerText).join("");
         const currentClean = currentWords.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-        
         if (currentClean === unscrambleState.target && currentClean.length > 0) {
             document.getElementById('usSlot').classList.add("correct");
-            if(navigator.vibrate) navigator.vibrate(50);
+            if(navigator.vibrate) navigator.vibrate(100);
         } else {
             document.getElementById('usSlot').classList.remove("correct");
         }
     }
 
+    function renderMemoryGame() {
+        const memLayout = document.getElementById('memoryLayout');
+        const all = document.querySelectorAll('.card > div:not(.timer-container):not(.explosion-popup):not(.flash-overlay)');
+        all.forEach(e => e.style.display = 'none');
+        memLayout.style.display = 'flex';
+        memLayout.innerHTML = '<div class="mem-stats"><span>❤️ Moves: <span id="memMoves">20</span></span></div>';
+        memoryMoves = 20;
+        let subset = currentItems.slice(0, 6);
+        let deck = [];
+        subset.forEach((item, idx) => {
+            deck.push({ id: idx, content: item["Korean/Question"] });
+            deck.push({ id: idx, content: item["English/Answer"] });
+        });
+        deck.sort(() => Math.random() - 0.5);
+        deck.forEach(card => {
+            let el = document.createElement('div');
+            el.className = 'mem-card';
+            el.innerHTML = `<div class="mem-inner"><div class="mem-face mem-front">?</div><div class="mem-face mem-back">${card.content}</div></div>`;
+            el.onclick = () => flipCard(el, card);
+            memLayout.appendChild(el);
+        });
+        memoryFlipped = [];
+    }
+
+    function flipCard(el, card) {
+        if (memoryMoves <= 0 || el.classList.contains('flipped') || memoryFlipped.length >= 2) return;
+        el.classList.add('flipped');
+        memoryFlipped.push({ el, card });
+        if (memoryFlipped.length === 2) {
+            memoryMoves--;
+            document.getElementById('memMoves').innerText = memoryMoves;
+            const [c1, c2] = memoryFlipped;
+            if (c1.card.id === c2.card.id) {
+                setTimeout(() => { c1.el.classList.add('matched'); c2.el.classList.add('matched'); memoryFlipped=[]; }, 500);
+            } else {
+                setTimeout(() => { c1.el.classList.remove('flipped'); c2.el.classList.remove('flipped'); memoryFlipped=[]; }, 1000);
+            }
+            if (memoryMoves === 0) alert("Game Over!");
+        }
+    }
+
+    function startTimer(duration, callback) {
+        const bar = document.getElementById('timerBar');
+        const cont = document.getElementById('gameTimer');
+        cont.classList.remove('urgent');
+        bar.style.transition = 'none'; bar.style.width = '100%';
+        setTimeout(() => { 
+            bar.style.transition = `width ${duration/1000}s linear`; 
+            bar.style.width = '0%'; 
+        }, 50);
+        setTimeout(() => { cont.classList.add('urgent'); }, duration * 0.7);
+        clearInterval(timerInterval);
+        timerInterval = setTimeout(callback, duration);
+    }
     function speakText() {
         const item = currentItems[currentIndex];
-        const utterance = new SpeechSynthesisUtterance(item["English/Answer"]);
-        utterance.lang = 'en-US'; utterance.rate = 0.9;
-        window.speechSynthesis.speak(utterance);
+        const u = new SpeechSynthesisUtterance(item["English/Answer"]);
+        u.lang = 'en-US'; u.rate = 0.9; window.speechSynthesis.speak(u);
     }
-
-    function startTimer() {
-        const bar = document.getElementById('timerBar');
-        bar.style.transition = 'none'; bar.style.width = '100%';
-        setTimeout(() => { bar.style.transition = 'width 5s linear'; bar.style.width = '0%'; }, 50);
-        clearInterval(timerInterval);
-        timerInterval = setTimeout(() => {
-            const aBox = document.getElementById('aBox');
-            if (!aBox.classList.contains('visible')) toggleAnswer();
-        }, 5000);
+    function nextSlide() { 
+        if (currentIndex < currentItems.length - 1) { 
+            currentIndex++; 
+            renderSlide(); 
+        } else {
+            alert("End of Activity! Great Job! 🎉");
+        }
     }
-
-    function nextSlide() { if (currentIndex < currentItems.length - 1) { currentIndex++; renderSlide(); } }
     function prevSlide() { if (currentIndex > 0) { currentIndex--; renderSlide(); } }
-
     function initTouchEvents() {
-        let ts = 0;
-        const stage = document.getElementById('touchStage');
-        stage.addEventListener('touchstart', e => { ts = e.changedTouches[0].screenX; }, {passive: true});
-        stage.addEventListener('touchend', e => { 
-            let te = e.changedTouches[0].screenX; 
-            if (te < ts - 60) nextSlide(); if (te > ts + 60) prevSlide();
-        }, {passive: true});
+        let ts=0; const s=document.getElementById('touchStage');
+        s.addEventListener('touchstart',e=>{ts=e.changedTouches[0].screenX},{passive:true});
+        s.addEventListener('touchend',e=>{let te=e.changedTouches[0].screenX; if(te<ts-60)nextSlide(); if(te>ts+60)prevSlide();},{passive:true});
     }
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === "ArrowRight") nextSlide();
-        if (e.key === "ArrowLeft") prevSlide();
-        if (e.key === " ") toggleAnswer();
+    document.addEventListener('keydown', e => {
+        if(e.key==="ArrowRight") nextSlide(); if(e.key==="ArrowLeft") prevSlide();
+        if(e.key===" " && ['looksay','speed','blanks'].includes(currentMode)) toggleAnswer();
     });
 </script>
 </body>
