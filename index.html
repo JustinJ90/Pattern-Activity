@@ -42,66 +42,107 @@
             display: flex; flex-direction: column; overflow: hidden; position: relative;
         }
 
-        /* --- 공통 질문 영역 --- */
-        .q-area { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; text-align: center; }
-        .q-text { font-size: 32px; font-weight: 800; color: #2c3e50; margin-bottom: 20px; word-break: keep-all; }
-        .q-sub { font-size: 18px; color: #7f8c8d; margin-bottom: 15px; font-weight: bold; }
-        .q-image { max-width: 100%; max-height: 250px; object-fit: contain; border-radius: 10px; display: none; margin-bottom: 15px; }
-        .q-emoji { font-size: 100px; line-height: 1; display: none; margin-bottom: 15px; animation: pop 0.3s; }
-
-        /* --- 정답 박스 (Look & Say, Blanks, Speed 용) --- */
-        .answer-area { 
-            height: 100px; background: #fafafa; display: flex; justify-content: center; align-items: center; padding: 20px; 
+        /* =========================================
+           레이아웃 1: Look & Say / Blanks / Speed
+           (상단 2/3 + 하단 1/3 구조)
+           ========================================= */
+        #lookSayLayout {
+            display: flex; flex-direction: column; height: 100%; width: 100%;
         }
+        /* 상단 2/3: 문제 표시 영역 */
+        .ls-upper {
+            flex: 2; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            padding: 20px; border-bottom: 1px solid #f0f0f0; overflow: hidden; text-align: center;
+        }
+        /* 하단 1/3: 정답 박스 영역 */
+        .ls-lower {
+            flex: 1; display: flex; justify-content: center; align-items: center;
+            padding: 20px; background-color: #fafafa;
+        }
+
+        /* 콘텐츠 스타일 */
+        .q-text { font-size: 36px; font-weight: 800; color: #2c3e50; line-height: 1.4; word-break: keep-all; }
+        .q-image { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px; display: none; }
+        .q-emoji { font-size: 140px; line-height: 1; display: none; animation: pop 0.3s; }
+        .blank-text { font-size: 32px; font-weight: bold; color: #2c3e50; line-height: 1.6; display: none; }
+
+        /* 정답 확인 박스 */
         .answer-box {
-            width: 90%; height: 60px; border-radius: 12px; font-weight: bold; font-size: 22px;
-            cursor: pointer; display: flex; justify-content: center; align-items: center; text-align: center;
-            background-color: white; color: #95a5a6; border: 2px dashed #bdc3c7; transition: all 0.3s;
+            width: 90%; height: 70%; border-radius: 15px; font-weight: bold; font-size: 24px;
+            cursor: pointer; transition: all 0.3s; display: flex; justify-content: center; align-items: center; text-align: center;
+            background-color: white; color: #95a5a6; border: 2px dashed #bdc3c7;
         }
         .answer-box.visible {
             background-color: #3498db; color: white; border: 2px solid #3498db;
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4); transform: translateY(-3px); font-size: 26px;
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4); transform: translateY(-5px);
         }
 
-        /* --- [Mode 2 & 3] Unscramble & Dictation Block --- */
-        .us-slot { flex: 1; background: #f0f4f8; border-radius: 10px; margin: 10px; padding: 10px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; border: 2px solid #dce4ec;}
-        .us-slot.correct { background: #e3f9e5; border-color: #2ecc71; }
-        .us-pool { min-height: 100px; background: white; padding: 10px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; border-top: 1px solid #eee; }
-        
-        .word-block { background: white; border: 2px solid #3498db; color: #2c3e50; padding: 6px 14px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.2s; font-size: 18px; }
-        .word-block:active { transform: scale(0.95); }
-        .us-slot .word-block { background: #3498db; color: white; }
+        /* =========================================
+           레이아웃 2: Unscramble / Dictation
+           (상단 - 중단 - 하단 3분할 구조)
+           ========================================= */
+        #unscrambleLayout {
+            display: none; flex-direction: column; height: 100%; width: 100%;
+        }
+        /* 상단: 질문(한글) or 듣기 버튼 */
+        .us-top {
+            flex: 1; display: flex; justify-content: center; align-items: center;
+            padding: 10px 20px; border-bottom: 1px solid #eee; background: #fff;
+        }
+        .us-top .q-text { font-size: 28px; }
 
-        /* --- [Mode 3] Dictation Button --- */
+        /* 중단: 정답 슬롯 */
+        .us-mid {
+            flex: 1.2; background: #f0f4f8; padding: 20px;
+            display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 8px;
+            overflow-y: auto; transition: background 0.3s;
+        }
+        .us-mid.correct { background: #e3f9e5; box-shadow: inset 0 0 20px rgba(46, 204, 113, 0.2); }
+
+        /* 하단: 단어 블록 풀 */
+        .us-bot {
+            flex: 1; padding: 20px; background: white; border-top: 1px solid #eee;
+            display: flex; flex-wrap: wrap; justify-content: center; align-content: center; gap: 10px;
+        }
+
+        /* ★ 단어 블록 (작고 깔끔하게 수정됨) ★ */
+        .word-block {
+            background: white; border: 2px solid #3498db; color: #2c3e50;
+            padding: 8px 16px; /* 패딩 축소 */
+            border-radius: 8px; /* 둥근 사각형 */
+            font-size: 18px; font-weight: bold;
+            cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.1s, background 0.1s;
+            display: flex; align-items: center; justify-content: center; text-align: center;
+        }
+        .word-block:active { transform: scale(0.95); }
+        .word-block.used { opacity: 0; pointer-events: none; width: 0; padding: 0; margin: 0; border: 0; overflow: hidden; }
+        .us-mid .word-block { background: #3498db; color: white; border-color: #3498db; box-shadow: none; }
+
+        /* 듣기 버튼 (Dictation용) */
         .listen-btn {
-            background: #f1c40f; color: #2c3e50; border: none; padding: 15px 30px; border-radius: 50px;
-            font-size: 24px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s; display: flex; align-items: center; gap: 10px;
+            background: #f1c40f; color: #2c3e50; border: none; padding: 10px 30px; border-radius: 50px;
+            font-size: 22px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s; display: none; align-items: center; gap: 10px;
         }
         .listen-btn:active { transform: scale(0.95); }
-        .listen-btn:hover { background: #f39c12; color: white; }
 
-        /* --- [Mode 4] Pattern Blanks --- */
-        .blank-text { font-size: 32px; font-weight: bold; color: #2c3e50; line-height: 1.6; }
-        
-        /* --- [Mode 5] Speed Game --- */
-        .timer-bar-bg { position: absolute; top: 0; left: 0; width: 100%; height: 8px; background: #eee; }
+        /* Speed Game Timer */
+        .timer-bar-bg { position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: #eee; display: none;}
         .timer-bar { height: 100%; background: #e74c3c; width: 100%; transition: width 1s linear; }
-        
+
         /* 네비게이션 */
-        .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: 1px solid #ddd; width: 60px; height: 60px; border-radius: 50%; font-size: 28px; cursor: pointer; color: #2c3e50; z-index: 20; display: flex; justify-content: center; align-items: center; }
+        .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: 1px solid #ddd; width: 60px; height: 60px; border-radius: 50%; font-size: 28px; cursor: pointer; color: #2c3e50; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 20; display: flex; justify-content: center; align-items: center; }
         .nav-prev { left: 10px; } .nav-next { right: 10px; }
         .progress-bar { position: absolute; bottom: 15px; font-size: 14px; color: #95a5a6; font-weight: bold; left: 50%; transform: translateX(-50%); }
 
-        /* 유틸 */
-        .hidden { display: none !important; }
-        @keyframes pop { 0% { transform: scale(0.5); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
-
         @media (max-width: 768px) {
-            .q-text { font-size: 24px; }
-            .word-block { font-size: 16px; padding: 5px 10px; }
+            .q-text { font-size: 26px; }
+            .us-top .q-text { font-size: 20px; }
+            .word-block { font-size: 16px; padding: 6px 12px; }
             .card { height: 100%; border-radius: 0; } 
             .stage { padding: 0; } .logo span { display: none; }
+            select { max-width: 150px; }
         }
     </style>
 </head>
@@ -127,31 +168,29 @@
     <button class="nav-btn nav-next" onclick="nextSlide()">❯</button>
 
     <div class="card">
-        
-        <div id="speedTimerArea" class="timer-bar-bg hidden"><div id="timerBar" class="timer-bar"></div></div>
+        <div id="speedTimer" class="timer-bar-bg"><div id="timerBar" class="timer-bar"></div></div>
 
-        <div class="q-area">
-            <img id="qImg" class="q-image" src="" alt="Image">
-            <div id="qEmoji" class="q-emoji"></div>
-            
-            <div id="qText" class="q-text">Loading...</div>
-
-            <div id="blankText" class="blank-text hidden"></div>
-
-            <div id="dicArea" class="hidden">
-                <button class="listen-btn" onclick="speakText()">🔊 Tap to Listen</button>
+        <div id="lookSayLayout">
+            <div class="ls-upper">
+                <div id="qText" class="q-text">Loading...</div>
+                <div id="blankText" class="blank-text"></div>
+                <img id="qImg" class="q-image" src="" alt="Question">
+                <div id="qEmoji" class="q-emoji"></div>
+            </div>
+            <div class="ls-lower">
+                <div class="answer-box" id="aBox" onclick="toggleAnswer()">
+                    👆 Tap to check answer
+                </div>
             </div>
         </div>
 
-        <div id="usArea" class="hidden" style="flex:1; flex-direction:column; width:100%;">
-            <div id="usSlot" class="us-slot"></div>
-            <div id="usPool" class="us-pool"></div>
-        </div>
-
-        <div id="commonAnswerArea" class="answer-area">
-            <div class="answer-box" id="aBox" onclick="toggleAnswer()">
-                👆 Tap to check answer
+        <div id="unscrambleLayout">
+            <div class="us-top">
+                <div id="usText" class="q-text">Question</div>
+                <button id="listenBtn" class="listen-btn" onclick="speakText()">🔊 Listen & Build</button>
             </div>
+            <div id="usSlot" class="us-mid"></div>
+            <div id="usPool" class="us-bot"></div>
         </div>
     </div>
 
@@ -160,7 +199,6 @@
 
 <script src="data.js"></script>
 <script>
-    // --- 유틸리티 ---
     function resizeSelect(sel) {
         let tempSpan = document.createElement("span");
         tempSpan.style.visibility = "hidden"; tempSpan.style.position = "absolute"; 
@@ -170,7 +208,6 @@
         document.body.removeChild(tempSpan);
     }
 
-    // --- 전역 변수 ---
     let currentItems = [];
     let currentIndex = 0;
     let currentMode = "looksay";
@@ -211,7 +248,7 @@
         
         const allItems = bookData[bookName].filter(d => d["Pattern #"] === pNum);
         
-        // 데이터 필터링: Unscramble, Dictation은 Unscramble 데이터 우선
+        // 데이터 필터링: 블록형 게임은 Unscramble 데이터 우선
         if (currentMode === 'unscramble' || currentMode === 'dictation') {
             currentItems = allItems.filter(d => d.Section === "Unscramble");
             if (!currentItems.length) currentItems = allItems.filter(d => d.Section === "Speaking II");
@@ -230,71 +267,63 @@
         const item = currentItems[currentIndex];
         
         const els = {
+            lsLayout: document.getElementById('lookSayLayout'),
+            usLayout: document.getElementById('unscrambleLayout'),
             qText: document.getElementById('qText'),
+            blankText: document.getElementById('blankText'),
             qImg: document.getElementById('qImg'),
             qEmoji: document.getElementById('qEmoji'),
-            blankText: document.getElementById('blankText'),
-            dicArea: document.getElementById('dicArea'),
-            usArea: document.getElementById('usArea'),
-            timerArea: document.getElementById('speedTimerArea'),
-            ansArea: document.getElementById('commonAnswerArea'),
             aBox: document.getElementById('aBox'),
+            usText: document.getElementById('usText'),
+            listenBtn: document.getElementById('listenBtn'),
+            timer: document.getElementById('speedTimer'),
             progress: document.getElementById('progress')
         };
 
         // 초기화
-        els.qText.classList.add('hidden');
-        els.qImg.classList.add('hidden');
-        els.qEmoji.classList.add('hidden');
-        els.blankText.classList.add('hidden');
-        els.dicArea.classList.add('hidden');
-        els.usArea.classList.add('hidden');
-        els.timerArea.classList.add('hidden');
-        els.ansArea.classList.remove('hidden');
-
+        els.lsLayout.style.display = 'none';
+        els.usLayout.style.display = 'none';
+        els.timer.style.display = 'none';
+        
+        // Look & Say 요소 초기화
+        els.qText.style.display = 'none';
+        els.blankText.style.display = 'none';
+        els.qImg.style.display = 'none';
+        els.qEmoji.style.display = 'none';
         els.aBox.className = "answer-box";
         els.aBox.innerText = "👆 Tap to check answer";
         els.progress.innerText = `${currentIndex + 1} / ${currentItems.length}`;
 
-        // 이미지 처리
+        // 이미지 체크
         let hasImage = false;
-        if (item["Image"] && item["Image"].trim() !== "") {
-            const val = item["Image"].trim();
-            if (val.includes('.') || val.includes('/')) {
-                els.qImg.src = "images/" + val; els.qImg.classList.remove('hidden');
+        const imageVal = item["Image"] ? item["Image"].trim() : "";
+        
+        if (imageVal !== "") {
+            if (imageVal.includes('.') || imageVal.includes('/')) {
+                els.qImg.src = "images/" + imageVal;
+                if(currentMode !== 'dictation') hasImage = true; // 딕테이션일땐 이미지 안씀
             } else {
-                els.qEmoji.innerText = val; els.qEmoji.classList.remove('hidden');
+                els.qEmoji.innerText = imageVal;
+                if(currentMode !== 'dictation') hasImage = true;
             }
-            hasImage = true;
         }
 
+        // 모드별 렌더링
         switch(currentMode) {
             case 'looksay':
-                if (!hasImage) { els.qText.innerText = item["Korean/Question"]; els.qText.classList.remove('hidden'); }
-                break;
-            
-            case 'unscramble':
-                // 한글 문제 보임 + 블록 맞추기
-                els.qText.innerText = item["Korean/Question"]; els.qText.classList.remove('hidden');
-                els.usArea.classList.remove('hidden');
-                els.ansArea.classList.add('hidden');
-                initUnscramble(item);
-                break;
-
-            case 'dictation':
-                // 한글/이미지 모두 숨김 + 듣기 버튼 + 블록 맞추기
-                els.qImg.classList.add('hidden'); // 이미지도 가림 (소리에 집중)
-                els.qEmoji.classList.add('hidden');
-                els.dicArea.classList.remove('hidden');
-                els.usArea.classList.remove('hidden');
-                els.ansArea.classList.add('hidden');
-                initUnscramble(item); // 블록 로직은 동일
+                els.lsLayout.style.display = 'flex';
+                if (hasImage) {
+                    if(els.qImg.src) els.qImg.style.display = 'block';
+                    else els.qEmoji.style.display = 'block';
+                } else {
+                    els.qText.innerText = item["Korean/Question"];
+                    els.qText.style.display = 'block';
+                }
                 break;
 
             case 'blanks':
-                els.qText.innerText = item["Korean/Question"]; els.qText.classList.remove('hidden');
-                els.blankText.classList.remove('hidden');
-                let patName = item["Pattern Name"].replace(/[\.\~\?\[\]]/g, "").trim(); 
+                els.lsLayout.style.display = 'flex';
+                let patName = item["Pattern Name"].replace(/[\.\~\?\[\]]/g, "").trim();
                 let sentence = item["English/Answer"];
                 let regex = new RegExp(patName, "i");
                 let masked = sentence.replace(regex, "_______");
@@ -303,17 +332,40 @@
                     if(parts.length > 1) { parts[0] = "____"; parts[1] = "____"; masked = parts.join(" "); }
                 }
                 els.blankText.innerHTML = masked;
+                els.blankText.style.display = 'block';
                 break;
 
             case 'speed':
-                if (!hasImage) { els.qText.innerText = item["Korean/Question"]; els.qText.classList.remove('hidden'); }
-                els.timerArea.classList.remove('hidden');
+                els.lsLayout.style.display = 'flex';
+                els.timer.style.display = 'block';
+                if (hasImage) {
+                    if(els.qImg.src) els.qImg.style.display = 'block';
+                    else els.qEmoji.style.display = 'block';
+                } else {
+                    els.qText.innerText = item["Korean/Question"];
+                    els.qText.style.display = 'block';
+                }
                 startTimer();
+                break;
+
+            case 'unscramble':
+                els.usLayout.style.display = 'flex';
+                els.usText.style.display = 'block';
+                els.listenBtn.style.display = 'none';
+                els.usText.innerText = item["Korean/Question"];
+                initUnscramble(item);
+                break;
+
+            case 'dictation':
+                els.usLayout.style.display = 'flex';
+                els.usText.style.display = 'none'; // 텍스트 숨김
+                els.listenBtn.style.display = 'flex'; // 듣기 버튼 표시
+                initUnscramble(item);
                 break;
         }
     }
 
-    // --- 로직 ---
+    // --- 기능 로직 ---
 
     function toggleAnswer() {
         const item = currentItems[currentIndex];
@@ -326,11 +378,10 @@
         }
     }
 
-    // [Unscramble & Dictation Block Logic]
     function initUnscramble(item) {
         const usSlot = document.getElementById('usSlot');
         const usPool = document.getElementById('usPool');
-        usSlot.innerHTML = ""; usPool.innerHTML = ""; usSlot.className = "us-slot";
+        usSlot.innerHTML = ""; usPool.innerHTML = ""; usSlot.className = "us-mid";
         
         unscrambleState.target = item["English/Answer"].replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
         
@@ -342,10 +393,10 @@
             let btn = document.createElement("div");
             btn.className = "word-block"; btn.innerText = w;
             btn.onclick = () => {
-                btn.classList.add("hidden");
+                btn.classList.add("used");
                 let slotBtn = document.createElement("div");
                 slotBtn.className = "word-block"; slotBtn.innerText = w;
-                slotBtn.onclick = () => { slotBtn.remove(); btn.classList.remove("hidden"); checkUnscramble(); };
+                slotBtn.onclick = () => { slotBtn.remove(); btn.classList.remove("used"); checkUnscramble(); };
                 usSlot.appendChild(slotBtn);
                 checkUnscramble();
             };
@@ -365,7 +416,6 @@
         }
     }
 
-    // [Dictation TTS]
     function speakText() {
         const item = currentItems[currentIndex];
         const utterance = new SpeechSynthesisUtterance(item["English/Answer"]);
@@ -373,7 +423,6 @@
         window.speechSynthesis.speak(utterance);
     }
 
-    // [Speed Game]
     function startTimer() {
         const bar = document.getElementById('timerBar');
         bar.style.transition = 'none'; bar.style.width = '100%';
@@ -385,7 +434,6 @@
         }, 5000);
     }
 
-    // --- 네비게이션 ---
     function nextSlide() { if (currentIndex < currentItems.length - 1) { currentIndex++; renderSlide(); } }
     function prevSlide() { if (currentIndex > 0) { currentIndex--; renderSlide(); } }
 
