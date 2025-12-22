@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Pattern Master Class (Final v5)</title>
+    <title>Pattern Master Class (v10)</title>
     <style>
         /* --- 기본 설정 --- */
         body {
@@ -21,16 +21,22 @@
             height: 60px; flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 100;
         }
         .logo { font-size: 18px; font-weight: bold; color: #ecf0f1; display: flex; align-items: center; gap: 8px; }
-        .menu-group { display: flex; gap: 8px; align-items: center; }
+        .menu-group { display: flex; gap: 10px; align-items: center; }
 
-        select {
+        select#actSel {
             background-color: #2c3e50; color: white; border: 1px solid #5d6d7e;
             padding: 8px 10px; border-radius: 8px; font-size: 14px;
             outline: none; font-weight: bold; cursor: pointer;
-            width: auto; max-width: 250px; min-width: 100px;
-            text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
-            transition: width 0.2s ease;
+            width: auto; min-width: 150px;
         }
+
+        .setting-btn {
+            background: #ecf0f1; color: #2c3e50; border: none;
+            width: 40px; height: 40px; border-radius: 50%;
+            font-size: 20px; cursor: pointer; display: flex; justify-content: center; align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: 0.2s;
+        }
+        .setting-btn:active { transform: scale(0.9); }
 
         /* --- 메인 스테이지 --- */
         .stage {
@@ -44,33 +50,83 @@
             display: flex; flex-direction: column; overflow: hidden; position: relative;
         }
 
-        /* === 타이머 & 폭탄 UI === */
-        .timer-container {
-            position: absolute; top: 0; left: 0; width: 100%; height: 10px;
-            background: #ddd; z-index: 50; display: none;
+        /* === ⚙️ 설정 모달 === */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.8); z-index: 2000;
+            display: flex; justify-content: center; align-items: center;
+            backdrop-filter: blur(5px);
         }
-        .bomb-icon {
-            position: absolute; left: 5px; top: 12px; font-size: 40px; z-index: 51;
-            transform: translateY(-50%); filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+        .modal-box {
+            background: white; width: 90%; max-width: 550px; max-height: 90vh;
+            border-radius: 20px; padding: 25px; display: flex; flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .modal-header { font-size: 22px; font-weight: bold; color: #2c3e50; margin-bottom: 15px; text-align: center; }
+        
+        .modal-section-title { font-size: 14px; font-weight: bold; color: #7f8c8d; margin-bottom: 8px; margin-top: 10px;}
+
+        .modal-book-sel {
+            width: 100%; padding: 10px; font-size: 16px; border-radius: 8px;
+            border: 2px solid #bdc3c7; margin-bottom: 5px; font-weight: bold;
+        }
+
+        .checkbox-container {
+            flex: 1; overflow-y: auto; border: 1px solid #eee; border-radius: 10px;
+            padding: 10px; margin-bottom: 10px; background: #f9f9f9;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 8px; min-height: 150px;
+        }
+        .chk-item {
+            display: flex; align-items: center; gap: 8px; padding: 8px;
+            background: white; border-radius: 8px; border: 1px solid #ddd; cursor: pointer;
+        }
+        .chk-item:hover { background: #f0f8ff; border-color: #3498db; }
+        .chk-item input { transform: scale(1.3); cursor: pointer; }
+        .chk-label { font-size: 13px; font-weight: bold; color: #555; user-select: none; }
+
+        /* 문항 수 선택 UI */
+        .count-options { display: flex; gap: 5px; justify-content: space-between; margin-bottom: 20px; }
+        .cnt-btn {
+            flex: 1; padding: 10px 0; border: 1px solid #bdc3c7; background: white;
+            border-radius: 8px; cursor: pointer; font-weight: bold; color: #34495e;
+            transition: 0.2s; font-size: 14px;
+        }
+        .cnt-btn.selected { background: #2c3e50; color: white; border-color: #2c3e50; }
+        .cnt-btn:disabled { background: #f0f0f0; color: #ccc; border-color: #eee; cursor: not-allowed; }
+
+        .modal-actions { display: flex; gap: 10px; }
+        .modal-btn {
+            flex: 1; padding: 15px; border: none; border-radius: 10px;
+            font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.2s;
+        }
+        .btn-start { background: #3498db; color: white; }
+        .btn-start:hover { background: #2980b9; }
+        .btn-all { background: #95a5a6; color: white; flex: 0.3; font-size: 14px; }
+
+        /* === 🏆 점수판 UI === */
+        .score-badge {
+            position: absolute; top: 70px; padding: 8px 15px; min-width: 50px;
+            border-radius: 12px; font-weight: 900; font-size: 28px; color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15); z-index: 60;
+            display: none; flex-direction: column; align-items: center; line-height: 1;
             transition: transform 0.2s;
         }
-        .timer-bar {
-            height: 100%; background: #e74c3c; width: 100%;
-            transition: width 1s linear; border-radius: 0 5px 5px 0;
-            box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
-        }
+        .score-badge.pop { transform: scale(1.3); }
+        .score-blue { left: 20px; background: #3498db; border: 2px solid #2980b9; }
+        .score-red { right: 20px; background: #e74c3c; border: 2px solid #c0392b; }
+        .score-title { font-size: 10px; margin-bottom: 3px; opacity: 0.9; font-weight: normal; text-transform: uppercase; }
+
+        /* === 타이머 & 폭탄 UI === */
+        .timer-container { position: absolute; top: 0; left: 0; width: 100%; height: 10px; background: #ddd; z-index: 50; display: none; }
+        .bomb-icon { position: absolute; left: 5px; top: 12px; font-size: 40px; z-index: 51; transform: translateY(-50%); transition: transform 0.2s; filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2)); }
+        .timer-bar { height: 100%; background: #e74c3c; width: 100%; transition: width 1s linear; border-radius: 0 5px 5px 0; }
         .timer-container.urgent .bomb-icon { animation: shake 0.5s infinite; }
         .timer-container.urgent .timer-bar { background: #c0392b; }
 
-        .explosion-popup {
-            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0);
-            font-size: 150px; z-index: 200; pointer-events: none;
-            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            text-shadow: 0 10px 20px rgba(0,0,0,0.5);
-        }
+        .explosion-popup { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); font-size: 150px; z-index: 200; pointer-events: none; transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); text-shadow: 0 10px 20px rgba(0,0,0,0.5); }
         .explosion-popup.boom { transform: translate(-50%, -50%) scale(1); animation: shake 0.5s; }
 
-        /* === Layout 1: Look & Say / Blanks / Speed === */
+        /* === Layout Styles === */
         #lookSayLayout { display: flex; flex-direction: column; height: 100%; width: 100%; }
         .ls-upper { flex: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; text-align: center; border-bottom: 1px solid #eee; overflow: hidden;}
         .ls-lower { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #fafafa; }
@@ -83,7 +139,11 @@
         .answer-box { width: 90%; height: 70%; border-radius: 15px; font-weight: bold; font-size: 24px; cursor: pointer; display: flex; justify-content: center; align-items: center; text-align: center; background-color: white; color: #95a5a6; border: 2px dashed #bdc3c7; transition: all 0.2s; }
         .answer-box.visible { background-color: #3498db; color: white; border: 2px solid #3498db; box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4); transform: translateY(-5px); }
 
-        /* === Layout 2: Unscramble / Dictation === */
+        .speed-check-area { display: none; width: 100%; gap: 20px; justify-content: center; }
+        .speed-btn { flex: 1; max-width: 150px; height: 70px; border-radius: 15px; border: none; font-size: 30px; font-weight: bold; color: white; cursor: pointer; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.1s; }
+        .speed-btn:active { transform: scale(0.95); }
+        .btn-o { background: #2ecc71; } .btn-x { background: #e74c3c; }
+
         #unscrambleLayout { display: none; flex-direction: column; height: 100%; width: 100%; }
         .us-top { flex: 1; display: flex; justify-content: center; align-items: center; padding: 10px 20px; border-bottom: 1px solid #eee; background: #fff; }
         .us-mid { flex: 1.2; background: #f0f4f8; padding: 20px; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 8px; overflow-y: auto; transition: background 0.3s; }
@@ -92,10 +152,9 @@
 
         .word-block { background: white; border: 2px solid #3498db; color: #2c3e50; padding: 8px 16px; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.1s; display: flex; align-items: center; justify-content: center; text-align: center; }
         .word-block:active { transform: scale(0.95); }
-        .word-block.used { display: none !important; } /* 이동 효과 */
+        .word-block.used { display: none !important; }
         .listen-btn { background: #f1c40f; color: #2c3e50; border: none; padding: 10px 30px; border-radius: 50px; font-size: 22px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s; display: none; align-items: center; gap: 10px; }
 
-        /* === Layout 3: Memory Match === */
         #memoryLayout { display: none; height: 100%; width: 100%; padding: 40px 20px 20px; box-sizing: border-box; flex-wrap: wrap; align-content: center; justify-content: center; gap: 10px; background: #f8f9fa; position: relative; }
         .mem-stats { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); font-size: 18px; font-weight: bold; color: #34495e; background: rgba(255,255,255,0.9); padding: 5px 15px; border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 10; display: flex; gap: 10px; }
         .mem-card { width: calc(25% - 10px); height: calc(33% - 10px); position: relative; perspective: 1000px; cursor: pointer; }
@@ -106,7 +165,6 @@
         .mem-front { background-color: #34495e; color: #ecf0f1; font-size: 24px; }
         .mem-back { background-color: white; color: #2c3e50; border: 2px solid #3498db; transform: rotateY(180deg); }
 
-        /* === Layout 4: Quiz Show (Grid 2x2) === */
         #quizLayout { display: none; flex-direction: column; height: 100%; width: 100%; padding-top: 15px;}
         .quiz-q-area { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; text-align: center; }
         .quiz-body { flex: 1.5; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; background: #ecf0f1; }
@@ -114,20 +172,13 @@
         .quiz-btn.correct { background: #2ecc71; border-color: #27ae60; color: white; }
         .quiz-btn.wrong { background: #e74c3c; border-color: #c0392b; color: white; animation: shake 0.4s; }
 
-        /* === Layout 5: Flash Sentence (Vertical) === */
         #flashLayout { display: none; flex-direction: column; height: 100%; width: 100%; padding-top: 20px; background: #ecf0f1; }
         .flash-list { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; padding: 20px 40px; overflow-y: auto; }
-        .flash-btn { 
-            width: 100%; max-width: 600px; 
-            padding: 15px; background: white; border: 2px solid #bdc3c7; border-radius: 12px; 
-            font-size: 20px; font-weight: bold; color: #34495e; cursor: pointer; text-align: center; 
-            transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
-        }
+        .flash-btn { width: 100%; max-width: 600px; padding: 15px; background: white; border: 2px solid #bdc3c7; border-radius: 12px; font-size: 20px; font-weight: bold; color: #34495e; cursor: pointer; text-align: center; transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .flash-btn:active { transform: scale(0.98); }
         .flash-btn.correct { background: #2ecc71; border-color: #27ae60; color: white; }
         .flash-btn.wrong { background: #e74c3c; border-color: #c0392b; color: white; animation: shake 0.4s; }
 
-        /* Flash Overlay */
         .flash-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #2c3e50; color: white; z-index: 50; display: none; flex-direction: column; justify-content: center; align-items: center; font-size: 40px; font-weight: 900; text-align: center; padding: 20px; box-sizing: border-box;}
         
         @keyframes shake { 0% { transform: translateX(0); } 25% { transform: translateX(-5px); } 50% { transform: translateX(5px); } 75% { transform: translateX(-5px); } 100% { transform: translateX(0); } }
@@ -156,9 +207,7 @@
 <header>
     <div class="logo">🎓 <span>Pattern Master</span></div>
     <div class="menu-group">
-        <select id="bookSel" onchange="updatePatterns(); resizeSelect(this)"></select>
-        <select id="patSel" onchange="resetActivity(); resizeSelect(this)"></select>
-        <select id="actSel" onchange="resetActivity(); resizeSelect(this)">
+        <select id="actSel" onchange="resetActivity()">
             <option value="looksay">1. Look & Say</option>
             <option value="unscramble">2. Unscramble</option>
             <option value="dictation">3. Block Dictation</option>
@@ -168,23 +217,53 @@
             <option value="quiz">7. Quiz Show 💣</option>
             <option value="flash">8. Flash Sentence ⚡</option>
         </select>
+        <button class="setting-btn" onclick="openModal()">⚙️</button>
     </div>
 </header>
+
+<div id="setupModal" class="modal-overlay">
+    <div class="modal-box">
+        <div class="modal-header">📚 학습 범위 설정</div>
+        
+        <div class="modal-section-title">1. 교재 및 유닛 선택</div>
+        <select id="modalBookSel" class="modal-book-sel" onchange="renderCheckboxes()"></select>
+        
+        <div id="checkboxList" class="checkbox-container"></div>
+
+        <div class="modal-section-title">2. 문항 수 제한</div>
+        <div class="count-options">
+            <button class="cnt-btn" onclick="selectCount(10)">10</button>
+            <button class="cnt-btn" onclick="selectCount(20)">20</button>
+            <button class="cnt-btn" onclick="selectCount(30)">30</button>
+            <button class="cnt-btn" onclick="selectCount(40)">40</button>
+            <button class="cnt-btn" onclick="selectCount(50)">50</button>
+            <button class="cnt-btn selected" onclick="selectCount(999)">All</button>
+        </div>
+
+        <div class="modal-actions">
+            <button class="modal-btn btn-all" onclick="toggleAllChecks()">All Check</button>
+            <button class="modal-btn btn-start" onclick="startWithSelection()">🚀 수업 시작</button>
+        </div>
+    </div>
+</div>
 
 <div class="stage" id="touchStage">
     <button class="nav-btn nav-prev" onclick="prevSlide()">❮</button>
     <button class="nav-btn nav-next" onclick="nextSlide()">❯</button>
 
     <div class="card">
+        <div id="scoreBoardBlue" class="score-badge score-blue">
+            <span class="score-title">CORRECT</span><span id="scoreValBlue">0</span>
+        </div>
+        <div id="scoreBoardRed" class="score-badge score-red">
+            <span class="score-title">WRONG</span><span id="scoreValRed">0</span>
+        </div>
+
         <div id="gameTimer" class="timer-container">
-            <div class="bomb-icon">💣</div>
-            <div id="timerBar" class="timer-bar"></div>
+            <div class="bomb-icon">💣</div><div id="timerBar" class="timer-bar"></div>
         </div>
         <div id="explosionPopup" class="explosion-popup">💥</div>
-
-        <div id="flashOverlay" class="flash-overlay">
-            <div id="flashContent">Ready...</div>
-        </div>
+        <div id="flashOverlay" class="flash-overlay"><div id="flashContent">Ready...</div></div>
 
         <div id="lookSayLayout">
             <div class="ls-upper">
@@ -194,8 +273,10 @@
                 <div id="qEmoji" class="q-emoji"></div>
             </div>
             <div class="ls-lower">
-                <div class="answer-box" id="aBox" onclick="toggleAnswer()">
-                    👆 Tap to check answer
+                <div class="answer-box" id="aBox" onclick="toggleAnswer()">👆 Tap to check answer</div>
+                <div id="speedCheckArea" class="speed-check-area">
+                    <button class="speed-btn btn-o" onclick="rateSpeedGame(true)">O</button>
+                    <button class="speed-btn btn-x" onclick="rateSpeedGame(false)">X</button>
                 </div>
             </div>
         </div>
@@ -210,106 +291,225 @@
         </div>
 
         <div id="memoryLayout">
-            <div class="mem-stats">
-                <span>❤️ Moves: <span id="memMoves">20</span></span>
-            </div>
+            <div class="mem-stats"><span>❤️ Moves: <span id="memMoves">20</span></span></div>
         </div>
 
         <div id="quizLayout">
-            <div class="quiz-q-area">
-                <div id="quizQ" class="q-text">Question</div>
-            </div>
-            <div id="quizBody" class="quiz-body">
-                </div>
+            <div class="quiz-q-area"><div id="quizQ" class="q-text">Question</div></div>
+            <div id="quizBody" class="quiz-body"></div>
         </div>
 
         <div id="flashLayout">
-            <div id="flashOptions" class="flash-list">
-                </div>
+            <div id="flashOptions" class="flash-list"></div>
         </div>
     </div>
 
-    <div class="progress-bar" id="progress">1 / 10</div>
+    <div class="progress-bar" id="progress">Setting Up...</div>
 </div>
 
 <script src="data.js"></script>
 <script>
-    function resizeSelect(sel) {
-        let tempSpan = document.createElement("span");
-        tempSpan.style.visibility = "hidden"; tempSpan.style.position = "absolute"; 
-        tempSpan.style.fontSize = "14px"; tempSpan.style.fontWeight = "bold"; tempSpan.innerText = sel.options[sel.selectedIndex].text;
-        document.body.appendChild(tempSpan);
-        sel.style.width = (tempSpan.offsetWidth + 45) + "px";
-        document.body.removeChild(tempSpan);
-    }
-
     let currentItems = [];
     let currentIndex = 0;
     let currentMode = "looksay";
-    let timerInterval = null; 
+    let timerId = null; 
+    let autoNextId = null; 
     let unscrambleState = { target: "", selected: [] };
     
-    // 게임 변수
+    let scoreCorrect = 0;
+    let scoreWrong = 0;
     let memoryFlipped = [];
     let memoryMoves = 20;
     let quizAnswerIdx = 0;
     let quizLocked = false;
     let flashDuration = 700;
 
+    let currentBookName = "";
+    let selectedMaxCount = 999; 
+
     window.onload = function() {
         if (typeof bookData === 'undefined') { alert("data.js 없음"); return; }
-        initBookMenu();
+        
+        const modalBookSel = document.getElementById('modalBookSel');
+        Object.keys(bookData).forEach((book, idx) => {
+            let op = document.createElement('option');
+            op.value = book; op.text = book;
+            modalBookSel.appendChild(op);
+            if(idx===0) currentBookName = book;
+        });
+
+        renderCheckboxes();
+        openModal(); 
         initTouchEvents();
-        resizeSelect(document.getElementById('actSel'));
     };
 
-    function initBookMenu() {
-        const bookSel = document.getElementById('bookSel');
-        Object.keys(bookData).forEach(book => bookSel.innerHTML += `<option value="${book}">${book}</option>`);
-        updatePatterns(); resizeSelect(bookSel);
+    function openModal() { document.getElementById('setupModal').style.display = 'flex'; }
+    function closeModal() { document.getElementById('setupModal').style.display = 'none'; }
+
+    function renderCheckboxes() {
+        currentBookName = document.getElementById('modalBookSel').value;
+        const list = document.getElementById('checkboxList');
+        list.innerHTML = "";
+
+        const items = bookData[currentBookName];
+        const patternMap = new Map();
+        items.forEach(d => { patternMap.set(d["Pattern #"], d["Pattern Name"]); });
+
+        const sortedPatterns = Array.from(patternMap.keys()).sort((a,b)=>a-b);
+        
+        sortedPatterns.forEach(pNum => {
+            let pName = patternMap.get(pNum);
+            let div = document.createElement('div');
+            div.className = 'chk-item';
+            div.innerHTML = `<input type="checkbox" value="${pNum}"> <span class="chk-label">${pNum}. ${pName}</span>`;
+            div.onclick = (e) => {
+                if(e.target.tagName !== 'INPUT') {
+                    let chk = div.querySelector('input');
+                    chk.checked = !chk.checked;
+                }
+                updateCountOptionsState(); // 체크할 때마다 옵션 상태 갱신
+            };
+            // Input 클릭시에도 이벤트 전파되므로 중복 방지 필요하지만 간단히 둠
+            div.querySelector('input').onclick = () => updateCountOptionsState();
+            list.appendChild(div);
+        });
+        updateCountOptionsState();
     }
 
-    function updatePatterns() {
-        const bookName = document.getElementById('bookSel').value;
-        const patSel = document.getElementById('patSel');
-        const items = bookData[bookName];
-        const pSet = new Set(items.map(d => d["Pattern #"]));
-        patSel.innerHTML = "";
-        pSet.forEach(p => {
-            const name = items.find(d => d["Pattern #"] == p)["Pattern Name"];
-            patSel.innerHTML += `<option value="${p}">${p}. ${name}</option>`;
+    function toggleAllChecks() {
+        const chks = document.querySelectorAll('#checkboxList input');
+        let allChecked = Array.from(chks).every(c => c.checked);
+        chks.forEach(c => c.checked = !allChecked);
+        updateCountOptionsState();
+    }
+
+    // 현재 선택된 문항 수 계산 및 버튼 활성/비활성화
+    function updateCountOptionsState() {
+        const chks = document.querySelectorAll('#checkboxList input:checked');
+        const selectedPNums = Array.from(chks).map(c => parseInt(c.value));
+        const allCandidates = bookData[currentBookName].filter(d => selectedPNums.includes(d["Pattern #"]));
+        // 후보군이 Speaking II 와 Unscramble 중 하나만 있어도 카운트 될 수 있으므로, 
+        // 실제 게임 가능 문항수는 대략 Speaking II 개수 기준 (보통 패턴당 10개)
+        // 여기서는 전체 데이터 수를 2로 나누거나(섹션중복), 패턴당 10개로 가정.
+        // 정확하게는: filter(Section == Speaking II).length
+        
+        let validCount = allCandidates.filter(d => d.Section === "Speaking II").length;
+        if(validCount === 0) validCount = allCandidates.length; // 데이터 구조상 예외처리
+
+        const btns = document.querySelectorAll('.cnt-btn');
+        btns.forEach(btn => {
+            let val = parseInt(btn.innerText);
+            if(isNaN(val)) val = 999; // All
+            
+            if(val > validCount && val !== 999) {
+                btn.disabled = true;
+                if(btn.classList.contains('selected')) selectCount(999); // 선택된게 불가능해지면 All로
+            } else {
+                btn.disabled = false;
+            }
         });
-        resizeSelect(patSel);
+    }
+
+    function selectCount(cnt) {
+        selectedMaxCount = cnt;
+        const btns = document.querySelectorAll('.cnt-btn');
+        btns.forEach(b => {
+            let val = parseInt(b.innerText);
+            if(isNaN(val)) val = 999;
+            if(val === cnt) b.classList.add('selected');
+            else b.classList.remove('selected');
+        });
+    }
+
+    function startWithSelection() {
+        const chks = document.querySelectorAll('#checkboxList input:checked');
+        if(chks.length === 0) { alert("적어도 하나의 유닛을 선택해주세요."); return; }
+
+        const selectedPNums = Array.from(chks).map(c => parseInt(c.value));
+        let allCandidates = bookData[currentBookName].filter(d => selectedPNums.includes(d["Pattern #"]));
+        
+        // 필터링된 데이터를 세션 변수에 저장 (나중에 모드 바뀔 때 필터링 원본으로 쓰임)
+        window.filteredDataForSession = allCandidates;
+        
+        closeModal();
         resetActivity();
     }
 
+    // --- Main Logic ---
+
     function resetActivity() {
-        const bookName = document.getElementById('bookSel').value;
-        const pNum = parseInt(document.getElementById('patSel').value);
         currentMode = document.getElementById('actSel').value;
-        const allItems = bookData[bookName].filter(d => d["Pattern #"] === pNum);
         
-        // 데이터 필터링
+        if (!window.filteredDataForSession) return; 
+
+        let candidates = window.filteredDataForSession;
+        let pool = [];
+
         if (['unscramble', 'dictation', 'flash', 'quiz'].includes(currentMode)) {
-            currentItems = allItems.filter(d => d.Section === "Unscramble");
-            if (!currentItems.length) currentItems = allItems.filter(d => d.Section === "Speaking II");
+            pool = candidates.filter(d => d.Section === "Unscramble");
+            if (pool.length === 0) pool = candidates.filter(d => d.Section === "Speaking II");
         } else {
-            currentItems = allItems.filter(d => d.Section === "Speaking II");
-            if (!currentItems.length) currentItems = allItems.filter(d => d.Section === "Unscramble");
+            pool = candidates.filter(d => d.Section === "Speaking II");
+            if (pool.length === 0) pool = candidates.filter(d => d.Section === "Unscramble");
+        }
+
+        // Shuffle
+        pool.sort(() => Math.random() - 0.5);
+
+        // Apply Count Limit
+        if (selectedMaxCount !== 999 && pool.length > selectedMaxCount) {
+            currentItems = pool.slice(0, selectedMaxCount);
+        } else {
+            currentItems = pool;
         }
 
         flashDuration = 700; 
+        clearTimeout(timerId);
+        clearTimeout(autoNextId);
+        scoreCorrect = 0; scoreWrong = 0;
+        updateScoreBoard();
+
         if (currentMode === 'memory') {
             currentIndex = 0; renderMemoryGame();
         } else {
             currentIndex = 0; renderSlide();
         }
-        clearInterval(timerInterval);
+    }
+
+    function updateScoreBoard() {
+        const sBlue = document.getElementById('scoreValBlue');
+        const sRed = document.getElementById('scoreValRed');
+        const badgeBlue = document.getElementById('scoreBoardBlue');
+        const badgeRed = document.getElementById('scoreBoardRed');
+
+        sBlue.innerText = scoreCorrect;
+        sRed.innerText = scoreWrong;
+
+        const isGameMode = ['speed', 'quiz', 'flash'].includes(currentMode);
+        badgeBlue.style.display = isGameMode ? 'flex' : 'none';
+        badgeRed.style.display = isGameMode ? 'flex' : 'none';
+    }
+
+    function addScore(isCorrect) {
+        if(isCorrect) {
+            scoreCorrect++;
+            document.getElementById('scoreBoardBlue').classList.remove('pop');
+            void document.getElementById('scoreBoardBlue').offsetWidth; 
+            document.getElementById('scoreBoardBlue').classList.add('pop');
+        } else {
+            scoreWrong++;
+            document.getElementById('scoreBoardRed').classList.remove('pop');
+            void document.getElementById('scoreBoardRed').offsetWidth; 
+            document.getElementById('scoreBoardRed').classList.add('pop');
+        }
+        updateScoreBoard();
     }
 
     function renderSlide() {
+        clearTimeout(timerId); clearTimeout(autoNextId);
+
         if (currentMode === 'memory') return;
-        if (currentItems.length === 0) return;
+        if (!currentItems || currentItems.length === 0) return;
         const item = currentItems[currentIndex];
         
         const els = {
@@ -321,22 +521,25 @@
             overlay: document.getElementById('flashOverlay'),
             timer: document.getElementById('gameTimer'),
             boom: document.getElementById('explosionPopup'),
-            prog: document.getElementById('progress')
+            prog: document.getElementById('progress'),
+            speedCheck: document.getElementById('speedCheckArea'),
+            aBox: document.getElementById('aBox')
         };
 
-        // 초기화
         [els.ls, els.us, els.mem, els.quiz, els.flashDiv, els.overlay, els.timer].forEach(e => e.style.display = 'none');
         els.boom.classList.remove('boom');
         els.timer.classList.remove('urgent');
+        els.speedCheck.style.display = 'none'; 
+        els.aBox.style.display = 'flex'; 
+        els.aBox.style.cursor = 'pointer'; 
+        els.aBox.onclick = toggleAnswer; 
         els.prog.innerText = `${currentIndex + 1} / ${currentItems.length}`;
 
-        // 공통 요소 Reset
         document.getElementById('qText').style.display = 'none';
         document.getElementById('qImg').style.display = 'none';
         document.getElementById('qEmoji').style.display = 'none';
         document.getElementById('blankText').style.display = 'none';
 
-        // 이미지 체크
         let hasImage = false;
         let imageVal = item["Image"] ? item["Image"].trim() : "";
         if (imageVal && currentMode !== 'dictation') {
@@ -350,11 +553,12 @@
             }
         }
 
-        // --- 모드별 로직 ---
+        updateScoreBoard(); 
+
         if (['looksay', 'blanks', 'speed'].includes(currentMode)) {
             els.ls.style.display = 'flex';
-            document.getElementById('aBox').className = "answer-box";
-            document.getElementById('aBox').innerText = "👆 Tap to check answer";
+            els.aBox.className = "answer-box";
+            els.aBox.innerText = "👆 Tap to check answer";
 
             if (currentMode === 'blanks') {
                 let patName = item["Pattern Name"].replace(/[\.\~\?\[\]]/g, "").trim();
@@ -399,7 +603,6 @@
         }
         else if (currentMode === 'quiz') {
             els.quiz.style.display = 'flex';
-            // Quiz Mode도 Flash처럼 50% 확률로 영어/한글 질문 랜덤화
             let isEngQuestion = Math.random() > 0.5;
             renderQuizOrFlash(item, false, isEngQuestion); 
         }
@@ -428,8 +631,8 @@
                         document.getElementById('explosionPopup').classList.add('boom');
                         if(navigator.vibrate) navigator.vibrate([200, 100, 200]);
                         quizLocked = true;
-                        // Time out -> Auto next
-                        setTimeout(() => nextSlide(), 1500);
+                        addScore(false); 
+                        autoNextId = setTimeout(() => nextSlide(), 1500);
                     });
 
                 }, flashDuration); 
@@ -438,20 +641,16 @@
         }
     }
 
-    // --- Quiz (Grid) & Flash (Vertical) Rendering Logic (Mixed Distractors) ---
     function renderQuizOrFlash(item, isFlash, isEngQuestion) {
         quizLocked = false;
         let container, btnClass;
-
         let questionText = isEngQuestion ? item["English/Answer"] : item["Korean/Question"];
 
         if (!isFlash) {
-            // Quiz Mode: Grid Layout, 4 choices
             container = document.getElementById('quizBody');
             btnClass = 'quiz-btn';
             document.getElementById('quizQ').innerText = questionText;
         } else {
-            // Flash Mode: Vertical Layout, 5 choices
             container = document.getElementById('flashOptions');
             btnClass = 'flash-btn';
             document.getElementById('quizQ').innerText = "What was the sentence?";
@@ -459,17 +658,13 @@
         
         container.innerHTML = "";
         
-        // --- Distractor Logic (Mix Same Pattern & Diff Pattern) ---
-        let bookItems = bookData[document.getElementById('bookSel').value];
+        let bookItems = bookData[document.getElementById('modalBookSel').value]; 
         
-        // 1. Same Pattern Distractors (Excluding correct answer)
         let samePat = bookItems.filter(d => 
             d["Pattern #"] === item["Pattern #"] && 
             d["English/Answer"] !== item["English/Answer"] &&
             d["English/Answer"].trim() !== ""
         );
-        
-        // 2. Diff Pattern Distractors
         let diffPat = bookItems.filter(d => 
             d["Pattern #"] !== item["Pattern #"] &&
             d["English/Answer"] && d["English/Answer"].trim() !== ""
@@ -478,19 +673,14 @@
         samePat.sort(() => Math.random() - 0.5);
         diffPat.sort(() => Math.random() - 0.5);
 
-        // Logic: Pick up to 2 from samePat, rest from diffPat
         let distractors = [];
         if (samePat.length > 0) distractors.push(samePat[0]);
         if (samePat.length > 1) distractors.push(samePat[1]);
         
-        // Need total 3 distractors (for Quiz) or 4 (for Flash)
         let totalNeeded = isFlash ? 4 : 3;
         let remaining = totalNeeded - distractors.length;
         distractors = distractors.concat(diffPat.slice(0, remaining));
 
-        // Determine target property for choices (Opposite of Question)
-        // If question is English -> Choices are Korean
-        // If question is Korean -> Choices are English
         let targetProp = isEngQuestion ? "Korean/Question" : "English/Answer";
 
         let choices = distractors.map(d => ({ txt: d[targetProp], isAns: false }));
@@ -513,55 +703,58 @@
                  document.getElementById('explosionPopup').classList.add('boom');
                  if(navigator.vibrate) navigator.vibrate([200, 100, 200]);
                  quizLocked = true;
-                 setTimeout(() => nextSlide(), 1500);
+                 addScore(false);
+                 autoNextId = setTimeout(() => nextSlide(), 1500);
             });
         }
     }
 
-    // --- Check Quiz & Auto Next ---
     function checkQuizAndNext(btn, idx, isFlash) {
         if (quizLocked) return;
         quizLocked = true;
-        clearInterval(timerInterval);
+        clearTimeout(timerId);
 
         const btnClass = isFlash ? '.flash-btn' : '.quiz-btn';
 
         if (idx === quizAnswerIdx) {
             btn.classList.add('correct');
+            addScore(true);
             if(navigator.vibrate) navigator.vibrate(50);
             if (isFlash && flashDuration > 200) flashDuration -= 50;
-
-            // Correct -> 0.5s auto next
-            setTimeout(() => {
-                nextSlide();
-            }, 500);
-
+            autoNextId = setTimeout(() => nextSlide(), 500);
         } else {
             btn.classList.add('wrong');
             document.querySelectorAll(btnClass)[quizAnswerIdx].classList.add('correct');
+            addScore(false);
             if(navigator.vibrate) navigator.vibrate(200);
             if(isFlash) flashDuration = 700;
-
-            // Wrong -> 1.5s auto next
-            setTimeout(() => {
-                nextSlide();
-            }, 1500);
+            autoNextId = setTimeout(() => nextSlide(), 1500);
         }
     }
 
-    // --- Helpers ---
     function toggleAnswer() {
         const item = currentItems[currentIndex];
         const aBox = document.getElementById('aBox');
         if (aBox.classList.contains('visible')) {
-            aBox.classList.remove('visible'); aBox.innerText = "👆 Tap to check answer";
+            if(currentMode !== 'speed') {
+                aBox.classList.remove('visible'); 
+                aBox.innerText = "👆 Tap to check answer";
+            }
         } else {
-            aBox.classList.add('visible'); aBox.innerText = item["English/Answer"];
+            aBox.classList.add('visible'); 
+            aBox.innerText = item["English/Answer"];
             if(currentMode === 'speed') {
-                clearInterval(timerInterval);
-                setTimeout(() => nextSlide(), 1500); // Speed Game Auto Next
+                clearTimeout(timerId);
+                document.getElementById('speedCheckArea').style.display = 'flex';
+                aBox.style.cursor = 'default';
+                aBox.onclick = null; 
             }
         }
+    }
+
+    function rateSpeedGame(isCorrect) {
+        addScore(isCorrect);
+        nextSlide();
     }
 
     function initUnscramble(item) {
@@ -569,11 +762,9 @@
         const usPool = document.getElementById('usPool');
         usSlot.innerHTML = ""; usPool.innerHTML = ""; usSlot.className = "us-mid";
         unscrambleState.target = item["English/Answer"].replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
-        
         let raw = item["Scrambled"] || item["English/Answer"];
         let words = raw.includes("/") ? raw.split("/") : raw.split(" ");
         words = words.map(w=>w.trim()).sort(()=>Math.random()-0.5);
-
         words.forEach((w) => {
             let btn = document.createElement("div");
             btn.className = "word-block"; btn.innerText = w;
@@ -601,7 +792,7 @@
 
     function renderMemoryGame() {
         const memLayout = document.getElementById('memoryLayout');
-        const all = document.querySelectorAll('.card > div:not(.timer-container):not(.explosion-popup):not(.flash-overlay)');
+        const all = document.querySelectorAll('.card > div:not(.timer-container):not(.explosion-popup):not(.flash-overlay):not(.score-badge)');
         all.forEach(e => e.style.display = 'none');
         memLayout.style.display = 'flex';
         memLayout.innerHTML = '<div class="mem-stats"><span>❤️ Moves: <span id="memMoves">20</span></span></div>';
@@ -650,23 +841,26 @@
             bar.style.width = '0%'; 
         }, 50);
         setTimeout(() => { cont.classList.add('urgent'); }, duration * 0.7);
-        clearInterval(timerInterval);
-        timerInterval = setTimeout(callback, duration);
+        clearTimeout(timerId);
+        timerId = setTimeout(callback, duration);
     }
+    
     function speakText() {
         const item = currentItems[currentIndex];
         const u = new SpeechSynthesisUtterance(item["English/Answer"]);
         u.lang = 'en-US'; u.rate = 0.9; window.speechSynthesis.speak(u);
     }
+    
     function nextSlide() { 
         if (currentIndex < currentItems.length - 1) { 
             currentIndex++; 
             renderSlide(); 
         } else {
-            alert("End of Activity! Great Job! 🎉");
+            alert(`Game Over! 🎉\nCorrect: ${scoreCorrect}\nWrong: ${scoreWrong}`);
         }
     }
     function prevSlide() { if (currentIndex > 0) { currentIndex--; renderSlide(); } }
+    
     function initTouchEvents() {
         let ts=0; const s=document.getElementById('touchStage');
         s.addEventListener('touchstart',e=>{ts=e.changedTouches[0].screenX},{passive:true});
