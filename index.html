@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Pattern Master Class (v14)</title>
+    <title>Pattern Master Class (v15)</title>
     <style>
         /* --- 기본 설정 --- */
         body {
@@ -163,7 +163,10 @@
 
         /* === Layout Styles === */
         #lookSayLayout { display: flex; flex-direction: column; height: 100%; width: 100%; }
-        .ls-upper { flex: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px 90px; text-align: center; border-bottom: 1px solid #eee; overflow: hidden;}
+        .ls-upper { 
+            flex: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; 
+            padding: 20px 90px; text-align: center; border-bottom: 1px solid #eee; overflow: hidden;
+        }
         .ls-lower { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #fafafa; }
         
         .q-text { font-size: 36px; font-weight: 800; color: #2c3e50; line-height: 1.4; word-break: keep-all; }
@@ -347,7 +350,8 @@
     let currentMode = "looksay";
     let timerId = null; 
     let autoNextId = null; 
-    let flashSequenceId = null; 
+    let flashTimer1 = null; 
+    let flashTimer2 = null;
     let unscrambleState = { target: "", selected: [] };
     
     let scoreCorrect = 0;
@@ -356,7 +360,7 @@
     let memoryMoves = 20;
     let quizAnswerIdx = 0;
     let quizLocked = false;
-    let flashDuration = 700;
+    let flashDuration = 1500; // Start Slow (1.5s)
 
     let currentBookName = "";
     let selectedMaxCount = 999; 
@@ -486,7 +490,8 @@
 
         clearTimeout(timerId);
         clearTimeout(autoNextId);
-        clearTimeout(flashSequenceId); 
+        clearTimeout(flashTimer1); 
+        clearTimeout(flashTimer2);
         
         scoreCorrect = 0; scoreWrong = 0;
         updateScoreBoard();
@@ -503,7 +508,7 @@
 
     function startGame() {
         document.getElementById('startScreen').style.display = 'none';
-        flashDuration = 700; 
+        flashDuration = 1500; // Reset to 1.5s
         if (currentMode === 'memory') {
             currentIndex = 0; renderMemoryGame();
         } else {
@@ -543,7 +548,8 @@
     function renderSlide() {
         clearTimeout(timerId); 
         clearTimeout(autoNextId);
-        clearTimeout(flashSequenceId); 
+        clearTimeout(flashTimer1); 
+        clearTimeout(flashTimer2);
 
         if (currentMode === 'memory') return;
         if (!currentItems || currentItems.length === 0) return;
@@ -653,11 +659,12 @@
             let isEngQuestion = Math.random() > 0.5;
             let questionText = isEngQuestion ? item["English/Answer"] : item["Korean/Question"];
 
-            flashSequenceId = setTimeout(() => {
+            // ★ Double Timer Fix for Glitch Prevention
+            flashTimer1 = setTimeout(() => {
                 fContent.innerText = questionText; 
                 if(navigator.vibrate) navigator.vibrate(50);
                 
-                flashSequenceId = setTimeout(() => {
+                flashTimer2 = setTimeout(() => {
                     els.overlay.style.display = 'none'; 
                     els.flashDiv.style.display = 'flex'; 
                     els.timer.style.display = 'flex'; 
@@ -670,9 +677,12 @@
                         quizLocked = true;
                         addScore(false); 
                         
-                        // ★ 폭탄 터졌을 때 정답 보여주기 (Flash)
+                        // ★ Timeout -> Show Answer (Flash)
                         const btns = document.querySelectorAll('.flash-btn');
                         if(btns[quizAnswerIdx]) btns[quizAnswerIdx].classList.add('correct');
+                        
+                        // Reset difficulty if wrong
+                        flashDuration = 1500; 
 
                         autoNextId = setTimeout(() => nextSlide(), 1500);
                     });
@@ -747,7 +757,7 @@
                  quizLocked = true;
                  addScore(false);
                  
-                 // ★ 폭탄 터졌을 때 정답 보여주기 (Quiz)
+                 // ★ Timeout -> Show Answer (Quiz)
                  const btns = document.querySelectorAll('.quiz-btn');
                  if(btns[quizAnswerIdx]) btns[quizAnswerIdx].classList.add('correct');
 
@@ -767,14 +777,20 @@
             btn.classList.add('correct');
             addScore(true);
             if(navigator.vibrate) navigator.vibrate(50);
-            if (isFlash && flashDuration > 200) flashDuration -= 50;
+            
+            // Speed Up! (Min 0.5s)
+            if (isFlash && flashDuration > 500) flashDuration -= 100;
+            
             autoNextId = setTimeout(() => nextSlide(), 500);
         } else {
             btn.classList.add('wrong');
             document.querySelectorAll(btnClass)[quizAnswerIdx].classList.add('correct');
             addScore(false);
             if(navigator.vibrate) navigator.vibrate(200);
-            if(isFlash) flashDuration = 700;
+            
+            // Reset to 1.5s
+            if(isFlash) flashDuration = 1500;
+            
             autoNextId = setTimeout(() => nextSlide(), 1500);
         }
     }
