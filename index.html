@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Pattern Master Class (v11)</title>
+    <title>Pattern Master Class (v12)</title>
     <style>
         /* --- 기본 설정 --- */
         body {
@@ -48,6 +48,31 @@
             background: white; width: 100%; max-width: 900px; height: 100%; max-height: 600px;
             border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             display: flex; flex-direction: column; overflow: hidden; position: relative;
+        }
+
+        /* === 🎬 시작 대기 화면 (Start Screen) === */
+        #startScreen {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255, 255, 255, 0.95); z-index: 150;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            border-radius: 20px;
+        }
+        .start-btn {
+            background: #e74c3c; color: white; border: none;
+            padding: 20px 50px; font-size: 32px; font-weight: 900;
+            border-radius: 50px; cursor: pointer;
+            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: pulse-btn 2s infinite;
+        }
+        .start-btn:hover { transform: scale(1.05); }
+        .start-btn:active { transform: scale(0.95); }
+        .start-title { font-size: 24px; color: #2c3e50; margin-bottom: 20px; font-weight: bold; }
+
+        @keyframes pulse-btn {
+            0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(231, 76, 60, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
         }
 
         /* === ⚙️ 설정 모달 === */
@@ -101,9 +126,8 @@
 
         /* === 🏆 점수판 UI === */
         .score-badge {
-            position: absolute; top: 60px; /* 위치 조정 */
-            padding: 8px 12px; min-width: 50px;
-            border-radius: 12px; font-weight: 900; font-size: 24px; color: white;
+            position: absolute; top: 70px; padding: 8px 15px; min-width: 50px;
+            border-radius: 12px; font-weight: 900; font-size: 28px; color: white;
             box-shadow: 0 4px 10px rgba(0,0,0,0.15); z-index: 60;
             display: none; flex-direction: column; align-items: center; line-height: 1;
             transition: transform 0.2s;
@@ -113,27 +137,50 @@
         .score-red { right: 15px; background: #e74c3c; border: 2px solid #c0392b; }
         .score-title { font-size: 10px; margin-bottom: 3px; opacity: 0.9; font-weight: normal; text-transform: uppercase; }
 
-        /* === 타이머 & 폭탄 UI === */
-        .timer-container { position: absolute; top: 0; left: 0; width: 100%; height: 10px; background: #ddd; z-index: 50; display: none; }
-        .bomb-icon { position: absolute; left: 5px; top: 12px; font-size: 40px; z-index: 51; transform: translateY(-50%); transition: transform 0.2s; filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2)); }
-        .timer-bar { height: 100%; background: #e74c3c; width: 100%; transition: width 1s linear; border-radius: 0 5px 5px 0; }
+        /* === 💣 타이머 & 폭탄 UI (Flexbox Layout) === */
+        .timer-container {
+            position: absolute; top: 0; left: 0; width: 100%; height: 12px;
+            background: #ddd; z-index: 50; display: none;
+            align-items: center; /* Flexbox for Bomb+Bar */
+        }
+        .bomb-wrapper {
+            width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;
+            background: #2c3e50; border-radius: 0 0 20px 0; /* Corner Style */
+            z-index: 52;
+        }
+        .bomb-icon {
+            font-size: 28px; animation: none;
+            filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+        }
+        .timer-bar-bg {
+            flex: 1; height: 100%; background: #ddd; position: relative;
+        }
+        .timer-bar {
+            height: 100%; background: #e74c3c; width: 100%;
+            transition: width 1s linear;
+        }
+        
         .timer-container.urgent .bomb-icon { animation: shake 0.5s infinite; }
         .timer-container.urgent .timer-bar { background: #c0392b; }
 
-        .explosion-popup { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); font-size: 150px; z-index: 200; pointer-events: none; transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); text-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .explosion-popup { 
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); 
+            font-size: 200px; /* 더 크게! */
+            z-index: 200; pointer-events: none; 
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+        }
         .explosion-popup.boom { transform: translate(-50%, -50%) scale(1); animation: shake 0.5s; }
 
-        /* === Layout Styles (Safe Zone Added) === */
-        /* ★ 텍스트 겹침 방지: 좌우 패딩을 넉넉하게 줌 ★ */
+        /* === Layout Styles === */
         #lookSayLayout { display: flex; flex-direction: column; height: 100%; width: 100%; }
         .ls-upper { 
             flex: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; 
-            padding: 20px 90px; /* 좌우 여백 확보 */
-            text-align: center; border-bottom: 1px solid #eee; overflow: hidden;
+            padding: 20px 90px; text-align: center; border-bottom: 1px solid #eee; overflow: hidden;
         }
         .ls-lower { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #fafafa; }
         
-        .q-text { font-size: 34px; font-weight: 800; color: #2c3e50; line-height: 1.4; word-break: keep-all; }
+        .q-text { font-size: 36px; font-weight: 800; color: #2c3e50; line-height: 1.4; word-break: keep-all; }
         .q-image { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px; display: none; }
         .q-emoji { font-size: 140px; line-height: 1; display: none; animation: pop 0.3s; }
         .blank-text { font-size: 32px; font-weight: bold; color: #2c3e50; line-height: 1.6; display: none; }
@@ -149,8 +196,7 @@
         #unscrambleLayout { display: none; flex-direction: column; height: 100%; width: 100%; }
         .us-top { 
             flex: 1; display: flex; justify-content: center; align-items: center; 
-            padding: 10px 90px; /* 좌우 여백 확보 */
-            border-bottom: 1px solid #eee; background: #fff; text-align: center;
+            padding: 10px 90px; border-bottom: 1px solid #eee; background: #fff; text-align: center;
         }
         .us-mid { flex: 1.2; background: #f0f4f8; padding: 20px; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; gap: 8px; overflow-y: auto; transition: background 0.3s; }
         .us-mid.correct { background: #e3f9e5; box-shadow: inset 0 0 20px rgba(46, 204, 113, 0.2); }
@@ -174,8 +220,7 @@
         #quizLayout { display: none; flex-direction: column; height: 100%; width: 100%; padding-top: 15px;}
         .quiz-q-area { 
             flex: 1; display: flex; justify-content: center; align-items: center; 
-            padding: 20px 90px; /* 좌우 여백 확보 */
-            text-align: center; 
+            padding: 20px 90px; text-align: center; 
         }
         .quiz-body { flex: 1.5; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; background: #ecf0f1; }
         .quiz-btn { background: white; border: 3px solid #bdc3c7; border-radius: 15px; font-size: 18px; font-weight: bold; color: #34495e; cursor: pointer; transition: 0.2s; display: flex; justify-content: center; align-items: center; text-align: center; padding: 10px; word-break: keep-all; line-height: 1.3; box-shadow: 0 3px 6px rgba(0,0,0,0.05); }
@@ -209,8 +254,7 @@
             .card { height: 100%; border-radius: 0; }
             .stage { padding: 0; } .logo span { display: none; }
             select { max-width: 150px; }
-            
-            /* 모바일에서는 여백을 조금 줄이고 배지 크기 축소 */
+            /* 모바일 대응 */
             .ls-upper, .us-top, .quiz-q-area { padding-left: 60px; padding-right: 60px; }
             .score-badge { font-size: 20px; min-width: 40px; padding: 6px 10px; top: 55px; }
         }
@@ -266,6 +310,11 @@
     <button class="nav-btn nav-next" onclick="nextSlide()">❯</button>
 
     <div class="card">
+        <div id="startScreen" style="display:none;">
+            <div id="startTitle" class="start-title">Ready?</div>
+            <button class="start-btn" onclick="startGame()">▶ Start</button>
+        </div>
+
         <div id="scoreBoardBlue" class="score-badge score-blue">
             <span class="score-title">CORRECT</span><span id="scoreValBlue">0</span>
         </div>
@@ -274,9 +323,11 @@
         </div>
 
         <div id="gameTimer" class="timer-container">
-            <div class="bomb-icon">💣</div><div id="timerBar" class="timer-bar"></div>
+            <div class="bomb-wrapper"><div class="bomb-icon">💣</div></div>
+            <div class="timer-bar-bg"><div id="timerBar" class="timer-bar"></div></div>
         </div>
         <div id="explosionPopup" class="explosion-popup">💥</div>
+        
         <div id="flashOverlay" class="flash-overlay"><div id="flashContent">Ready...</div></div>
 
         <div id="lookSayLayout">
@@ -375,7 +426,6 @@
             let pName = patternMap.get(pNum);
             let div = document.createElement('div');
             div.className = 'chk-item';
-            // Unchecked by default
             div.innerHTML = `<input type="checkbox" value="${pNum}"> <span class="chk-label">${pNum}. ${pName}</span>`;
             div.onclick = (e) => {
                 if(e.target.tagName !== 'INPUT') {
@@ -468,12 +518,29 @@
             currentItems = pool;
         }
 
-        flashDuration = 700; 
+        // 초기화
         clearTimeout(timerId);
         clearTimeout(autoNextId);
         scoreCorrect = 0; scoreWrong = 0;
         updateScoreBoard();
+        
+        // Hide All Layouts First
+        const layouts = document.querySelectorAll('.card > div:not(.timer-container):not(.explosion-popup):not(.flash-overlay):not(.score-badge):not(#startScreen)');
+        layouts.forEach(e => e.style.display = 'none');
+        document.getElementById('gameTimer').style.display = 'none';
 
+        // Show Start Screen
+        const startScreen = document.getElementById('startScreen');
+        startScreen.style.display = 'flex';
+        document.getElementById('startTitle').innerText = 
+            `Mode: ${document.getElementById('actSel').options[document.getElementById('actSel').selectedIndex].text}`;
+    }
+
+    function startGame() {
+        document.getElementById('startScreen').style.display = 'none';
+        
+        flashDuration = 700; 
+        
         if (currentMode === 'memory') {
             currentIndex = 0; renderMemoryGame();
         } else {
@@ -560,11 +627,6 @@
 
         updateScoreBoard(); 
 
-        // Bug Fix: Remove leftover timer in non-game modes
-        if(!['speed', 'quiz', 'flash'].includes(currentMode)) {
-             document.getElementById('gameTimer').style.display = 'none';
-        }
-
         if (['looksay', 'blanks', 'speed'].includes(currentMode)) {
             els.ls.style.display = 'flex';
             els.aBox.className = "answer-box";
@@ -592,7 +654,7 @@
             }
 
             if (currentMode === 'speed') {
-                els.timer.style.display = 'block';
+                els.timer.style.display = 'flex'; // Changed to flex for alignment
                 startTimer(5000, () => {
                     if (!document.getElementById('aBox').classList.contains('visible')) toggleAnswer();
                 });
@@ -633,7 +695,7 @@
                 setTimeout(() => {
                     els.overlay.style.display = 'none'; 
                     els.flashDiv.style.display = 'flex'; 
-                    els.timer.style.display = 'block'; 
+                    els.timer.style.display = 'flex'; 
                     
                     renderQuizOrFlash(item, true, isEngQuestion); 
                     
@@ -708,7 +770,7 @@
         });
 
         if(!isFlash) {
-            document.getElementById('gameTimer').style.display = 'block';
+            document.getElementById('gameTimer').style.display = 'flex';
             startTimer(5000, () => {
                  document.getElementById('explosionPopup').classList.add('boom');
                  if(navigator.vibrate) navigator.vibrate([200, 100, 200]);
@@ -802,13 +864,12 @@
 
     function renderMemoryGame() {
         const memLayout = document.getElementById('memoryLayout');
-        const all = document.querySelectorAll('.card > div:not(.score-badge)');
+        // 메모리 게임 시작 전 모든 레이아웃 및 타이머 UI 숨김 처리
+        const all = document.querySelectorAll('.card > div:not(.score-badge):not(#startScreen)');
         all.forEach(e => e.style.display = 'none');
-        
-        memLayout.style.display = 'flex';
-        // Force hide timer in memory mode
         document.getElementById('gameTimer').style.display = 'none';
         
+        memLayout.style.display = 'flex';
         memLayout.innerHTML = '<div class="mem-stats"><span>❤️ Moves: <span id="memMoves">20</span></span></div>';
         memoryMoves = 20;
         let subset = currentItems.slice(0, 6);
